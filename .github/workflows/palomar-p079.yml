@@ -8,9 +8,9 @@ jobs:
     uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
     with:
       repository: ${{ github.repository }}
-      commit: ${{ github.sha }}
+      commit: 19566faca29bf58f819725fe59a2f3b49395e042
       pipeline_commit: d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
-      request_id: p079cloud001
+      request_id: p079cloud032
       mode: full
-      execution_profile: palomar-standard-v1
+      execution_profile: palomar-namespace-16x32-v1
       options: '{"comparator_config_path":"entries/P079/comparator.json","formalization_metadata_path":"entries/P079/formalization.yaml","authorization_relationship":"I am a responsible author or maintainer"}'
