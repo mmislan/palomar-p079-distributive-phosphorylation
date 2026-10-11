@@ -871,9 +871,7 @@ def manuscriptTwoSiteRates : Rates 2 where
   alpha := ![(147000 : ℝ)/124267, (79 : ℝ)/34]
   beta := ![1, 1]
   gamma := ![(45 : ℝ)/11, (45 : ℝ)/34]
-def manuscriptTwoSiteStates : Fin 3 → State 2 := ![ { S := ![(250 : ℝ)/693, (1027 : ℝ)/1008, (271 : ℝ)/528], E := 3/4, F := 8/7, C := ![(39 : ℝ)/14, (13 : ℝ)/28], D := ![(125 : ℝ)/462, (271 : ℝ)/462] },
-  { S := ![(2625 : ℝ)/11297, 1, (8672 : ℝ)/11297], E := 1, F := 1, C := ![(189 : ℝ)/79, (48 : ℝ)/79], D := ![(2625 : ℝ)/11297, (8672 : ℝ)/11297] }, { S := ![(350 : ℝ)/2223, (869 : ℝ)/912, (4065 : ℝ)/3952],
-  E := 5/4, F := 8/9, C := ![(77 : ℝ)/38, (55 : ℝ)/76], D := ![(875 : ℝ)/4446, (1355 : ℝ)/1482] } ]
+def manuscriptTwoSiteStates : Fin 3 → State 2 := ![ { S := ![(250 : ℝ)/693, (1027 : ℝ)/1008, (271 : ℝ)/528], E := 3/4, F := 8/7, C := ![(39 : ℝ)/14, (13 : ℝ)/28], D := ![(125 : ℝ)/462, (271 : ℝ)/462] }, { S := ![(2625 : ℝ)/11297, 1, (8672 : ℝ)/11297], E := 1, F := 1, C := ![(189 : ℝ)/79, (48 : ℝ)/79], D := ![(2625 : ℝ)/11297, (8672 : ℝ)/11297] }, { S := ![(350 : ℝ)/2223, (869 : ℝ)/912, (4065 : ℝ)/3952], E := 5/4, F := 8/9, C := ![(77 : ℝ)/38, (55 : ℝ)/76], D := ![(875 : ℝ)/4446, (1355 : ℝ)/1482] } ]
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/FiniteTwoSitePaperTailGap.lean"
 def OneDominantTailGap {ι : Type*} [Fintype ι] [DecidableEq ι] (A : Matrix ι ι ℝ) : Prop := ∃ x : ℝ, -2 < x ∧ A.charpoly.IsRoot x ∧ ((A.map (algebraMap ℝ ℂ)).charpoly).derivative.eval (x : ℂ) ≠ 0 ∧ ∀ z : ℂ, z ∈ spectrum ℂ (A.map (algebraMap ℝ ℂ)) → z.re < -2 ∨ z = (x : ℂ)
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/PaperTwoSiteTailTarget.lean"
