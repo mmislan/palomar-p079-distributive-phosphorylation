@@ -58,6 +58,15 @@ elab "challengeAuxModule " label:str : command => do
   current := current.insert marker (.str .anonymous requested, [])
   Lean.modifyEnv fun env => Lean.Meta.auxLemmasExt.modifyState env
     (fun _ => { lemmas := current })
+-- Recreate only the proved numeral auxiliaries shared with omitted, unused definitions.
+elab "challengeNumeralAux " n:ident k:num : command => do
+  let predecessor := Lean.quote (k.getNat - 1)
+  Lean.Elab.Command.elabCommand (← `(set_option linter.auxLemma false in theorem $n : Nat.AtLeastTwo ($predecessor + 1) := by infer_instance))
+  let name := (← Lean.getCurrNamespace) ++ n.getId
+  let info ← Lean.getConstInfo name
+  let key : Lean.Meta.AuxLemmaKey := { type := info.type, isPrivate := false, defeq := false }
+  Lean.modifyEnv fun env => Lean.Meta.auxLemmasExt.modifyState env
+    (fun s => { lemmas := s.lemmas.insert key (name, info.levelParams) })
 namespace PhosphorylationSharpness
 noncomputable section
 open scoped BigOperators
@@ -231,7 +240,7 @@ def ScaledIntegerMatrix.realMatrix {ι κ : Type*} (A : ScaledIntegerMatrix ι �
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/OperationalCoordinateMaps.lean"
 def operationalUnpack (q : Fin 9 → ℝ) : CoordinateSpace 3 := (![q 0,q 1,q 2], (![q 3,q 4,q 5], ![q 6,q 7,q 8]))
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/OperationalCoordinateMaps.lean"
-challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/OperationalCoordinateMaps.lean"
+def operationalFlatten (u : CoordinateSpace 3) : Fin 9 → ℝ := ![u.1 0,u.1 1,u.1 2,u.2.1 0,u.2.1 1,u.2.1 2, u.2.2 0,u.2.2 1,u.2.2 2]
 def operationalProjection (i : Fin 9) : (Fin 9 → ℝ) →L[ℝ] ℝ := ContinuousLinearMap.proj i
 def operationalLift (s : Fin 9 → ℝ) : (Fin 9 → ℝ) →L[ℝ] CoordinateSpace 3 := (ContinuousLinearMap.pi ![s 0 • operationalProjection 0, s 1 • operationalProjection 1,s 2 • operationalProjection 2]).prod ((ContinuousLinearMap.pi ![s 3 • operationalProjection 3, s 4 • operationalProjection 4,s 5 • operationalProjection 5]).prod (ContinuousLinearMap.pi ![s 6 • operationalProjection 6, s 7 • operationalProjection 7,s 8 • operationalProjection 8]))
 def operationalReadS (i : Fin 3) : CoordinateSpace 3 →L[ℝ] ℝ := ((ContinuousLinearMap.proj i) : (Fin 3 → ℝ) →L[ℝ] ℝ).comp (ContinuousLinearMap.fst ℝ (Fin 3 → ℝ) ((Fin 3 → ℝ) × (Fin 3 → ℝ)))
@@ -264,7 +273,6 @@ def operationalSpecies (q s : Fin 9 → ℝ) (θ : Fin 21 → ℝ)
     threeSiteFreeE (θ 18) u, threeSiteFreeF (θ 19) u,
     u.2.1 0, u.2.1 1, u.2.1 2, u.2.2 0, u.2.2 1, u.2.2 2]
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/OperationalWeightedCoordinates.lean"
-challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/OperationalWeightedCoordinates.lean"
 def operationalStoichiometry : Matrix (Fin 9) (Fin 18) ℚ := Matrix.of ![![0,0,1,-1,1,0,-1,1,0,0,0,1,0,0,0,0,0,0], ![0,0,0,0,0,0,0,0,1,-1,1,0,-1,1,0,0,0,1], ![0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,1,0], ![1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], ![0,0,0,0,0,0,1,-1,-1,0,0,0,0,0,0,0,0,0], ![0,0,0,0,0,0,0,0,0,0,0,0,1,-1,-1,0,0,0], ![0,0,0,1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0], ![0,0,0,0,0,0,0,0,0,1,-1,-1,0,0,0,0,0,0], ![0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,-1]]
 def operationalReactionDerivative (θ : Fin 21 → ℝ) (x : Fin 12 → ℝ)
     (T : Matrix (Fin 12) (Fin 9) ℝ) (a : Fin 18) (j : Fin 9) : ℝ :=
@@ -273,7 +281,6 @@ def operationalReactionDerivative (θ : Fin 21 → ℝ) (x : Fin 12 → ℝ)
   match operationalReactionSecond a with
   | none => rate*T first j
   | some b => rate*(x first*T b j+x b*T first j)
-challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/OperationalWeightedCoordinates.lean"
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/OperationalWeightedCoordinates.lean"
 def operationalWeightedStoichiometry (s : Fin 9 → ℝ) : Matrix (Fin 9) (Fin 18) ℝ := fun i a => (operationalStoichiometry i a : ℝ) / s i
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/OperationalCertificateAlgebra.lean"
@@ -381,17 +388,7 @@ def operationalZeroIntervalScales : Fin 9 → ℚ := ![(543596293/469538300 : �
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalInverseZero.lean"
 def operationalZeroP : ScaledIntegerMatrix (Fin 9) (Fin 9) where
   denominator := 1000000
-  entries := ![
-    ![112661611, 51349347, 1965123, -103222912, 655446676, 12661935, 3232380, 60139597, 2533344],
-    ![51349347, 24111614, 973359, -51142596, 298749342, 6578792, 1447892, 27844250, 1203443],
-    ![1965123, 973359, 316435, -2624815, 11095595, 555891, 64127, 1111065, 170196],
-    ![-103222912, -51142596, -2624815, 144160577, -599986329, -19358117, -2786361, -57837682, -2882712],
-    ![655446676, 298749342, 11095595, -599986329, 3827390024, 70251111, 18267626, 350334111, 14590590],
-    ![12661935, 6578792, 555891, -19358117, 70251111, 3970105, 425507, 7217955, 468240],
-    ![3232380, 1447892, 64127, -2786361, 18267626, 425507, 282121, 1665299, 69179],
-    ![60139597, 27844250, 1111065, -57837682, 350334111, 7217955, 1665299, 32552476, 1366907],
-    ![2533344, 1203443, 170196, -2882712, 14590590, 468240, 69179, 1366907, 319373]
-  ]
+  entries := ![ ![112661611, 51349347, 1965123, -103222912, 655446676, 12661935, 3232380, 60139597, 2533344], ![51349347, 24111614, 973359, -51142596, 298749342, 6578792, 1447892, 27844250, 1203443], ![1965123, 973359, 316435, -2624815, 11095595, 555891, 64127, 1111065, 170196], ![-103222912, -51142596, -2624815, 144160577, -599986329, -19358117, -2786361, -57837682, -2882712], ![655446676, 298749342, 11095595, -599986329, 3827390024, 70251111, 18267626, 350334111, 14590590], ![12661935, 6578792, 555891, -19358117, 70251111, 3970105, 425507, 7217955, 468240], ![3232380, 1447892, 64127, -2786361, 18267626, 425507, 282121, 1665299, 69179], ![60139597, 27844250, 1111065, -57837682, 350334111, 7217955, 1665299, 32552476, 1366907], ![2533344, 1203443, 170196, -2882712, 14590590, 468240, 69179, 1366907, 319373] ]
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalNormZero.lean"
 def operationalZeroPRowBound : ℚ := (1461527851/250000 : ℚ)
 def operationalZeroDecayMargin : ℚ := (145328706557919795738200856652951977017906713348296860215415578415070659372549966905706916126497068518796501570986655871171030380578575525468020010699522030388281656686731039503788471774227646587932242542009158882939856627805511725142898028807245900895900601403855446869234183163639600499077498724723533291287783039058223737167908907669692425427927980479981305315509520136641719800106586798633287/147518187717985264629029662871450618248297804654867439360424533064196965264232620940555528919100246603253139536304228791805554875655870391721042474498140050757606931496157285101009613438702403145840099756586334344176951797052448987570758761747296683351880455610313709240839881864807535774833312099179458870266117962264125303783964746002232474758026570409199588515600429133437337600000000000000000 : ℚ)
@@ -402,17 +399,7 @@ def operationalTwoIntervalScales : Fin 9 → ℚ := ![(1087192586/1988871157 : �
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalInverseTwo.lean"
 def operationalTwoP : ScaledIntegerMatrix (Fin 9) (Fin 9) where
   denominator := 1000000
-  entries := ![
-    ![714443230, 2487094744, 721894679, -15062441, 15907920873, 2223936565, 8856741, 1472319032, 476128347],
-    ![2487094744, 8663740980, 2515385139, -53079367, 55390959819, 7747805978, 30541579, 5128138423, 1658984104],
-    ![721894679, 2515385139, 731070774, -15512806, 16077668458, 2250046521, 8861199, 1488837653, 481935877],
-    ![-15062441, -53079367, -15512806, 565834, -337271974, -47574567, -144485, -31352295, -10226525],
-    ![15907920873, 55390959819, 16077668458, -337271974, 354278237925, 49527627430, 195741624, 32789965605, 10604491898],
-    ![2223936565, 7747805978, 2250046521, -47574567, 49527627430, 6930347023, 27384264, 4585861205, 1483823612],
-    ![8856741, 30541579, 8861199, -144485, 195741624, 27384264, 309023, 18038610, 5817781],
-    ![1472319032, 5128138423, 1488837653, -31352295, 32789965605, 4585861205, 18038610, 3035645517, 981872044],
-    ![476128347, 1658984104, 481935877, -10226525, 10604491898, 1483823612, 5817781, 981872044, 317961835]
-  ]
+  entries := ![ ![714443230, 2487094744, 721894679, -15062441, 15907920873, 2223936565, 8856741, 1472319032, 476128347], ![2487094744, 8663740980, 2515385139, -53079367, 55390959819, 7747805978, 30541579, 5128138423, 1658984104], ![721894679, 2515385139, 731070774, -15512806, 16077668458, 2250046521, 8861199, 1488837653, 481935877], ![-15062441, -53079367, -15512806, 565834, -337271974, -47574567, -144485, -31352295, -10226525], ![15907920873, 55390959819, 16077668458, -337271974, 354278237925, 49527627430, 195741624, 32789965605, 10604491898], ![2223936565, 7747805978, 2250046521, -47574567, 49527627430, 6930347023, 27384264, 4585861205, 1483823612], ![8856741, 30541579, 8861199, -144485, 195741624, 27384264, 309023, 18038610, 5817781], ![1472319032, 5128138423, 1488837653, -31352295, 32789965605, 4585861205, 18038610, 3035645517, 981872044], ![476128347, 1658984104, 481935877, -10226525, 10604491898, 1483823612, 5817781, 981872044, 317961835] ]
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalNormTwo.lean"
 def operationalTwoPRowBound : ℚ := (267554942803/500000 : ℚ)
 def operationalTwoDecayMargin : ℚ := (2313420339089540192561208978756556878652132333783377953977603237309733852100519015643643880949575727617939337589710945882233864690643091334453384923329461471309539060259439463862583634237265311178207991671970124297000712496016409172492231098762644568365016468017855760446206638257993793024276551843986844268013585858308908996828547066676913655720639507834006074512307335229863958871689631417751859416013479/2371834886972293759807356663340487578848094772830564478699949075620927899269630752084563379314149251945105737883692422216313142888340473333639154054712602729861383804113812612901146974517873148383968023918225436596139463664037998797598263048494918468334179369652401438989145016876614416422302191863415327731624349350418221107831806668042560930943823284832902024714881512569532020809741107200000000000000000 : ℚ)
@@ -423,17 +410,7 @@ def operationalFourIntervalScales : Fin 9 → ℚ := ![(543596293/2004214940 : �
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalInverseFour.lean"
 def operationalFourP : ScaledIntegerMatrix (Fin 9) (Fin 9) where
   denominator := 1000000
-  entries := ![
-    ![130811439, 1181735963, 882694257, -67163, 5047759858, 1820946261, 1083228, 466064535, 391749829],
-    ![1181735963, 10690408277, 7988266277, -745824, 45634178032, 16474214264, 9252308, 4215299411, 3545532666],
-    ![882694257, 7988266277, 5971974963, -589163, 34087425345, 12311859574, 6873156, 3149605682, 2650392573],
-    ![-67163, -745824, -589163, 74077, -3018679, -1160464, 6900, -284799, -266187],
-    ![5047759858, 45634178032, 34087425345, -3018679, 194915140609, 70314902063, 39813928, 17996615672, 15129638847],
-    ![1820946261, 16474214264, 12311859574, -1160464, 70314902063, 25389534202, 14356741, 6495751337, 5464339804],
-    ![1083228, 9252308, 6873156, 6900, 39813928, 14356741, 212520, 3613580, 2979683],
-    ![466064535, 4215299411, 3149605682, -284799, 17996615672, 6495751337, 3613580, 1662355817, 1397843498],
-    ![391749829, 3545532666, 2650392573, -266187, 15129638847, 5464339804, 2979683, 1397843498, 1176481752]
-  ]
+  entries := ![ ![130811439, 1181735963, 882694257, -67163, 5047759858, 1820946261, 1083228, 466064535, 391749829], ![1181735963, 10690408277, 7988266277, -745824, 45634178032, 16474214264, 9252308, 4215299411, 3545532666], ![882694257, 7988266277, 5971974963, -589163, 34087425345, 12311859574, 6873156, 3149605682, 2650392573], ![-67163, -745824, -589163, 74077, -3018679, -1160464, 6900, -284799, -266187], ![5047759858, 45634178032, 34087425345, -3018679, 194915140609, 70314902063, 39813928, 17996615672, 15129638847], ![1820946261, 16474214264, 12311859574, -1160464, 70314902063, 25389534202, 14356741, 6495751337, 5464339804], ![1083228, 9252308, 6873156, 6900, 39813928, 14356741, 212520, 3613580, 2979683], ![466064535, 4215299411, 3149605682, -284799, 17996615672, 6495751337, 3613580, 1662355817, 1397843498], ![391749829, 3545532666, 2650392573, -266187, 15129638847, 5464339804, 2979683, 1397843498, 1176481752] ]
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalNormFour.lean"
 def operationalFourPRowBound : ℚ := (383168493033/1000000 : ℚ)
 def operationalFourDecayMargin : ℚ := (390391618960160560848407330506436102114539076028171632905800972471658874124172427557686801503784664104351904762226836122673373930778307533649171765975183222533224810177025240176172054706813283787235201336323362346879785134133858998951511585538531590850128524479152036179478524190177139141100505093626053667549304744618008693609886598680472583430200524459893820003559169405399541797046566680347643819/397905262913780449054944299661547063862403588391038724741018604082590549329007434883146588782394115748134894419481894824607627478457439971670653869033010226804262120084226044390136808097138614088760037713211328967275899787021273788293864738683900976805929970791949664238890281526317678471063484088179828894023803261912877092341144466099570260741641883465218500370410610597023029657600000000000000000 : ℚ)
@@ -443,18 +420,39 @@ challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/
 def InOperationalParameterBox (θ : Fin 21 → ℝ) : Prop := ∀ i, |θ i-benchmarkThreeSiteOperationalNominal i| ≤ (1/671088640000 : ℝ)*benchmarkThreeSiteOperationalNominal i
 def operationalPhysicalRestrictedSink (q s : Fin 9 → ℚ) (θ : Fin 21 → ℝ) (e : Fin 9 → ℝ) : Prop := IsHurwitz (restrictedJacobianMatrix (operationalPhysicalParameters θ 18) (operationalPhysicalParameters θ 19) (operationalPhysicalParameters θ 20) (operationalParameterRates (operationalPhysicalParameters θ)) (operationalUnpack (fun i => ((q i / 10 : ℚ) : ℝ)) + operationalLift (fun i => ((s i / 10 : ℚ) : ℝ)) e))
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalInverseZero.lean"
-challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalInverseZero.lean"
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalFullCertificate.lean"
-challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalFullCertificate.lean"
+challengeNumeralAux operationalZeroFullOutcome._proof_3 8192000
+challengeNumeralAux operationalZeroFullOutcome._proof_4 16384000000
+challengeNumeralAux operationalZeroFullOutcome._proof_5 100
+challengeNumeralAux operationalZeroFullOutcome._proof_6 357000
+challengeNumeralAux operationalZeroFullOutcome._proof_7 23797
+challengeNumeralAux operationalZeroFullOutcome._proof_8 10000000
+challengeNumeralAux operationalZeroFullOutcome._proof_9 437971
+challengeNumeralAux operationalZeroFullOutcome._proof_10 100000000
+challengeNumeralAux operationalZeroFullOutcome._proof_1 218764808329051461578859664168415574856896977253299942183080347793378744494716931669151270266485111504209
+challengeNumeralAux operationalZeroFullOutcome._proof_2 14787547339777033195991071424383892203979741648460352142542874901487227497663485514140876800000000000000000
+challengeNumeralAux operationalTwoFullOutcome._proof_3 16384000
+challengeNumeralAux operationalTwoFullOutcome._proof_4 327680000000
+challengeNumeralAux operationalTwoFullOutcome._proof_5 32918000
+challengeNumeralAux operationalTwoFullOutcome._proof_6 1439001
+challengeNumeralAux operationalTwoFullOutcome._proof_7 20000000
+challengeNumeralAux operationalTwoFullOutcome._proof_8 3697503
+challengeNumeralAux operationalTwoFullOutcome._proof_9 50000000
+challengeNumeralAux operationalTwoFullOutcome._proof_1 489688143626661270927230150387757428988666312583057387523196772556661289010094942204927686144971255286670470601623
+challengeNumeralAux operationalTwoFullOutcome._proof_2 19940451679071769213046230667604449464772368013801095203005229248592935834727757199382838188284313600000000000000000
+challengeNumeralAux operationalFourFullOutcome._proof_3 2048000
+challengeNumeralAux operationalFourFullOutcome._proof_4 40960000000
+challengeNumeralAux operationalFourFullOutcome._proof_5 23433000
+challengeNumeralAux operationalFourFullOutcome._proof_6 10757833
+challengeNumeralAux operationalFourFullOutcome._proof_7 2714459
+challengeNumeralAux operationalFourFullOutcome._proof_8 12500000
+challengeNumeralAux operationalFourFullOutcome._proof_1 4599501469907009612464002751315450826328711932522883905127728262836218206833047661497370341089714584554295941
+challengeNumeralAux operationalFourFullOutcome._proof_2 245291609798590978623041458588212757858564254475582332674050107111671862729092679484239878553600000000000000000
 def operationalZeroPrintedOutcome (θ : Fin 21 → ℝ) (e : Fin 9 → ℝ) : Prop := OperationalPrintedSinkOutcome operationalZeroIntervalCoordinates operationalZeroIntervalScales (fun i : Fin 21 => operationalZeroIntervalNominal (Fin.castAdd 9 i)) θ operationalZeroP.realMatrix (1/8192000) (1/16384000000) (1/100) (operationalZeroDecayMargin : ℝ) (operationalZeroPRowBound : ℝ) (357000) (23797/10000000) (437971/100000000) (218764808329051461578859664168415574856896977253299942183080347793378744494716931669151270266485111504209/14787547339777033195991071424383892203979741648460352142542874901487227497663485514140876800000000000000000 : ℝ) e ∧ operationalPhysicalRestrictedSink operationalZeroIntervalCoordinates operationalZeroIntervalScales θ e ∧ OperationalLiteralPhysicalRecovery (fun i => (operationalZeroIntervalCoordinates i : ℝ)) (fun i => (operationalZeroIntervalScales i : ℝ)) θ operationalZeroP.realMatrix (1/8192000) (1/16384000000) (1/100) (operationalZeroDecayMargin : ℝ) (operationalZeroPRowBound : ℝ) (357000) e
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalInverseTwo.lean"
-challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalInverseTwo.lean"
-challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalFullCertificate.lean"
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalFullCertificate.lean"
 def operationalTwoPrintedOutcome (θ : Fin 21 → ℝ) (e : Fin 9 → ℝ) : Prop := OperationalPrintedSinkOutcome operationalTwoIntervalCoordinates operationalTwoIntervalScales (fun i : Fin 21 => operationalTwoIntervalNominal (Fin.castAdd 9 i)) θ operationalTwoP.realMatrix (1/16384000) (1/327680000000) (1/100) (operationalTwoDecayMargin : ℝ) (operationalTwoPRowBound : ℝ) (32918000) (1439001/20000000) (3697503/50000000) (489688143626661270927230150387757428988666312583057387523196772556661289010094942204927686144971255286670470601623/19940451679071769213046230667604449464772368013801095203005229248592935834727757199382838188284313600000000000000000 : ℝ) e ∧ operationalPhysicalRestrictedSink operationalTwoIntervalCoordinates operationalTwoIntervalScales θ e ∧ OperationalLiteralPhysicalRecovery (fun i => (operationalTwoIntervalCoordinates i : ℝ)) (fun i => (operationalTwoIntervalScales i : ℝ)) θ operationalTwoP.realMatrix (1/16384000) (1/327680000000) (1/100) (operationalTwoDecayMargin : ℝ) (operationalTwoPRowBound : ℝ) (32918000) e
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalInverseFour.lean"
-challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalInverseFour.lean"
-challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalFullCertificate.lean"
 challengeAuxModule "E:/Palomar-Submissions/proofs/PhosphorylationStableCapacity/BenchmarkOperationalFullCertificate.lean"
 def operationalFourPrintedOutcome (θ : Fin 21 → ℝ) (e : Fin 9 → ℝ) : Prop := OperationalPrintedSinkOutcome operationalFourIntervalCoordinates operationalFourIntervalScales (fun i : Fin 21 => operationalFourIntervalNominal (Fin.castAdd 9 i)) θ operationalFourP.realMatrix (1/2048000) (1/40960000000) (1/100) (operationalFourDecayMargin : ℝ) (operationalFourPRowBound : ℝ) (23433000) (10757833/50000000) (2714459/12500000) (4599501469907009612464002751315450826328711932522883905127728262836218206833047661497370341089714584554295941/245291609798590978623041458588212757858564254475582332674050107111671862729092679484239878553600000000000000000 : ℝ) e ∧ operationalPhysicalRestrictedSink operationalFourIntervalCoordinates operationalFourIntervalScales θ e ∧ OperationalLiteralPhysicalRecovery (fun i => (operationalFourIntervalCoordinates i : ℝ)) (fun i => (operationalFourIntervalScales i : ℝ)) θ operationalFourP.realMatrix (1/2048000) (1/40960000000) (1/100) (operationalFourDecayMargin : ℝ) (operationalFourPRowBound : ℝ) (23433000) e
 challengeAuxModule "CHALLENGE_ONLY_CONTRACT"

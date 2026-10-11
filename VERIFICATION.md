@@ -1,7 +1,9 @@
-# Verification record
+# Checking the formalization
 
-This snapshot contains the complete nineteen-result source selection and its 36-page companion manuscript. The proof sources, Solution, dependency pins and Comparator selection are unchanged from the supplied complete-paper-r5 candidate.
+The Comparator configuration selects nineteen results. The companion manuscript has 36 pages. The proof sources, Solution, dependency pins and theorem selection are unchanged from the complete-paper source supplied for this release.
 
-The Challenge removes fifteen unreferenced definitions and reflows retained declaration text. All nineteen selected theorem statements remain textually identical. The numerical certificate definitions removed from the Challenge remain in the Solution proof library. The resulting Challenge is 997 lines and 89,127 bytes.
+The independent Challenge states the selected results and their definitions in 995 lines and 91,105 bytes. Unreferenced numerical certificate data remains in the Solution library. Twenty-seven elementary `Nat.AtLeastTwo` facts reproduce the numeral auxiliaries used by Lean when elaborating the original definitions; each uses the same standard arithmetic instance proof as the Solution. They preserve the correspondence of elaborated declarations without importing project proofs into the Challenge.
 
-No new Lean compilation, Comparator or kernel check has been run on this snapshot. Earlier verification results apply only to their recorded source hashes. No current full-package PASS is asserted. The prepared manual cloud workflow can check an exact published commit once authorized; passing that required check precedes Palomar intake.
+The manual workflow `.github/workflows/palomar-p079.yml` runs Palomar's full mechanical check. Its reports identify the exact repository commit, Challenge, theorem selection, toolchain and kernel results. Consult the report for the commit being examined: a successful source build alone is not a Comparator or all-kernel pass.
+
+[Cloud verification runs](https://github.com/mmislan/palomar-p079-distributive-phosphorylation/actions/workflows/palomar-p079.yml)
