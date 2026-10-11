@@ -6687,8 +6687,8 @@
     },
     {
       "path": "Registry/P079/Challenge.lean",
-      "bytes": 91105,
-      "sha256": "9df4189c93f603fee1145c7dfa4fecf1ebf4a100e93ddc046125eeadea7709dd"
+      "bytes": 91128,
+      "sha256": "f3dcfdcdb785796e3516f898581c489925597729b6be2026b4a0300100af0eb9"
     },
     {
       "path": "Registry/P079/Solution.lean",
@@ -6708,7 +6708,7 @@
     {
       "path": "VERIFICATION.md",
       "bytes": 1234,
-      "sha256": "b95e129a7b8c18077ec01e5956c9bcbcbd47583867065abbf9628b0e5d34e458"
+      "sha256": "276f39a4e0769b9eb385d306a0b977ce46fbac427137923be1252cf4da1bfe71"
     }
   ],
   "excludes_itself": true

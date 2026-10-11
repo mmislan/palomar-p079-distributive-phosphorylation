@@ -61,7 +61,7 @@ elab "challengeAuxModule " label:str : command => do
 -- Recreate only the proved numeral auxiliaries shared with omitted, unused definitions.
 elab "challengeNumeralAux " n:ident k:num : command => do
   let predecessor := Lean.quote (k.getNat - 1)
-  Lean.Elab.Command.elabCommand (← `(set_option linter.auxLemma false in theorem $n : Nat.AtLeastTwo ($predecessor + 1) := by infer_instance))
+  Lean.Elab.Command.elabCommand (← `(set_option linter.auxLemma false in theorem $n : Nat.AtLeastTwo ($predecessor + 1) := Nat.instAtLeastTwoHAddOfNat $predecessor))
   let name := (← Lean.getCurrNamespace) ++ n.getId
   let info ← Lean.getConstInfo name
   let key : Lean.Meta.AuxLemmaKey := { type := info.type, isPrivate := false, defeq := false }
