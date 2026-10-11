@@ -1,0 +1,201 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "Exact equilibrium and stable-state capacities of distributive phosphorylation",
+    "description": "The equilibrium and stable-state capacities of the sequential distributive n-site phosphorylation cycle are determined for every n >= 1. The positive-equilibrium ceiling is 2n-1, and the ceiling for locally asymptotically stable positive equilibria is n, including nonhyperbolic attractors. Both bounds are attained simultaneously by one rational choice of rates and totals: exactly 2n-1 rational positive equilibria consist of n hyperbolic sinks and n-1 saddles with one unstable direction. This configuration persists on a nonempty open set in the full rate-and-total parameter space. The construction also yields quantitative eigenvalue splitting, compact-current refinements, prescribed-root coefficient and interlacing results, explicit finite spectra, and a three-site example with local robustness, recovery and measured-readout guarantees.",
+    "authors": [
+      "Michael Mislan"
+    ],
+    "responsible_maintainers": [
+      "Michael Mislan"
+    ],
+    "license": "Apache-2.0"
+  },
+  "classification": {
+    "arxiv": [
+      "math.DS"
+    ],
+    "msc2020": [
+      "34D20",
+      "92C42"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Sharp equilibrium and stable-state capacities of multisite phosphorylation",
+      "type": "paper",
+      "relationship": "formalizes",
+      "location": "papers/P079/paper.pdf"
+    },
+    {
+      "title": "On the number of steady states in a multiple futile cycle",
+      "type": "paper",
+      "relationship": "background",
+      "location": "https://arxiv.org/abs/0704.0036"
+    },
+    {
+      "title": "A proof of unlimited multistability for phosphorylation cycles",
+      "type": "paper",
+      "relationship": "background",
+      "location": "https://arxiv.org/abs/1904.02983"
+    }
+  ],
+  "automation": {
+    "methods": [
+      {
+        "method": "agent",
+        "framework": "Codex",
+        "tool_setup": "AI-assisted mathematical formalization and submission preparation."
+      }
+    ],
+    "notes": "Available original production records are preserved separately; model identifiers are not reconstructed."
+  },
+  "review": {
+    "status": "agent-reviewed",
+    "notes": "The source package and selected statement text were reviewed. This release removes unreferenced Challenge definitions and reflows retained declarations without changing the nineteen selected statements. No fresh Lean, Comparator or kernel run was performed for this snapshot. See VERIFICATION.md for the evidence boundary."
+  },
+  "alignment": {
+    "statements": [
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.all_size_exact_capacity_with_hyperbolic_attainment_435",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.all_size_full_family_with_hyperbolic_sinks",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.all_size_rational_full_family_with_sinks_and_saddles",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.positive_equilibria_finite_and_ncard_le_two_n_sub_one",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.all_positive_sizes_rational_full_family_with_sinks_and_saddles",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.all_positive_sizes_open_full_hyperbolic_family",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.three_site_printed_operational_submission",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.paper_fixed_binding_finite_law",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.paper_fixed_binding_rational_attainment",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.paper_compact_actual_current_law",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.P079PrintedContract.paper_fixed_finite_table",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.three_site_benchmark_full_configuration",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.two_site_literal_dominant_tail_gap",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.three_site_printed_operational_submission_with_measured_separation",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.paper_compact_actual_current_interval_law",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.paper_global_conversion_quotient_and_D_positive",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.paper_global_conversion_B_positive",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.paper_global_readout_strict_order",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      },
+      {
+        "source": "Companion manuscript; see entries/P079/CLAIM-EVIDENCE.md",
+        "lean": "PhosphorylationStableCapacity.paper_global_interlacing_partial_fractions_and_ratios",
+        "module": "Registry.P079.Solution",
+        "status": "formalized",
+        "note": "Retained from the complete nineteen-result source package; this release has no fresh combined verification receipt."
+      }
+    ]
+  },
+  "related_formalizations": [
+    {
+      "id": "https://github.com/qinz1yang/differential-geometry/tree/777299070a5529e96345e0033979706fd00c7e62",
+      "relationship": "builds-on",
+      "note": "Finite-dimensional degree development; exact source attribution is retained in NOTICE and the source-provenance record."
+    }
+  ]
+}

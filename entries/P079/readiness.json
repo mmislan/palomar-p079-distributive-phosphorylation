@@ -1,0 +1,1032 @@
+{
+  "paper": "P079",
+  "problems": [
+    20
+  ],
+  "historical_verification": "BASELINE_RECEIPTS_AUTHENTICATED; NEW EXACT_ROOT_STRICTLY_COMPILED",
+  "challenge": "19_INDEPENDENT_ENDPOINTS_SOURCE_SELECTED",
+  "solution": "EXACT_NINETEEN_STRICT_SOLUTION_PASS; FINAL_COMPARATOR_KERNEL_GATES_PENDING",
+  "target_compilation": "1301_MODULE_CLOSURE; ZERO_PENDING_SUPPORT_GATES; STRICT_SOLUTION_PASS",
+  "comparator": "HISTORICAL_R8_PASS_ONLY; CURRENT_NINETEEN_PENDING",
+  "independent_kernels": "HISTORICAL_R8_PASS_ONLY; CURRENT_NINETEEN_PENDING",
+  "statement_fidelity": "CURRENT_NINETEEN_PLUS_SAME_FAMILY_CURVES_ROUNDING_AND_COEFFICIENT_LIST_ELIGIBILITY; FINAL_GATES_PENDING",
+  "metadata_review": "AGENT_PREPARED",
+  "scope_gap": true,
+  "publication": "NOT_AUTHORIZED",
+  "submission": "NOT_AUTHORIZED",
+  "historical_evidence": {
+    "audit": "preparation/historical-evidence-audit.json",
+    "preserved_directory": "migration/authenticated-historical/P079",
+    "checked_module_count": 10,
+    "changed_source_count": 0
+  },
+  "disposition": "STRICT_SOURCE_AND_REVIEWED_PDF_PREPARED; FINAL_PACKAGE_GATES_PENDING",
+  "local_verification": {
+    "receipt": "preparation/verification/P079-release-r8-run/result.json",
+    "source_snapshot": "preparation/verification/P079-release-r8-run/source-hashes.json",
+    "mechanical_verification": "PASS",
+    "source_note": "The exact 662-file r8 source snapshot passes Comparator and con-ron, nanoda, Lean default; see external receipt and manifest match."
+  },
+  "private_candidate": {
+    "path": ".local/release-candidates/P079-2026-10-04-release-r8",
+    "branch": "codex/p079-release-submission",
+    "commit": "SEE_RELEASE_HANDOFF",
+    "published": false
+  },
+  "module_port_review": "preparation/release/P079/MODULE-PORT.md",
+  "disposition_record": "entries/P079/DISPOSITION.md",
+  "formalization_contract": "E:/Erdos Problems/problem_workspaces/RAF_exact_stable-state_capacity_n-site_phosphorylation_system/SUBMISSION_FORMALIZATION_CONTRACT.md",
+  "pending_operational_extension": {
+    "selected_theorem": "PhosphorylationStableCapacity.three_site_printed_operational_submission",
+    "strict_module_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_ROOT_MODULE_CHECKS\\BenchmarkOperationalFullCertificate\\20261005T071439386Z\\result.json",
+    "combined_verification": "PENDING_FRESH_CANDIDATE_COMPARATOR_AND_ALL_KERNELS"
+  },
+  "prepared_complete_extension": {
+    "updated_at_utc": "2026-10-06T12:47:28.985805+00:00",
+    "selected_endpoint_count": 19,
+    "selected_endpoints": [
+      "PhosphorylationStableCapacity.all_size_exact_capacity_with_hyperbolic_attainment_435",
+      "PhosphorylationStableCapacity.all_size_full_family_with_hyperbolic_sinks",
+      "PhosphorylationStableCapacity.all_size_rational_full_family_with_sinks_and_saddles",
+      "PhosphorylationStableCapacity.positive_equilibria_finite_and_ncard_le_two_n_sub_one",
+      "PhosphorylationStableCapacity.all_positive_sizes_rational_full_family_with_sinks_and_saddles",
+      "PhosphorylationStableCapacity.all_positive_sizes_open_full_hyperbolic_family",
+      "PhosphorylationStableCapacity.three_site_printed_operational_submission",
+      "PhosphorylationStableCapacity.paper_fixed_binding_finite_law",
+      "PhosphorylationStableCapacity.paper_fixed_binding_rational_attainment",
+      "PhosphorylationStableCapacity.paper_compact_actual_current_law",
+      "PhosphorylationStableCapacity.P079PrintedContract.paper_fixed_finite_table",
+      "PhosphorylationStableCapacity.three_site_benchmark_full_configuration",
+      "PhosphorylationStableCapacity.two_site_literal_dominant_tail_gap",
+      "PhosphorylationStableCapacity.three_site_printed_operational_submission_with_measured_separation",
+      "PhosphorylationStableCapacity.paper_compact_actual_current_interval_law",
+      "PhosphorylationStableCapacity.paper_global_conversion_quotient_and_D_positive",
+      "PhosphorylationStableCapacity.paper_global_conversion_B_positive",
+      "PhosphorylationStableCapacity.paper_global_readout_strict_order",
+      "PhosphorylationStableCapacity.paper_global_interlacing_partial_fractions_and_ratios"
+    ],
+    "source_sha256": {
+      "Registry/P079/Challenge.lean": "080c1f6996775f9120ec332a8f9174099d476126564100c181624c05917f1512",
+      "Registry/P079/Solution.lean": "513a34294afdd2ed2b2b784efd5d440704333942fd831fe73cb8c58f9ca31ac5",
+      "entries/P079/comparator.json": "714aa0f74f96ec0ec4643fd53593ace94583cd2b3d068c9a9c0b15ad1ae19fd1"
+    },
+    "source_preparation": "preparation/release/P079/COMPLETE-SELECTION-PREPARATION.json",
+    "strict_module_gates": "IN_PROGRESS_ROOT_SERIALIZED_WARNING_FREE_CHECKS_AND_DIAGNOSTIC_REPAIRS",
+    "fresh_combined_verification": "PENDING_COMPARATOR_CONRON_NANODA_DEFAULT_LEAN",
+    "manuscript_pdf": "REVIEWED_36_PAGE_PDF_PROMOTED_FINAL_PACKAGE_GATES_PENDING",
+    "reviewed_pdf_record": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_REVIEWED_MANUSCRIPT_PROPOSAL_PDF.json",
+    "scope": "The nineteen independent selected declarations cover universal capacity and common rational sink/saddle attainment with full-parameter openness; the common-witness actual-current splitting law and rational member; compact-current and closed-interval guarantees; printed finite spectra, benchmark and dominant-tail configurations; operational recovery and independent measured errors; arbitrary-root conversion positivity, global readout order, and complete negative interlacing, positive partial fractions and coefficient ratios. Supporting source also supplies original four-loop first-success construction and the universal prescribed-root construction for every admissible r and every positive b, beta, gamma, with nondegeneracy, odd positive-real-eigenvalue multiplicity and regular full-space open persistence. These sources require completion of fresh strict support/selection checks and the final exact-package Comparator and all three kernel gates.",
+    "combined_verification": false,
+    "publication": "NOT_AUTHORIZED",
+    "submission": "NOT_AUTHORIZED",
+    "constructed_unstable_curve_support": {
+      "kind": "CONSTRUCTED_ACTUAL_POSITIVE_ANALYTIC_UNSTABLE_CURVES_SAME_FULL_FAMILY",
+      "status": "TWELVE_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASSES; FINAL_PACKAGE_AND_PDF_GATES_PENDING",
+      "module_count": 12,
+      "solution_support_import": "proofs.PhosphorylationStableCapacity.PaperFullConfigurationUnstableCurves435",
+      "actual_endpoint": "P079UnstableWorkbench.actual_positive_saddle_analytic_unstable_curve",
+      "common_family_endpoint": "P079UnstableWorkbench.all_positive_sizes_rational_full_configuration_with_positive_unstable_curves",
+      "scope": "Actual local analytic embedded one-dimensional curves at every odd positive saddle of the SAME rational full-configuration system, tangent to the positive real eigenvector and contained in the positive compatibility class; explicit invariant backward trajectories converge to the same equilibrium. No curve premise is assumed; classification of all backward-convergent trajectories is not claimed.",
+      "receipts": [
+        {
+          "module": "proofs.PhosphorylationStableCapacity.UniformRealResolvent435",
+          "source": "proofs/PhosphorylationStableCapacity/UniformRealResolvent435.lean",
+          "source_sha256": "b246687f53cb1c43e201dd9eabb4544cdcee39b0c64c25536d27f1910a2f121e",
+          "port_sha256": "f6755d7b07ff97b5f3cbe7c885f0660ccc3bcde2cd58907292235ee4d58fde6c",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.UniformRealResolvent435\\20261006T072559140806Z\\result.json",
+          "receipt_sha256": "c1af9238ef61388295ac8290073ac890d203c8ada415089f8a84e5c471c26b9f",
+          "completed_at_utc": "2026-10-06T07:26:17.908183+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.UnstableCurveNonresonance435",
+          "source": "proofs/PhosphorylationStableCapacity/UnstableCurveNonresonance435.lean",
+          "source_sha256": "6b3bd68636810364843490f8adfc432edd37233535b30a2a5145e6944f30ff9b",
+          "port_sha256": "712a6b1b400b2a483d451d55b83b224d190f3d068fa451a6c29db2de38e66db6",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.UnstableCurveNonresonance435\\20261006T074232492971Z\\result.json",
+          "receipt_sha256": "55d6408486b06d4e6a5e19015f29310e71bd1a9b2317216dcdc524f58ad884b0",
+          "completed_at_utc": "2026-10-06T07:42:52.012114+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.QuadraticCoefficientMajorant435",
+          "source": "proofs/PhosphorylationStableCapacity/QuadraticCoefficientMajorant435.lean",
+          "source_sha256": "b006b8bc445db0205b620889646adbb8b5bc528bb36d8d765a995b97d1cbb5cc",
+          "port_sha256": "9ebaa585efe293d4f697a3297000f2c356494e06e70407f0b2a487a30711662b",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.QuadraticCoefficientMajorant435\\20261006T074641863585Z\\result.json",
+          "receipt_sha256": "c9f6ccab80206f9134bd0f939fc643285fd41801bbdb696068a2fb0824d7df29",
+          "completed_at_utc": "2026-10-06T07:46:58.388755+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.BilinearCauchyProduct435",
+          "source": "proofs/PhosphorylationStableCapacity/BilinearCauchyProduct435.lean",
+          "source_sha256": "cbc340b6bc8aa3ff0d40d7c02d49d7926a8da7081774f400d5212e6fe008b4d1",
+          "port_sha256": "a514d1373c7264aec5ffc28bbae4f068d3206ae34d14ff61e066104e76c5aec8",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.BilinearCauchyProduct435\\20261006T073316990347Z\\result.json",
+          "receipt_sha256": "c388b14f985d60d4a77342970757b5750484272305e057b85c62cc066b55d2b4",
+          "completed_at_utc": "2026-10-06T07:33:43.177208+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.ScalarSeriesDifferential435",
+          "source": "proofs/PhosphorylationStableCapacity/ScalarSeriesDifferential435.lean",
+          "source_sha256": "fede83ae8bb8fbb488479855b4dbf3ad6090026a739514fe9b81f9d3b44d7d41",
+          "port_sha256": "f5e5e5f3925c4a03b003120c699015dc0dd3c0a86b47e3814632da14f5ebf8a7",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ScalarSeriesDifferential435\\20261006T074944729260Z\\result.json",
+          "receipt_sha256": "04a71cf78fb79b257ea3a56dbbfc5a8054d4f79304880ef553035c11c2a26ace",
+          "completed_at_utc": "2026-10-06T07:50:00.896546+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.QuadraticParameterSeries435",
+          "source": "proofs/PhosphorylationStableCapacity/QuadraticParameterSeries435.lean",
+          "source_sha256": "1016c65d232f9da131a66403ef8113c92ed427567341f476c60f62ef94be9ab6",
+          "port_sha256": "651c6557179bd3c6793522ea8c0eea5462a57716ae06416a3979db31db8ba3c9",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.QuadraticParameterSeries435\\20261006T075356137997Z\\result.json",
+          "receipt_sha256": "af04ddb78bc944ede3236548c62f1066f8f8f94b23f02c5667a597b0a003b50f",
+          "completed_at_utc": "2026-10-06T07:54:11.539062+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.AnalyticCurveEmbedding435",
+          "source": "proofs/PhosphorylationStableCapacity/AnalyticCurveEmbedding435.lean",
+          "source_sha256": "be7fa40091fdc26fa339839b4865170c96d5da58f64e1e8e18b916f544f96229",
+          "port_sha256": "40b2e5ca217fea9e537dba9ae3164a1fc6fd50c0d3359d548987596d7867d497",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.AnalyticCurveEmbedding435\\20261006T080029137155Z\\result.json",
+          "receipt_sha256": "6f7640be26b33ea64b9a771af261539058547e2dd452afce278ac38b02ba5c92",
+          "completed_at_utc": "2026-10-06T08:00:44.770835+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.BackwardParameterTrajectory435",
+          "source": "proofs/PhosphorylationStableCapacity/BackwardParameterTrajectory435.lean",
+          "source_sha256": "c11dba4579ea90f06b8f56966c6198ce98fc47393625618fe797448c665a1704",
+          "port_sha256": "078e1e621fb62ac49b0bb083c6f13a55d7d596894dc846e6fc67bc19c6885adc",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.BackwardParameterTrajectory435\\20261006T082110192943Z\\result.json",
+          "receipt_sha256": "517a6a0ffa9c2e1c542c9463dcdf4485ff5030edd41ff889b7a8e61369cdda1d",
+          "completed_at_utc": "2026-10-06T08:21:24.891616+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.ActualQuadraticClassField435",
+          "source": "proofs/PhosphorylationStableCapacity/ActualQuadraticClassField435.lean",
+          "source_sha256": "76d63eb00f3af1777cf438a06aac29b33dae0266d718774ca992d7f7dbfb2759",
+          "port_sha256": "b05eaf5a4ac8599e6e9e29e4d7884a8504128bf0b6b184c5812055378cac99e5",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ActualQuadraticClassField435\\20261006T081035110249Z\\result.json",
+          "receipt_sha256": "c3a857ba85667c92673521b8ed48a30e65ccb27c13f2a4500818d7252cef01ad",
+          "completed_at_utc": "2026-10-06T08:10:58.163964+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.ActualAnalyticUnstableCurve435",
+          "source": "proofs/PhosphorylationStableCapacity/ActualAnalyticUnstableCurve435.lean",
+          "source_sha256": "7fa5e5d80ebe2a692fc230ca848f26ac2a204e9f3054c84766bee0f5edb91492",
+          "port_sha256": "16870c278c8722c064660c7f52049e3aff9f3c57b4823c5180f9c39b5b4996f6",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ActualAnalyticUnstableCurve435\\20261006T082648247067Z\\result.json",
+          "receipt_sha256": "5a4037a9ebdb9e12dd4cc7bfcbd68e237ba9db5f88cbe0c4a34fd99b3628e7cc",
+          "completed_at_utc": "2026-10-06T08:27:08.008659+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.ActualPositiveAnalyticUnstableCurve435",
+          "source": "proofs/PhosphorylationStableCapacity/ActualPositiveAnalyticUnstableCurve435.lean",
+          "source_sha256": "25c7ebc2d7e30de513c9c179f21926000d4abc5c4236004f36dbd59fec29b407",
+          "port_sha256": "7255ce00d45f0acbfaf635acc7a1d96558dd22db6317070681fd8db20b24a61a",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ActualPositiveAnalyticUnstableCurve435\\20261006T082959431392Z\\result.json",
+          "receipt_sha256": "230850d36d0489d105366ab3ceaa39e06416030ab5fc0fbde1aeea48566c5c1d",
+          "completed_at_utc": "2026-10-06T08:30:19.806313+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.PaperFullConfigurationUnstableCurves435",
+          "source": "proofs/PhosphorylationStableCapacity/PaperFullConfigurationUnstableCurves435.lean",
+          "source_sha256": "83b0071f33ab3728ef1c6d07f30f1fab5b488098e337d4215613bcb866cfc14d",
+          "port_sha256": "ad380ba9cf9dddcf399865170f26d7a4e70340329134268bb1e43f2244a3c0b0",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.PaperFullConfigurationUnstableCurves435\\20261006T083027849147Z\\result.json",
+          "receipt_sha256": "f555c17420562a6140013f269eb9f59055b95581e3822dc2cd108cf76cdc2ba3",
+          "completed_at_utc": "2026-10-06T08:30:31.931611+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        }
+      ],
+      "combined_verification": false,
+      "manuscript_pdf": "CURVE_AMENDMENT_NOT_YET_REBUILT_OR_PROMOTED",
+      "inventory": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\unstable_curve_construction\\CURVE_CANONICAL_INTEGRATION_INVENTORY.json"
+    },
+    "current_plan_snapshot": {
+      "basis": "CAPTURED_ZERO_PENDING_SOURCE_BOUND_PLAN_NOT_FINAL_KERNEL_EVIDENCE",
+      "plan": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_OVERNIGHT_MODULE_PLAN.json",
+      "plan_sha256": "273845dab380e193a49abaeaaf09e7075fba4ae5ab9b12fe1b3f7818d1df59ee",
+      "prepared_at_utc": "2026-10-06T12:54:58.617578+00:00",
+      "complete_closure_count": 1301,
+      "pending_gate_count_at_preparation": 0,
+      "porter_sha256": "5e45b9a504986eb1c0f65547c2a7ffe9e75dd1ba2a90f40465261543d4013a6b"
+    },
+    "current_supplemental_strict_support": [
+      {
+        "module": "proofs.PhosphorylationStableCapacity.UniformRealResolvent435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\UniformRealResolvent435.lean",
+        "source_sha256": "b246687f53cb1c43e201dd9eabb4544cdcee39b0c64c25536d27f1910a2f121e",
+        "expected_port_sha256": "f6755d7b07ff97b5f3cbe7c885f0660ccc3bcde2cd58907292235ee4d58fde6c",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.UniformRealResolvent435\\20261006T072559140806Z\\result.json",
+        "receipt_sha256": "c1af9238ef61388295ac8290073ac890d203c8ada415089f8a84e5c471c26b9f",
+        "completed_at_utc": "2026-10-06T07:26:17.908183+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.UnstableCurveNonresonance435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\UnstableCurveNonresonance435.lean",
+        "source_sha256": "6b3bd68636810364843490f8adfc432edd37233535b30a2a5145e6944f30ff9b",
+        "expected_port_sha256": "712a6b1b400b2a483d451d55b83b224d190f3d068fa451a6c29db2de38e66db6",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.UnstableCurveNonresonance435\\20261006T074232492971Z\\result.json",
+        "receipt_sha256": "55d6408486b06d4e6a5e19015f29310e71bd1a9b2317216dcdc524f58ad884b0",
+        "completed_at_utc": "2026-10-06T07:42:52.012114+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.QuadraticCoefficientMajorant435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\QuadraticCoefficientMajorant435.lean",
+        "source_sha256": "b006b8bc445db0205b620889646adbb8b5bc528bb36d8d765a995b97d1cbb5cc",
+        "expected_port_sha256": "9ebaa585efe293d4f697a3297000f2c356494e06e70407f0b2a487a30711662b",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.QuadraticCoefficientMajorant435\\20261006T074641863585Z\\result.json",
+        "receipt_sha256": "c9f6ccab80206f9134bd0f939fc643285fd41801bbdb696068a2fb0824d7df29",
+        "completed_at_utc": "2026-10-06T07:46:58.388755+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.BilinearCauchyProduct435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\BilinearCauchyProduct435.lean",
+        "source_sha256": "cbc340b6bc8aa3ff0d40d7c02d49d7926a8da7081774f400d5212e6fe008b4d1",
+        "expected_port_sha256": "a514d1373c7264aec5ffc28bbae4f068d3206ae34d14ff61e066104e76c5aec8",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.BilinearCauchyProduct435\\20261006T073316990347Z\\result.json",
+        "receipt_sha256": "c388b14f985d60d4a77342970757b5750484272305e057b85c62cc066b55d2b4",
+        "completed_at_utc": "2026-10-06T07:33:43.177208+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.ScalarSeriesDifferential435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\ScalarSeriesDifferential435.lean",
+        "source_sha256": "fede83ae8bb8fbb488479855b4dbf3ad6090026a739514fe9b81f9d3b44d7d41",
+        "expected_port_sha256": "f5e5e5f3925c4a03b003120c699015dc0dd3c0a86b47e3814632da14f5ebf8a7",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ScalarSeriesDifferential435\\20261006T074944729260Z\\result.json",
+        "receipt_sha256": "04a71cf78fb79b257ea3a56dbbfc5a8054d4f79304880ef553035c11c2a26ace",
+        "completed_at_utc": "2026-10-06T07:50:00.896546+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.QuadraticParameterSeries435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\QuadraticParameterSeries435.lean",
+        "source_sha256": "1016c65d232f9da131a66403ef8113c92ed427567341f476c60f62ef94be9ab6",
+        "expected_port_sha256": "651c6557179bd3c6793522ea8c0eea5462a57716ae06416a3979db31db8ba3c9",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.QuadraticParameterSeries435\\20261006T075356137997Z\\result.json",
+        "receipt_sha256": "af04ddb78bc944ede3236548c62f1066f8f8f94b23f02c5667a597b0a003b50f",
+        "completed_at_utc": "2026-10-06T07:54:11.539062+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.AnalyticCurveEmbedding435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\AnalyticCurveEmbedding435.lean",
+        "source_sha256": "be7fa40091fdc26fa339839b4865170c96d5da58f64e1e8e18b916f544f96229",
+        "expected_port_sha256": "40b2e5ca217fea9e537dba9ae3164a1fc6fd50c0d3359d548987596d7867d497",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.AnalyticCurveEmbedding435\\20261006T080029137155Z\\result.json",
+        "receipt_sha256": "6f7640be26b33ea64b9a771af261539058547e2dd452afce278ac38b02ba5c92",
+        "completed_at_utc": "2026-10-06T08:00:44.770835+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.BackwardParameterTrajectory435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\BackwardParameterTrajectory435.lean",
+        "source_sha256": "c11dba4579ea90f06b8f56966c6198ce98fc47393625618fe797448c665a1704",
+        "expected_port_sha256": "078e1e621fb62ac49b0bb083c6f13a55d7d596894dc846e6fc67bc19c6885adc",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.BackwardParameterTrajectory435\\20261006T082110192943Z\\result.json",
+        "receipt_sha256": "517a6a0ffa9c2e1c542c9463dcdf4485ff5030edd41ff889b7a8e61369cdda1d",
+        "completed_at_utc": "2026-10-06T08:21:24.891616+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.ActualQuadraticClassField435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\ActualQuadraticClassField435.lean",
+        "source_sha256": "76d63eb00f3af1777cf438a06aac29b33dae0266d718774ca992d7f7dbfb2759",
+        "expected_port_sha256": "b05eaf5a4ac8599e6e9e29e4d7884a8504128bf0b6b184c5812055378cac99e5",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ActualQuadraticClassField435\\20261006T081035110249Z\\result.json",
+        "receipt_sha256": "c3a857ba85667c92673521b8ed48a30e65ccb27c13f2a4500818d7252cef01ad",
+        "completed_at_utc": "2026-10-06T08:10:58.163964+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.ActualAnalyticUnstableCurve435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\ActualAnalyticUnstableCurve435.lean",
+        "source_sha256": "7fa5e5d80ebe2a692fc230ca848f26ac2a204e9f3054c84766bee0f5edb91492",
+        "expected_port_sha256": "16870c278c8722c064660c7f52049e3aff9f3c57b4823c5180f9c39b5b4996f6",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ActualAnalyticUnstableCurve435\\20261006T082648247067Z\\result.json",
+        "receipt_sha256": "5a4037a9ebdb9e12dd4cc7bfcbd68e237ba9db5f88cbe0c4a34fd99b3628e7cc",
+        "completed_at_utc": "2026-10-06T08:27:08.008659+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.ActualPositiveAnalyticUnstableCurve435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\ActualPositiveAnalyticUnstableCurve435.lean",
+        "source_sha256": "25c7ebc2d7e30de513c9c179f21926000d4abc5c4236004f36dbd59fec29b407",
+        "expected_port_sha256": "7255ce00d45f0acbfaf635acc7a1d96558dd22db6317070681fd8db20b24a61a",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ActualPositiveAnalyticUnstableCurve435\\20261006T082959431392Z\\result.json",
+        "receipt_sha256": "230850d36d0489d105366ab3ceaa39e06416030ab5fc0fbde1aeea48566c5c1d",
+        "completed_at_utc": "2026-10-06T08:30:19.806313+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.PaperFullConfigurationUnstableCurves435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\PaperFullConfigurationUnstableCurves435.lean",
+        "source_sha256": "83b0071f33ab3728ef1c6d07f30f1fab5b488098e337d4215613bcb866cfc14d",
+        "expected_port_sha256": "ad380ba9cf9dddcf399865170f26d7a4e70340329134268bb1e43f2244a3c0b0",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.PaperFullConfigurationUnstableCurves435\\20261006T083027849147Z\\result.json",
+        "receipt_sha256": "f555c17420562a6140013f269eb9f59055b95581e3822dc2cd108cf76cdc2ba3",
+        "completed_at_utc": "2026-10-06T08:30:31.931611+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.PaperTwoSiteRoundedRoot435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\PaperTwoSiteRoundedRoot435.lean",
+        "source_sha256": "f5365ca59260fd688ff61eaf2e82077595cb54a1ae27da374be884fd31fca68c",
+        "expected_port_sha256": "0b9f59902357a20c236021ffb3d7ad654347705259f78b745cb1c6b3e33be8e8",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.PaperTwoSiteRoundedRoot435\\20261006T104057786780Z\\result.json",
+        "receipt_sha256": "5693592b22700288c0e0fca9d66929c8beb164ae4fd29632c639e6aee9ba66ca",
+        "completed_at_utc": "2026-10-06T10:42:21.959194+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.OrderedRationalCoefficientLists435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\OrderedRationalCoefficientLists435.lean",
+        "source_sha256": "2313280dfaa5a52e42f57e927ed24e5582201943f27df59ce17d9ee908f874ad",
+        "expected_port_sha256": "4a8687f653a0a96787dd73f055430b1ac51970d3a8ee46722cc194ebaa33cd23",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.OrderedRationalCoefficientLists435\\20261006T120851039154Z\\result.json",
+        "receipt_sha256": "7545d5b73f48213a3c2b418f539d5b22014c18ac932465f8228c499379c5ad12",
+        "completed_at_utc": "2026-10-06T12:09:13.004213+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      }
+    ],
+    "current_document_snapshot": {
+      "status": "REVIEWED_36_PAGE_PDF_PROMOTED_FINAL_PACKAGE_GATES_PENDING",
+      "review_record": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_REVIEWED_MANUSCRIPT_PROPOSAL_PDF.json",
+      "review_record_sha256": "818a6e0fb8f004d9dab7357c5f072c4298884019db8d64d592926904ca166a76",
+      "pdf": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_MANUSCRIPT_BUILDS\\curves_20261006T083301Z\\main.pdf",
+      "pdf_sha256": "0da2c719ae98f5bbbd2745726394d306e0ff6ce0d8259c2aadc9c26af14958f6",
+      "bbl_sha256": "3723a88338371e09e27142b229550b57c2aa090fe514c97ad94d565f9dab8c81",
+      "page_count": 36,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "proposal_sha256": "d4c3f6434a4d95e413eb926ee541c9787b193c6afc5e7741502b83ec4d36949c",
+      "live_pdf_promotion": true,
+      "proof_verification_established_by_pdf": false,
+      "promotion_result": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_MANUSCRIPT_PROMOTIONS\\20261006T125553949171Z\\result.json",
+      "promotion_result_sha256": "7e396ea5b0d0cf82bbecabcc5bb435d9d1a1078cbcd40022d79c874287b1223a"
+    }
+  },
+  "historical_15_selection_snapshot_20261006": {
+    "captured_at_utc": "2026-10-06T05:52:47.415158+00:00",
+    "backup": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\entry_selection_metadata_history\\20261006T055247414156Z\\readiness.json",
+    "source_sha256": "56e6452e11d518d560226632d7461b2b526d2a44cf392d3544579819452c39f8",
+    "scope": "HISTORICAL_PRE_REFRESH_FIFTEEN_SELECTION_METADATA; NO_PASS_FOR_CURRENT_NINETEEN",
+    "fields": {
+      "paper": "P079",
+      "problems": [
+        20
+      ],
+      "historical_verification": "BASELINE_RECEIPTS_AUTHENTICATED; NEW EXACT_ROOT_STRICTLY_COMPILED",
+      "challenge": "15_INDEPENDENT_ENDPOINTS_LOCALLY_SOURCE_STAGED",
+      "solution": "MAIN_R8_PRESERVED; STRONG_SECONDARY_SOURCE_PREPARED_REQUIRES_STRICT_GATES",
+      "target_compilation": "CHANGED_15_ENDPOINT_SELECTION_PENDING_FRESH_FULL_BUILD",
+      "comparator": "HISTORICAL_R8_PASS; CURRENT_15_ENDPOINT_SELECTION_UNVERIFIED",
+      "independent_kernels": "HISTORICAL_R8_PASS; CURRENT_15_ENDPOINT_SELECTION_UNVERIFIED",
+      "statement_fidelity": "MAIN_COMMON_WITNESS_SPLITTING_COMPACT_INTERVAL_RATIONAL_FINITE_SPECTRA_MEASURED_READOUTS_SELECTED",
+      "metadata_review": "AGENT_PREPARED",
+      "scope_gap": true,
+      "publication": "NOT_AUTHORIZED",
+      "submission": "NOT_AUTHORIZED",
+      "historical_evidence": {
+        "audit": "preparation/historical-evidence-audit.json",
+        "preserved_directory": "migration/authenticated-historical/P079",
+        "checked_module_count": 10,
+        "changed_source_count": 0
+      },
+      "disposition": "ASSIGNED_SOURCE_IMPLEMENTATIONS_COMPLETE; STRICT_VERIFICATION_AND_REPAIRS_PENDING",
+      "local_verification": {
+        "receipt": "preparation/verification/P079-release-r8-run/result.json",
+        "source_snapshot": "preparation/verification/P079-release-r8-run/source-hashes.json",
+        "mechanical_verification": "PASS",
+        "source_note": "The exact 662-file r8 source snapshot passes Comparator and con-ron, nanoda, Lean default; see external receipt and manifest match."
+      },
+      "private_candidate": {
+        "path": ".local/release-candidates/P079-2026-10-04-release-r8",
+        "branch": "codex/p079-release-submission",
+        "commit": "SEE_RELEASE_HANDOFF",
+        "published": false
+      },
+      "module_port_review": "preparation/release/P079/MODULE-PORT.md",
+      "disposition_record": "entries/P079/DISPOSITION.md",
+      "formalization_contract": "E:/Erdos Problems/problem_workspaces/RAF_exact_stable-state_capacity_n-site_phosphorylation_system/SUBMISSION_FORMALIZATION_CONTRACT.md",
+      "pending_operational_extension": {
+        "selected_theorem": "PhosphorylationStableCapacity.three_site_printed_operational_submission",
+        "strict_module_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_ROOT_MODULE_CHECKS\\BenchmarkOperationalFullCertificate\\20261005T071439386Z\\result.json",
+        "combined_verification": "PENDING_FRESH_CANDIDATE_COMPARATOR_AND_ALL_KERNELS"
+      },
+      "prepared_complete_extension": {
+        "selected_endpoint_count": 15,
+        "selected_endpoints": [
+          "PhosphorylationStableCapacity.all_size_exact_capacity_with_hyperbolic_attainment_435",
+          "PhosphorylationStableCapacity.all_size_full_family_with_hyperbolic_sinks",
+          "PhosphorylationStableCapacity.all_size_rational_full_family_with_sinks_and_saddles",
+          "PhosphorylationStableCapacity.positive_equilibria_finite_and_ncard_le_two_n_sub_one",
+          "PhosphorylationStableCapacity.all_positive_sizes_rational_full_family_with_sinks_and_saddles",
+          "PhosphorylationStableCapacity.all_positive_sizes_open_full_hyperbolic_family",
+          "PhosphorylationStableCapacity.three_site_printed_operational_submission",
+          "PhosphorylationStableCapacity.paper_fixed_binding_finite_law",
+          "PhosphorylationStableCapacity.paper_fixed_binding_rational_attainment",
+          "PhosphorylationStableCapacity.paper_compact_actual_current_law",
+          "PhosphorylationStableCapacity.P079PrintedContract.paper_fixed_finite_table",
+          "PhosphorylationStableCapacity.three_site_benchmark_full_configuration",
+          "PhosphorylationStableCapacity.two_site_literal_dominant_tail_gap",
+          "PhosphorylationStableCapacity.three_site_printed_operational_submission_with_measured_separation",
+          "PhosphorylationStableCapacity.paper_compact_actual_current_interval_law"
+        ],
+        "source_sha256": {
+          "Registry/P079/Challenge.lean": "1c4167e19f8ca96aa4a2aa350a02739f55f6c92acac3d840edd97ca33abb5da1",
+          "Registry/P079/Solution.lean": "1a20134a978a0672203ce59e59a90f3e4fca391bdce515ec2ba5e2440e231b5f",
+          "entries/P079/comparator.json": "7cf51b16987cb3cd2eb59a16400b3cf877cd7edf64d1cfe85fd8e7af9f896f3b"
+        },
+        "source_preparation": "preparation/release/P079/COMPLETE-SELECTION-PREPARATION.json",
+        "strict_module_gates": "PENDING_FOR_CURRENT_CHANGED_SOURCES",
+        "fresh_combined_verification": "PENDING_COMPARATOR_CONRON_NANODA_DEFAULT_LEAN",
+        "manuscript_pdf": "OLD_PDF_MUST_BE_REBUILT_AFTER_CURRENT_SCOPE_VERIFICATION",
+        "nightly_automation": "p079-overnight-proof-verification",
+        "verification_window": "Latest explicit human available-capacity policy during the dated uncontended-session authorization or ordinary 01:00-06:00 America/Whitehorse window; root-owned serialized bounded jobs observing actual capacity, without superseded fixed 4GiB RAM/6GiB commit reserves",
+        "daytime": "SOURCE_PROOF_WRITING_NO_LARGE_COMPILES",
+        "remaining_theory": "All assigned constructive and signed source implementations are complete: full positive-minor and signed negative-constant criteria, actual neutral/even/odd accepted-branch soundness, same-index rational physical/Routh admission, specified-P first-prefix loop, universal accepted-predecessor coalesced limits, explicit rational producer, original four-loop first-success termination, and complete configuration at those same earliest returned indices. Fresh strict compilation and any resulting in-place proof repairs remain pending; source completion is not kernel evidence."
+      }
+    }
+  },
+  "current_selection": {
+    "updated_at_utc": "2026-10-06T12:56:21.336696+00:00",
+    "selected_endpoint_count": 19,
+    "selected_endpoints": [
+      "PhosphorylationStableCapacity.all_size_exact_capacity_with_hyperbolic_attainment_435",
+      "PhosphorylationStableCapacity.all_size_full_family_with_hyperbolic_sinks",
+      "PhosphorylationStableCapacity.all_size_rational_full_family_with_sinks_and_saddles",
+      "PhosphorylationStableCapacity.positive_equilibria_finite_and_ncard_le_two_n_sub_one",
+      "PhosphorylationStableCapacity.all_positive_sizes_rational_full_family_with_sinks_and_saddles",
+      "PhosphorylationStableCapacity.all_positive_sizes_open_full_hyperbolic_family",
+      "PhosphorylationStableCapacity.three_site_printed_operational_submission",
+      "PhosphorylationStableCapacity.paper_fixed_binding_finite_law",
+      "PhosphorylationStableCapacity.paper_fixed_binding_rational_attainment",
+      "PhosphorylationStableCapacity.paper_compact_actual_current_law",
+      "PhosphorylationStableCapacity.P079PrintedContract.paper_fixed_finite_table",
+      "PhosphorylationStableCapacity.three_site_benchmark_full_configuration",
+      "PhosphorylationStableCapacity.two_site_literal_dominant_tail_gap",
+      "PhosphorylationStableCapacity.three_site_printed_operational_submission_with_measured_separation",
+      "PhosphorylationStableCapacity.paper_compact_actual_current_interval_law",
+      "PhosphorylationStableCapacity.paper_global_conversion_quotient_and_D_positive",
+      "PhosphorylationStableCapacity.paper_global_conversion_B_positive",
+      "PhosphorylationStableCapacity.paper_global_readout_strict_order",
+      "PhosphorylationStableCapacity.paper_global_interlacing_partial_fractions_and_ratios"
+    ],
+    "source_sha256": {
+      "Registry/P079/Challenge.lean": "080c1f6996775f9120ec332a8f9174099d476126564100c181624c05917f1512",
+      "Registry/P079/Solution.lean": "513a34294afdd2ed2b2b784efd5d440704333942fd831fe73cb8c58f9ca31ac5",
+      "entries/P079/comparator.json": "714aa0f74f96ec0ec4643fd53593ace94583cd2b3d068c9a9c0b15ad1ae19fd1"
+    },
+    "source_preparation": "preparation/release/P079/COMPLETE-SELECTION-PREPARATION.json",
+    "strict_module_gates": "ZERO_PENDING_SUPPORT_PLAN_AND_EXACT_STRICT_SOLUTION_PASS",
+    "fresh_combined_verification": "PENDING_COMPARATOR_CONRON_NANODA_DEFAULT_LEAN",
+    "manuscript_pdf": "REVIEWED_36_PAGE_PDF_PROMOTED_FINAL_PACKAGE_GATES_PENDING",
+    "reviewed_pdf_record": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_REVIEWED_MANUSCRIPT_PROPOSAL_PDF.json",
+    "scope": "The nineteen independent selected declarations cover universal capacity and common rational sink/saddle attainment with full-parameter openness; the common-witness actual-current splitting law and rational member; compact-current and closed-interval guarantees; printed finite spectra, benchmark and dominant-tail configurations; operational recovery and independent measured errors; arbitrary-root conversion positivity, global readout order, and complete negative interlacing, positive partial fractions and coefficient ratios. Supporting source also supplies original four-loop first-success construction and the universal prescribed-root construction for every admissible r and every positive b, beta, gamma, with nondegeneracy, odd positive-real-eigenvalue multiplicity and regular full-space open persistence. These sources require completion of fresh strict support/selection checks and the final exact-package Comparator and all three kernel gates. Twelve supporting modules now have exact local strict passes constructing actual analytic embedded positive unstable curves with invariant backward trajectories at every odd saddle of the SAME rational full-configuration family. Final current-package and amended-PDF gates remain pending.",
+    "combined_verification": false,
+    "publication": "NOT_AUTHORIZED",
+    "submission": "NOT_AUTHORIZED",
+    "source_binding_history": [
+      {
+        "captured_at_utc": "2026-10-06T06:48:32.416696+00:00",
+        "record": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\current_selection_binding_history\\20261006T064832416696Z\\entries\\P079\\readiness.json",
+        "sha256": "7bc7699c4166205926aa1e867a85229c0b23ac9fbad508e1b4b608cd10d95d35",
+        "previous_source_sha256": {
+          "Registry/P079/Challenge.lean": "e139c5c9907abd683c6e77ce7e87fe8775526fbc45c6d1a66c40a80a91ade5e7",
+          "Registry/P079/Solution.lean": "9013bc89b33c90da77497aa55d969b3589fbee2ed128e8ac034560746410ba1f",
+          "entries/P079/comparator.json": "714aa0f74f96ec0ec4643fd53593ace94583cd2b3d068c9a9c0b15ad1ae19fd1"
+        }
+      },
+      {
+        "captured_at_utc": "2026-10-06T07:04:49.070674+00:00",
+        "record": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\current_selection_binding_history\\20261006T070449070674Z\\entries\\P079\\readiness.json",
+        "sha256": "089d8b2888a26233cbf284b546194e93bc17a98c9bc99de66f4cd52caa808455",
+        "previous_source_sha256": {
+          "Registry/P079/Challenge.lean": "fecd843b534dd5869edcacee1f1fdcd7799f12a08a641175ce5e0ad6bf118645",
+          "Registry/P079/Solution.lean": "9013bc89b33c90da77497aa55d969b3589fbee2ed128e8ac034560746410ba1f",
+          "entries/P079/comparator.json": "714aa0f74f96ec0ec4643fd53593ace94583cd2b3d068c9a9c0b15ad1ae19fd1"
+        }
+      },
+      {
+        "captured_at_utc": "2026-10-06T08:35:54.487514+00:00",
+        "record": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\curve_metadata_history\\20261006T083554487514Z\\3-readiness.json",
+        "sha256": "8839a520a4f6b9d090185b9394f657a367272e56f32de384a2f94f417064fe5f",
+        "previous_source_sha256": {
+          "Registry/P079/Challenge.lean": "fecd843b534dd5869edcacee1f1fdcd7799f12a08a641175ce5e0ad6bf118645",
+          "Registry/P079/Solution.lean": "9013bc89b33c90da77497aa55d969b3589fbee2ed128e8ac034560746410ba1f",
+          "entries/P079/comparator.json": "714aa0f74f96ec0ec4643fd53593ace94583cd2b3d068c9a9c0b15ad1ae19fd1"
+        }
+      },
+      {
+        "captured_at_utc": "2026-10-06T10:31:44.019756+00:00",
+        "record": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\current_selection_binding_history\\20261006T103144019756Z\\entries\\P079\\readiness.json",
+        "sha256": "e46f44dd51de06492e5842f21c7f60a0c5606d2a4f5a1ea1c8f290f5e413236f",
+        "previous_source_sha256": {
+          "Registry/P079/Solution.lean": "7dba81b24148816803c49f05fe3d2b58e865f470424636e7ffcc9d8f5fe8d575",
+          "Registry/P079/Challenge.lean": "fecd843b534dd5869edcacee1f1fdcd7799f12a08a641175ce5e0ad6bf118645",
+          "entries/P079/comparator.json": "714aa0f74f96ec0ec4643fd53593ace94583cd2b3d068c9a9c0b15ad1ae19fd1"
+        }
+      }
+    ],
+    "source_binding_refresh": "CURRENT_STRICT_SOURCE_REPAIR_AND_RECEIPT_BINDINGS_REFRESH; SELECTED_NINETEEN_NAMES_UNCHANGED; EARLIER_SPACING_AUDIT_PRESERVED",
+    "spacing_audit": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_ABS_MULTIPLICATION_SPACING_REPAIR.json",
+    "constructed_unstable_curve_support": {
+      "kind": "CONSTRUCTED_ACTUAL_POSITIVE_ANALYTIC_UNSTABLE_CURVES_SAME_FULL_FAMILY",
+      "status": "TWELVE_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASSES; FINAL_PACKAGE_AND_PDF_GATES_PENDING",
+      "module_count": 12,
+      "solution_support_import": "proofs.PhosphorylationStableCapacity.PaperFullConfigurationUnstableCurves435",
+      "actual_endpoint": "P079UnstableWorkbench.actual_positive_saddle_analytic_unstable_curve",
+      "common_family_endpoint": "P079UnstableWorkbench.all_positive_sizes_rational_full_configuration_with_positive_unstable_curves",
+      "scope": "Actual local analytic embedded one-dimensional curves at every odd positive saddle of the SAME rational full-configuration system, tangent to the positive real eigenvector and contained in the positive compatibility class; explicit invariant backward trajectories converge to the same equilibrium. No curve premise is assumed; classification of all backward-convergent trajectories is not claimed.",
+      "receipts": [
+        {
+          "module": "proofs.PhosphorylationStableCapacity.UniformRealResolvent435",
+          "source": "proofs/PhosphorylationStableCapacity/UniformRealResolvent435.lean",
+          "source_sha256": "b246687f53cb1c43e201dd9eabb4544cdcee39b0c64c25536d27f1910a2f121e",
+          "port_sha256": "f6755d7b07ff97b5f3cbe7c885f0660ccc3bcde2cd58907292235ee4d58fde6c",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.UniformRealResolvent435\\20261006T072559140806Z\\result.json",
+          "receipt_sha256": "c1af9238ef61388295ac8290073ac890d203c8ada415089f8a84e5c471c26b9f",
+          "completed_at_utc": "2026-10-06T07:26:17.908183+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.UnstableCurveNonresonance435",
+          "source": "proofs/PhosphorylationStableCapacity/UnstableCurveNonresonance435.lean",
+          "source_sha256": "6b3bd68636810364843490f8adfc432edd37233535b30a2a5145e6944f30ff9b",
+          "port_sha256": "712a6b1b400b2a483d451d55b83b224d190f3d068fa451a6c29db2de38e66db6",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.UnstableCurveNonresonance435\\20261006T074232492971Z\\result.json",
+          "receipt_sha256": "55d6408486b06d4e6a5e19015f29310e71bd1a9b2317216dcdc524f58ad884b0",
+          "completed_at_utc": "2026-10-06T07:42:52.012114+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.QuadraticCoefficientMajorant435",
+          "source": "proofs/PhosphorylationStableCapacity/QuadraticCoefficientMajorant435.lean",
+          "source_sha256": "b006b8bc445db0205b620889646adbb8b5bc528bb36d8d765a995b97d1cbb5cc",
+          "port_sha256": "9ebaa585efe293d4f697a3297000f2c356494e06e70407f0b2a487a30711662b",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.QuadraticCoefficientMajorant435\\20261006T074641863585Z\\result.json",
+          "receipt_sha256": "c9f6ccab80206f9134bd0f939fc643285fd41801bbdb696068a2fb0824d7df29",
+          "completed_at_utc": "2026-10-06T07:46:58.388755+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.BilinearCauchyProduct435",
+          "source": "proofs/PhosphorylationStableCapacity/BilinearCauchyProduct435.lean",
+          "source_sha256": "cbc340b6bc8aa3ff0d40d7c02d49d7926a8da7081774f400d5212e6fe008b4d1",
+          "port_sha256": "a514d1373c7264aec5ffc28bbae4f068d3206ae34d14ff61e066104e76c5aec8",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.BilinearCauchyProduct435\\20261006T073316990347Z\\result.json",
+          "receipt_sha256": "c388b14f985d60d4a77342970757b5750484272305e057b85c62cc066b55d2b4",
+          "completed_at_utc": "2026-10-06T07:33:43.177208+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.ScalarSeriesDifferential435",
+          "source": "proofs/PhosphorylationStableCapacity/ScalarSeriesDifferential435.lean",
+          "source_sha256": "fede83ae8bb8fbb488479855b4dbf3ad6090026a739514fe9b81f9d3b44d7d41",
+          "port_sha256": "f5e5e5f3925c4a03b003120c699015dc0dd3c0a86b47e3814632da14f5ebf8a7",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ScalarSeriesDifferential435\\20261006T074944729260Z\\result.json",
+          "receipt_sha256": "04a71cf78fb79b257ea3a56dbbfc5a8054d4f79304880ef553035c11c2a26ace",
+          "completed_at_utc": "2026-10-06T07:50:00.896546+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.QuadraticParameterSeries435",
+          "source": "proofs/PhosphorylationStableCapacity/QuadraticParameterSeries435.lean",
+          "source_sha256": "1016c65d232f9da131a66403ef8113c92ed427567341f476c60f62ef94be9ab6",
+          "port_sha256": "651c6557179bd3c6793522ea8c0eea5462a57716ae06416a3979db31db8ba3c9",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.QuadraticParameterSeries435\\20261006T075356137997Z\\result.json",
+          "receipt_sha256": "af04ddb78bc944ede3236548c62f1066f8f8f94b23f02c5667a597b0a003b50f",
+          "completed_at_utc": "2026-10-06T07:54:11.539062+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.AnalyticCurveEmbedding435",
+          "source": "proofs/PhosphorylationStableCapacity/AnalyticCurveEmbedding435.lean",
+          "source_sha256": "be7fa40091fdc26fa339839b4865170c96d5da58f64e1e8e18b916f544f96229",
+          "port_sha256": "40b2e5ca217fea9e537dba9ae3164a1fc6fd50c0d3359d548987596d7867d497",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.AnalyticCurveEmbedding435\\20261006T080029137155Z\\result.json",
+          "receipt_sha256": "6f7640be26b33ea64b9a771af261539058547e2dd452afce278ac38b02ba5c92",
+          "completed_at_utc": "2026-10-06T08:00:44.770835+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.BackwardParameterTrajectory435",
+          "source": "proofs/PhosphorylationStableCapacity/BackwardParameterTrajectory435.lean",
+          "source_sha256": "c11dba4579ea90f06b8f56966c6198ce98fc47393625618fe797448c665a1704",
+          "port_sha256": "078e1e621fb62ac49b0bb083c6f13a55d7d596894dc846e6fc67bc19c6885adc",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.BackwardParameterTrajectory435\\20261006T082110192943Z\\result.json",
+          "receipt_sha256": "517a6a0ffa9c2e1c542c9463dcdf4485ff5030edd41ff889b7a8e61369cdda1d",
+          "completed_at_utc": "2026-10-06T08:21:24.891616+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.ActualQuadraticClassField435",
+          "source": "proofs/PhosphorylationStableCapacity/ActualQuadraticClassField435.lean",
+          "source_sha256": "76d63eb00f3af1777cf438a06aac29b33dae0266d718774ca992d7f7dbfb2759",
+          "port_sha256": "b05eaf5a4ac8599e6e9e29e4d7884a8504128bf0b6b184c5812055378cac99e5",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ActualQuadraticClassField435\\20261006T081035110249Z\\result.json",
+          "receipt_sha256": "c3a857ba85667c92673521b8ed48a30e65ccb27c13f2a4500818d7252cef01ad",
+          "completed_at_utc": "2026-10-06T08:10:58.163964+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.ActualAnalyticUnstableCurve435",
+          "source": "proofs/PhosphorylationStableCapacity/ActualAnalyticUnstableCurve435.lean",
+          "source_sha256": "7fa5e5d80ebe2a692fc230ca848f26ac2a204e9f3054c84766bee0f5edb91492",
+          "port_sha256": "16870c278c8722c064660c7f52049e3aff9f3c57b4823c5180f9c39b5b4996f6",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ActualAnalyticUnstableCurve435\\20261006T082648247067Z\\result.json",
+          "receipt_sha256": "5a4037a9ebdb9e12dd4cc7bfcbd68e237ba9db5f88cbe0c4a34fd99b3628e7cc",
+          "completed_at_utc": "2026-10-06T08:27:08.008659+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.ActualPositiveAnalyticUnstableCurve435",
+          "source": "proofs/PhosphorylationStableCapacity/ActualPositiveAnalyticUnstableCurve435.lean",
+          "source_sha256": "25c7ebc2d7e30de513c9c179f21926000d4abc5c4236004f36dbd59fec29b407",
+          "port_sha256": "7255ce00d45f0acbfaf635acc7a1d96558dd22db6317070681fd8db20b24a61a",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ActualPositiveAnalyticUnstableCurve435\\20261006T082959431392Z\\result.json",
+          "receipt_sha256": "230850d36d0489d105366ab3ceaa39e06416030ab5fc0fbde1aeea48566c5c1d",
+          "completed_at_utc": "2026-10-06T08:30:19.806313+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        },
+        {
+          "module": "proofs.PhosphorylationStableCapacity.PaperFullConfigurationUnstableCurves435",
+          "source": "proofs/PhosphorylationStableCapacity/PaperFullConfigurationUnstableCurves435.lean",
+          "source_sha256": "83b0071f33ab3728ef1c6d07f30f1fab5b488098e337d4215613bcb866cfc14d",
+          "port_sha256": "ad380ba9cf9dddcf399865170f26d7a4e70340329134268bb1e43f2244a3c0b0",
+          "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.PaperFullConfigurationUnstableCurves435\\20261006T083027849147Z\\result.json",
+          "receipt_sha256": "f555c17420562a6140013f269eb9f59055b95581e3822dc2cd108cf76cdc2ba3",
+          "completed_at_utc": "2026-10-06T08:30:31.931611+00:00",
+          "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+          "combined_candidate_verification": false
+        }
+      ],
+      "combined_verification": false,
+      "manuscript_pdf": "CURVE_AMENDMENT_NOT_YET_REBUILT_OR_PROMOTED",
+      "inventory": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\unstable_curve_construction\\CURVE_CANONICAL_INTEGRATION_INVENTORY.json"
+    },
+    "current_plan_snapshot": {
+      "basis": "CAPTURED_ZERO_PENDING_SOURCE_BOUND_PLAN_NOT_FINAL_KERNEL_EVIDENCE",
+      "plan": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_OVERNIGHT_MODULE_PLAN.json",
+      "plan_sha256": "273845dab380e193a49abaeaaf09e7075fba4ae5ab9b12fe1b3f7818d1df59ee",
+      "prepared_at_utc": "2026-10-06T12:54:58.617578+00:00",
+      "complete_closure_count": 1301,
+      "pending_gate_count_at_preparation": 0,
+      "porter_sha256": "5e45b9a504986eb1c0f65547c2a7ffe9e75dd1ba2a90f40465261543d4013a6b"
+    },
+    "current_supplemental_scope": "Nineteen independent Challenge declarations retain their literal-model scope. Supplemental proofs construct analytic embedded and immersed invariant positive unstable curves with backward trajectories at odd saddles of the same rational full family. Separate same-witness two-site rounded-root and coefficient-list eligibility results are supporting modules, not additional selected declarations. All fourteen supplemental components below have exact current local strict receipts. Remaining full support gates, strict Solution, fresh exact candidate Comparator and all three kernels remain pending.",
+    "current_supplemental_strict_support": [
+      {
+        "module": "proofs.PhosphorylationStableCapacity.UniformRealResolvent435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\UniformRealResolvent435.lean",
+        "source_sha256": "b246687f53cb1c43e201dd9eabb4544cdcee39b0c64c25536d27f1910a2f121e",
+        "expected_port_sha256": "f6755d7b07ff97b5f3cbe7c885f0660ccc3bcde2cd58907292235ee4d58fde6c",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.UniformRealResolvent435\\20261006T072559140806Z\\result.json",
+        "receipt_sha256": "c1af9238ef61388295ac8290073ac890d203c8ada415089f8a84e5c471c26b9f",
+        "completed_at_utc": "2026-10-06T07:26:17.908183+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.UnstableCurveNonresonance435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\UnstableCurveNonresonance435.lean",
+        "source_sha256": "6b3bd68636810364843490f8adfc432edd37233535b30a2a5145e6944f30ff9b",
+        "expected_port_sha256": "712a6b1b400b2a483d451d55b83b224d190f3d068fa451a6c29db2de38e66db6",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.UnstableCurveNonresonance435\\20261006T074232492971Z\\result.json",
+        "receipt_sha256": "55d6408486b06d4e6a5e19015f29310e71bd1a9b2317216dcdc524f58ad884b0",
+        "completed_at_utc": "2026-10-06T07:42:52.012114+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.QuadraticCoefficientMajorant435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\QuadraticCoefficientMajorant435.lean",
+        "source_sha256": "b006b8bc445db0205b620889646adbb8b5bc528bb36d8d765a995b97d1cbb5cc",
+        "expected_port_sha256": "9ebaa585efe293d4f697a3297000f2c356494e06e70407f0b2a487a30711662b",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.QuadraticCoefficientMajorant435\\20261006T074641863585Z\\result.json",
+        "receipt_sha256": "c9f6ccab80206f9134bd0f939fc643285fd41801bbdb696068a2fb0824d7df29",
+        "completed_at_utc": "2026-10-06T07:46:58.388755+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.BilinearCauchyProduct435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\BilinearCauchyProduct435.lean",
+        "source_sha256": "cbc340b6bc8aa3ff0d40d7c02d49d7926a8da7081774f400d5212e6fe008b4d1",
+        "expected_port_sha256": "a514d1373c7264aec5ffc28bbae4f068d3206ae34d14ff61e066104e76c5aec8",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.BilinearCauchyProduct435\\20261006T073316990347Z\\result.json",
+        "receipt_sha256": "c388b14f985d60d4a77342970757b5750484272305e057b85c62cc066b55d2b4",
+        "completed_at_utc": "2026-10-06T07:33:43.177208+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.ScalarSeriesDifferential435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\ScalarSeriesDifferential435.lean",
+        "source_sha256": "fede83ae8bb8fbb488479855b4dbf3ad6090026a739514fe9b81f9d3b44d7d41",
+        "expected_port_sha256": "f5e5e5f3925c4a03b003120c699015dc0dd3c0a86b47e3814632da14f5ebf8a7",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ScalarSeriesDifferential435\\20261006T074944729260Z\\result.json",
+        "receipt_sha256": "04a71cf78fb79b257ea3a56dbbfc5a8054d4f79304880ef553035c11c2a26ace",
+        "completed_at_utc": "2026-10-06T07:50:00.896546+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.QuadraticParameterSeries435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\QuadraticParameterSeries435.lean",
+        "source_sha256": "1016c65d232f9da131a66403ef8113c92ed427567341f476c60f62ef94be9ab6",
+        "expected_port_sha256": "651c6557179bd3c6793522ea8c0eea5462a57716ae06416a3979db31db8ba3c9",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.QuadraticParameterSeries435\\20261006T075356137997Z\\result.json",
+        "receipt_sha256": "af04ddb78bc944ede3236548c62f1066f8f8f94b23f02c5667a597b0a003b50f",
+        "completed_at_utc": "2026-10-06T07:54:11.539062+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.AnalyticCurveEmbedding435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\AnalyticCurveEmbedding435.lean",
+        "source_sha256": "be7fa40091fdc26fa339839b4865170c96d5da58f64e1e8e18b916f544f96229",
+        "expected_port_sha256": "40b2e5ca217fea9e537dba9ae3164a1fc6fd50c0d3359d548987596d7867d497",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.AnalyticCurveEmbedding435\\20261006T080029137155Z\\result.json",
+        "receipt_sha256": "6f7640be26b33ea64b9a771af261539058547e2dd452afce278ac38b02ba5c92",
+        "completed_at_utc": "2026-10-06T08:00:44.770835+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.BackwardParameterTrajectory435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\BackwardParameterTrajectory435.lean",
+        "source_sha256": "c11dba4579ea90f06b8f56966c6198ce98fc47393625618fe797448c665a1704",
+        "expected_port_sha256": "078e1e621fb62ac49b0bb083c6f13a55d7d596894dc846e6fc67bc19c6885adc",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.BackwardParameterTrajectory435\\20261006T082110192943Z\\result.json",
+        "receipt_sha256": "517a6a0ffa9c2e1c542c9463dcdf4485ff5030edd41ff889b7a8e61369cdda1d",
+        "completed_at_utc": "2026-10-06T08:21:24.891616+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.ActualQuadraticClassField435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\ActualQuadraticClassField435.lean",
+        "source_sha256": "76d63eb00f3af1777cf438a06aac29b33dae0266d718774ca992d7f7dbfb2759",
+        "expected_port_sha256": "b05eaf5a4ac8599e6e9e29e4d7884a8504128bf0b6b184c5812055378cac99e5",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ActualQuadraticClassField435\\20261006T081035110249Z\\result.json",
+        "receipt_sha256": "c3a857ba85667c92673521b8ed48a30e65ccb27c13f2a4500818d7252cef01ad",
+        "completed_at_utc": "2026-10-06T08:10:58.163964+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.ActualAnalyticUnstableCurve435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\ActualAnalyticUnstableCurve435.lean",
+        "source_sha256": "7fa5e5d80ebe2a692fc230ca848f26ac2a204e9f3054c84766bee0f5edb91492",
+        "expected_port_sha256": "16870c278c8722c064660c7f52049e3aff9f3c57b4823c5180f9c39b5b4996f6",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ActualAnalyticUnstableCurve435\\20261006T082648247067Z\\result.json",
+        "receipt_sha256": "5a4037a9ebdb9e12dd4cc7bfcbd68e237ba9db5f88cbe0c4a34fd99b3628e7cc",
+        "completed_at_utc": "2026-10-06T08:27:08.008659+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.ActualPositiveAnalyticUnstableCurve435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\ActualPositiveAnalyticUnstableCurve435.lean",
+        "source_sha256": "25c7ebc2d7e30de513c9c179f21926000d4abc5c4236004f36dbd59fec29b407",
+        "expected_port_sha256": "7255ce00d45f0acbfaf635acc7a1d96558dd22db6317070681fd8db20b24a61a",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.ActualPositiveAnalyticUnstableCurve435\\20261006T082959431392Z\\result.json",
+        "receipt_sha256": "230850d36d0489d105366ab3ceaa39e06416030ab5fc0fbde1aeea48566c5c1d",
+        "completed_at_utc": "2026-10-06T08:30:19.806313+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.PaperFullConfigurationUnstableCurves435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\PaperFullConfigurationUnstableCurves435.lean",
+        "source_sha256": "83b0071f33ab3728ef1c6d07f30f1fab5b488098e337d4215613bcb866cfc14d",
+        "expected_port_sha256": "ad380ba9cf9dddcf399865170f26d7a4e70340329134268bb1e43f2244a3c0b0",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.PaperFullConfigurationUnstableCurves435\\20261006T083027849147Z\\result.json",
+        "receipt_sha256": "f555c17420562a6140013f269eb9f59055b95581e3822dc2cd108cf76cdc2ba3",
+        "completed_at_utc": "2026-10-06T08:30:31.931611+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.PaperTwoSiteRoundedRoot435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\PaperTwoSiteRoundedRoot435.lean",
+        "source_sha256": "f5365ca59260fd688ff61eaf2e82077595cb54a1ae27da374be884fd31fca68c",
+        "expected_port_sha256": "0b9f59902357a20c236021ffb3d7ad654347705259f78b745cb1c6b3e33be8e8",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.PaperTwoSiteRoundedRoot435\\20261006T104057786780Z\\result.json",
+        "receipt_sha256": "5693592b22700288c0e0fca9d66929c8beb164ae4fd29632c639e6aee9ba66ca",
+        "completed_at_utc": "2026-10-06T10:42:21.959194+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      },
+      {
+        "module": "proofs.PhosphorylationStableCapacity.OrderedRationalCoefficientLists435",
+        "source": "E:\\Palomar-Submissions\\proofs\\PhosphorylationStableCapacity\\OrderedRationalCoefficientLists435.lean",
+        "source_sha256": "2313280dfaa5a52e42f57e927ed24e5582201943f27df59ce17d9ee908f874ad",
+        "expected_port_sha256": "4a8687f653a0a96787dd73f055430b1ac51970d3a8ee46722cc194ebaa33cd23",
+        "strict_receipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.OrderedRationalCoefficientLists435\\20261006T120851039154Z\\result.json",
+        "receipt_sha256": "7545d5b73f48213a3c2b418f539d5b22014c18ac932465f8228c499379c5ad12",
+        "completed_at_utc": "2026-10-06T12:09:13.004213+00:00",
+        "status": "CURRENT_EXACT_SOURCE_STRICT_LOCAL_MODULE_PASS",
+        "combined_candidate_verification": false
+      }
+    ],
+    "current_document_snapshot": {
+      "status": "REVIEWED_36_PAGE_PDF_PROMOTED_FINAL_PACKAGE_GATES_PENDING",
+      "review_record": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_REVIEWED_MANUSCRIPT_PROPOSAL_PDF.json",
+      "review_record_sha256": "818a6e0fb8f004d9dab7357c5f072c4298884019db8d64d592926904ca166a76",
+      "pdf": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_MANUSCRIPT_BUILDS\\curves_20261006T083301Z\\main.pdf",
+      "pdf_sha256": "0da2c719ae98f5bbbd2745726394d306e0ff6ce0d8259c2aadc9c26af14958f6",
+      "bbl_sha256": "3723a88338371e09e27142b229550b57c2aa090fe514c97ad94d565f9dab8c81",
+      "page_count": 36,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "proposal_sha256": "d4c3f6434a4d95e413eb926ee541c9787b193c6afc5e7741502b83ec4d36949c",
+      "live_pdf_promotion": true,
+      "proof_verification_established_by_pdf": false,
+      "promotion_result": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_MANUSCRIPT_PROMOTIONS\\20261006T125553949171Z\\result.json",
+      "promotion_result_sha256": "7e396ea5b0d0cf82bbecabcc5bb435d9d1a1078cbcd40022d79c874287b1223a"
+    },
+    "semantic_computability_scope": "Semantic Polynomial-based producers and their dependent weights/certificates use noncomputable sections under the pinned Polynomial instances. OrderedRationalCoefficientLists435 gives computable finite-list recurrence, Horner evaluation and synthetic D/B coefficients, exact support bounds, and equality of computable Prefix/Split eligibility Booleans with the unchanged semantic tests, including r=0. The generic rational Schur positive-definite checker remains computable. No extracted executable implementation or machine-checked execution of the entire original nested algorithm is claimed by this metadata.",
+    "external_historical_proposal_annotation": {
+      "proposal": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\p079_postverification_manuscript_proposal\\proposal.json",
+      "proposal_sha256_retained": "d4c3f6434a4d95e413eb926ee541c9787b193c6afc5e7741502b83ec4d36949c",
+      "historical_administrative_key": "currentPendingTheoremCorrespondence.status",
+      "historical_value": "NEW_SUPPORT_PROOF_ASSIGNED_NOT_YET_FROZEN_OR_VERIFIED",
+      "current_resolution": "PaperGeneralPrescribedRootConstruction435 has current strict source evidence in the captured plan; historical administrative field does not override current source/receipt status. Proposal and PDF-review hashes retained unchanged.",
+      "current_support_plan_row": {
+        "sourceSha256": "fd70e3bf5d87101ea5cb083668bbd08900cbee6d34829ac93ca60a2e782966f6",
+        "expectedPortSha256": "43f2e1d588f406265424f656f8dadc04dd1a42af53a83eaa6ebe0d9644b33576",
+        "requiresGate": false,
+        "matchingStrictReceipt": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\P079_WSL_MODULE_CHECKS\\proofs.PhosphorylationStableCapacity.PaperGeneralPrescribedRootConstruction435\\20261006T064223173263Z\\result.json"
+      }
+    },
+    "challenge_lines": 997,
+    "challenge_ported_lines": 1000,
+    "challenge_import_repair_scope": "IMPORT_ONLY; ALL_DEFINITIONS_AND_NINETEEN_STATEMENTS_UNCHANGED",
+    "gated_prefreeze_receipts": {
+      "status": "GATED_DRY_RUN_PASS_NO_METADATA_EDITS",
+      "selectedCount": 19,
+      "supplementalCount": 14,
+      "zeroPlanSha256": "273845dab380e193a49abaeaaf09e7075fba4ae5ab9b12fe1b3f7818d1df59ee",
+      "solutionReceiptSha256": "4104eb7520db9bf76acaaf7c0c880c1a8f9f38d74df872767b2852f9e4ce7fcb",
+      "appliedResultSha256": "f5be416e8bccb16bd2ba485b1f859ca1dbfba23ccb31f07a9be7bb271678dde3",
+      "promotedResultSha256": "7e396ea5b0d0cf82bbecabcc5bb435d9d1a1078cbcd40022d79c874287b1223a",
+      "finalComparatorAndAllThreeKernels": "PENDING",
+      "publication": false,
+      "submission": false,
+      "solutionSourceSha256": "513a34294afdd2ed2b2b784efd5d440704333942fd831fe73cb8c58f9ca31ac5",
+      "solutionPortSha256": "527e25be16a8596a13e2f78b8b6e51f876778e6a9dacd98da194937e6f37b268",
+      "nativeArtifacts": {
+        "E:\\Palomar-Submissions\\.local\\p079-native-secondary\\.lake\\build\\lib\\lean\\Registry\\P079\\Solution.olean": "12d917b0d390c817a136ae63b075d2827d12de543181782d625b3ea38c4dea33",
+        "E:\\Palomar-Submissions\\.local\\p079-native-secondary\\.lake\\build\\lib\\lean\\Registry\\P079\\Solution.olean.private": "f07be2769d09753b8f9eb3284943cf55617a8e987362fd6cb2e4073ea50548c7",
+        "E:\\Palomar-Submissions\\.local\\p079-native-secondary\\.lake\\build\\lib\\lean\\Registry\\P079\\Solution.olean.server": "10d4caf4347790821931bc6bd3bd34c2822d2b135f0b37846b328feeecd6ce7a"
+      },
+      "proofVerificationEstablishedByPdf": false
+    }
+  },
+  "pre_freeze_metadata_history": [
+    {
+      "captured_at_utc": "2026-10-06T12:32:49.453530+00:00",
+      "backup": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\final_claim_scope_review_20261006\\canonical_metadata_history\\20261006T123249453530Z\\entries\\P079\\readiness.json",
+      "sha256": "ef5a8434452376867b5d73c5d793e8a0f4acb26709584ae61f28bebe8707fb1b",
+      "basis": "FULL_BEFORE_BYTES_PRESERVED"
+    },
+    {
+      "captured_at_utc": "2026-10-06T12:47:28.985805+00:00",
+      "backup": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\final_claim_scope_review_20261006\\canonical_metadata_history\\20261006T124728985805Z\\entries\\P079\\readiness.json",
+      "sha256": "3cb92bc7e21cad26565275ace0e9c9c8d34b186b4a54509b2ffbb614683cb68c",
+      "basis": "FULL_BEFORE_BYTES_PRESERVED"
+    },
+    {
+      "atUtc": "2026-10-06T12:56:21.336696+00:00",
+      "backup": "E:\\Erdos Problems\\problem_workspaces\\RAF_exact_stable-state_capacity_n-site_phosphorylation_system\\final_claim_scope_review_20261006\\gated_metadata_history\\20261006T125621336696Z\\entries\\P079\\readiness.json",
+      "sha256": "64ab97a32accaf6bdaf1c080715b7d90b4594517bb95d90d81eabe1e00e0f18a"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+This package includes a 100-module source closure from
+qinz1yang/differential-geometry (https://github.com/qinz1yang/differential-geometry)
+at commit 777299070a5529e96345e0033979706fd00c7e62.
+It is distributed under Apache License 2.0. The upstream license text is
+preserved at DifferentialGeometry/LICENSE. The modules appear under
+DifferentialGeometry/ after the Lean module-system port described in
+preparation/release/P079/MODULE-PORT.md. Original upstream source hashes and
+origins are recorded in preparation/release/P079/source-provenance.json;
+ported candidate hashes are recorded in the release manifest.
+
+The P079 model and proof modules under proofs/ are the work of Michael Mislan.

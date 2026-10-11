@@ -1,0 +1,367 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{graphicx,booktabs,array}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage[colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
+\hypersetup{pdftitle={Sharp equilibrium and stable-state capacities of multisite phosphorylation},
+ pdfsubject={The sequential distributive n-site phosphorylation cycle has at most 2n-1 positive equilibria and at most n stable ones, and both bounds are attained for every n},
+ pdfkeywords={multisite phosphorylation, multistability, multistationarity, mass-action kinetics, chemical reaction networks, degree theory, singular perturbation, interlacing polynomials, diagonal stability}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\raw}{\mathrm{raw}}
+\newcommand{\ET}{E_{\mathrm T}}
+\newcommand{\FT}{F_{\mathrm T}}
+\newcommand{\ST}{S_{\mathrm T}}
+\newcommand{\JS}{\mathcal J}
+\newcommand{\cs}{c_\ast}
+\newcommand{\es}{e_\ast}
+\newcommand{\jm}{\jmath}
+\newcommand{\capE}{\mathcal E_n}
+\newcommand{\capH}{\mathcal H_n}
+\newcommand{\capC}{\mathcal C_n}
+\newcommand{\bM}{\mathbf M}
+\newcommand{\bR}{\mathbf R}
+\newcommand{\bK}{\mathbf K}
+\newcommand{\bH}{\mathbf H}
+\newcommand{\bA}{\mathbf A}
+\newcommand{\bB}{\mathbf B}
+\newcommand{\bP}{\mathbf P}
+\newcommand{\bQ}{\mathbf Q}
+\newcommand{\bD}{\mathbf D}
+\newcommand{\bI}{\mathbf I}
+\newcommand{\one}{\boldsymbol 1}
+\newcommand{\bc}{\boldsymbol c}
+\newcommand{\by}{\boldsymbol y}
+\newcommand{\bS}{\boldsymbol S}
+\newcommand{\bh}{\boldsymbol h}
+\newcommand{\bz}{\boldsymbol z}
+\newcommand{\bw}{\boldsymbol w}
+\newcommand{\bphi}{\boldsymbol\phi}
+\newcommand{\bchi}{\boldsymbol\chi}
+\newcommand{\btau}{\boldsymbol\tau}
+\newcommand{\bsigma}{\boldsymbol\sigma}
+\newcommand{\bomega}{\boldsymbol\omega}
+\newcommand{\bLam}{\boldsymbol\Lambda}
+\newcommand{\be}{\boldsymbol e}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\ind}{ind}
+\setlength{\emergencystretch}{1.5em}
+\setlength{\belowcaptionskip}{6pt}
+
+\title{Sharp equilibrium and stable-state capacities\\ of multisite phosphorylation}
+\author{Michael Mislan}
+\date{}
+
+\hypersetup{pdfauthor={Michael Mislan}}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The sequential distributive \(n\)-site phosphorylation cycle, in which one kinase and one
+phosphatase act on a substrate with \(n\) ordered sites, is the standard mass-action model of
+multisite protein modification. Wang and Sontag proved that it has at most \(2n-1\) positive
+equilibria in each compatibility class, and the best general multistability result, due to
+Feliu, Rendall and Wiuf, provides \(\lfloor n/2\rfloor+1\) asymptotically stable equilibria. Both
+capacities are determined exactly. For every \(n\ge1\), and for one common list of positive rate
+constants and one compatibility class, the maximal number of positive equilibria is \(2n-1\)
+and the maximal number of locally asymptotically stable equilibria is \(n\). The upper bound
+\(n\) is proved by degree theory and parametric transversality and includes nonhyperbolic
+attractors. The lower bounds are attained simultaneously by rational data: \(2n-1\) hyperbolic
+equilibria, of which \(n\) are sinks and \(n-1\) are saddles with a one-dimensional unstable
+manifold, and the same configuration persists on a nonempty open subset of the
+\((6n+3)\)-dimensional space of rate constants and totals. The equilibria are produced by an
+explicit positive polynomial recurrence together with an interlacing argument. Stability is
+obtained by separating equilibrium geometry from kinetic time scales: after coalescing the
+equilibria, fast binding reduces the dynamics to a slow system on substrate inventories that
+retain the enzyme-bound substrate, and for a large kinase excess its transverse part converges
+to a path matrix with a rank-one positive feedback whose gain is strictly less than one by an
+explicit margin. Additional results include a diagonal Lyapunov certificate, the exact splitting law of the
+critical eigenvalue, exact rational witnesses for \(n\le7\), and a three-site benchmark with a
+rigorous local robustness and recovery certificate. The Lean~4 formalization covers the two
+capacity ceilings, rational simultaneous sink/saddle attainment and open persistence, the
+general prescribed-root construction and its coefficient and interlacing claims, the
+quantitative splitting law and compact-current refinements, and the fixed spectra, benchmark
+and operational recovery certificates. Supporting Lean proofs construct positive analytic
+unstable curves at the same rational family's saddles, with backward trajectories tending
+to their equilibria. The precise formal
+statements and source-bound verification records are described in Section~\ref{sec:formal}.
+\end{abstract}
+
+\section{Introduction}
+
+\subsection{Background}
+Reversible phosphorylation at several sites is one of the most common mechanisms by which cells
+regulate protein function \cite{Cohen2000,SalazarHofer2009}. In the simplest mechanistic
+description a single kinase \(E\) adds phosphate groups to a substrate one site at a time in a
+fixed order, a single phosphatase \(F\) removes them in the reverse order, and each enzyme
+releases the substrate after every catalytic event. This is the \emph{sequential distributive}
+mechanism, or multiple futile cycle. Under mass-action kinetics it is the reaction network
+\begin{equation}\label{eq:network}
+\begin{aligned}
+ S_{i-1}+E &\ \underset{b_i}{\overset{a_i}{\rightleftharpoons}}\ C_i
+       \ \xrightarrow{\ c_i\ }\ S_i+E,\\[3pt]
+ S_i+F &\ \underset{\beta_i}{\overset{\alpha_i}{\rightleftharpoons}}\ Y_i
+       \ \xrightarrow{\ \gamma_i\ }\ S_{i-1}+F,
+       \qquad i=1,\dots,n,
+\end{aligned}
+\end{equation}
+where \(S_i\) is the substrate with \(i\) phosphorylated sites, \(C_i\) and \(Y_i\) are the
+kinase--substrate and phosphatase--substrate complexes, and all \(6n\) rate constants are
+strictly positive. There are \(3n+3\) species and three conserved totals,
+\begin{equation}\label{eq:totals}
+ \ET=E+\sum_{i=1}^n C_i,\qquad
+ \FT=F+\sum_{i=1}^n Y_i,\qquad
+ \ST=\sum_{i=0}^n S_i+\sum_{i=1}^n(C_i+Y_i).
+\end{equation}
+The set of nonnegative concentrations with prescribed positive totals is a
+\emph{compatibility class}; it is invariant under the dynamics and has dimension \(3n\).
+Throughout this paper every statement about stability refers to the dynamics \emph{within} a
+compatibility class, that is, with the three totals fixed.
+
+Markevich, Hoek and Kholodenko observed that the two-site cycle can be bistable although it has
+no feedback other than competition for the shared enzymes \cite{Markevich2004}. This started a
+long line of work on the equilibria of \eqref{eq:network}; see
+\cite{Gunawardena2005,ConradiFlockerziRaisch2008,ThomsonGunawardena2009,FeliuWiuf2012,
+HolsteinFlockerziConradi2013,ConradiMincheva2014,HellRendall2015,CFMW2017,
+BihanDickensteinGiaroli2020,FKdWY2022,TorresFeliu2021} and the surveys
+\cite{ConradiShiu2018,Dickenstein2016,Dickenstein2020}. The network has become a standard test
+case for algebraic and analytic methods in reaction network theory: it is large, biologically
+meaningful, and its steady-state variety has a monomial parametrization \cite{PDSC2012}.
+
+Three results frame the present work. Wang and Sontag \cite{WangSontag2008} proved that for all
+rate constants and all totals there are at most \(2n-1\) positive equilibria; they also
+exhibited \(n+1\) (\(n\) even) or \(n\) (\(n\) odd) equilibria and conjectured that \(n+1\) is
+never exceeded. Flockerzi, Holstein and Conradi \cite{FHC2014} refuted that conjecture by
+constructing five equilibria for \(n=3\) and seven for \(n=4\), so that the ceiling \(2n-1\) is
+attained for \(n\le4\); their method requires the solution of a system of polynomial
+inequalities that grows with \(n\). Whether \(2n-1\) is attained for larger \(n\) has been
+recorded as open \cite{FRW2020,FKdWY2023}. Feliu, Rendall and Wiuf \cite{FRW2020} proved
+``unlimited multistability'': for every \(n\) there are parameters with
+\(2\lfloor n/2\rfloor+1\) equilibria of which \(\lfloor n/2\rfloor+1\) are asymptotically
+stable. Their proof coalesces equilibria in a Michaelis--Menten limit and uses a
+centre-manifold and singular-perturbation argument, and they explain why that limit cannot
+produce \(2n-1\) equilibria when \(n\ge3\). Explicit parameter regions with
+\(2\lfloor n/2\rfloor+1\) equilibria are described in \cite{GRPD2019}, and numerical evidence
+for growth of the number of stable states with \(n\) goes back to
+\cite{ThomsonGunawardena2009}. Thus for \(n\ge5\) there has been a gap between \(2n-1\) and the
+largest number of equilibria known to occur, and for \(n\ge3\) a gap between the largest number
+of stable equilibria known to occur for all \(n\), namely \(\lfloor n/2\rfloor+1\), and any
+proved ceiling. No upper bound on the number of stable equilibria other than the trivial
+\(2n-1\) appears to have been stated.
+
+\subsection{Results}
+For a rate vector \(\kappa\in\R^{6n}_{>0}\) and totals \(T=(\ET,\FT,\ST)\in\R^3_{>0}\) let
+\(e(\kappa,T)\) be the number of positive equilibria of \eqref{eq:network} in the class
+determined by \(T\); let \(h(\kappa,T)\) be the number of those at which the Jacobian of the
+vector field, restricted to the stoichiometric subspace, is Hurwitz (all eigenvalues in the open
+left half-plane); and let \(c(\kappa,T)\) be the number of those that are locally
+asymptotically stable relative to the class. Clearly \(h\le c\le e\). We call
+\[
+ \capE=\max_{\kappa,T}e(\kappa,T),\qquad
+ \capH=\max_{\kappa,T}h(\kappa,T),\qquad
+ \capC=\max_{\kappa,T}c(\kappa,T)
+\]
+the \emph{equilibrium capacity}, the \emph{Hurwitz capacity} and the \emph{stable-state
+capacity} of the \(n\)-site cycle. In each case the count is taken for one common rate vector
+and one common triple of totals; equilibria of different systems or different classes are never
+combined.
+
+\begin{theorem}[Sharp capacities]\label{thm:main}
+For every integer \(n\ge1\),
+\[
+ \capE=2n-1,\qquad \capH=\capC=n .
+\]
+More precisely:
+\begin{enumerate}
+\item[\textup{(a)}] For all positive rate constants and totals, the compatibility class
+contains at most \(n\) locally asymptotically stable equilibria. Equilibria whose
+linearization is singular or has imaginary eigenvalues are included in this count.
+\item[\textup{(b)}] There are positive rational rate constants and totals for which the class
+contains exactly \(2n-1\) equilibria, all positive, rational and hyperbolic; \(n\) of them are
+sinks and the other \(n-1\) are saddles whose Jacobian has exactly one eigenvalue in the open
+right half-plane.
+\item[\textup{(c)}] The configuration in \textup{(b)} occurs on a nonempty open subset of
+\(\R^{6n+3}_{>0}\), the space of all rate constants and totals.
+\end{enumerate}
+\end{theorem}
+
+The inequality \(\capE\le2n-1\) is the theorem of Wang and Sontag, and \(\capE=2n-1\) was known
+for \(n\le4\) \cite{FHC2014}. For \(n=1\) the unique equilibrium is globally attracting
+\cite{AngeliSontag2008}, and for \(n=2\) two stable equilibria occur \cite{HellRendall2015}; to
+our knowledge, a proof that \(n\) stable equilibria occur is new for every \(n\ge3\), and so is
+the ceiling (a) in the generality stated. Part (a) bounds the number of attracting \emph{equilibria}. It does
+not bound the number of attractors of other kinds, such as periodic orbits, and the theorem
+does not assert that every trajectory converges to an equilibrium.
+
+The equilibria in (b) are explicit. Order them by the ratio \(u=E/F\) of free kinase to free
+phosphatase and label them \(X_0,\dots,X_{2n-2}\). The construction realizes any prescribed
+values of these ratios (Theorem~\ref{thm:count}), and in the stable realization the
+even-indexed equilibria are the sinks. The latter are obtained by splitting a single
+equilibrium of multiplicity \(2n-1\), and the splitting is governed by an exact law.
+
+\begin{theorem}[Splitting law]\label{thm:split}
+Let \(n\ge2\) and let \(\xi_0<\dots<\xi_{2n-2}\) be real numbers. In the family of systems
+constructed in Section~\ref{sec:lift}, depending on a parameter \(\delta>0\) and having
+equilibria \(X_0(\delta),\dots,X_{2n-2}(\delta)\) with \(\sqrt{1+8E/F}=3+\delta\xi_j\) at
+\(X_j(\delta)\), the restricted Jacobian at \(X_j(\delta)\) has \(3n-1\) eigenvalues whose real
+parts are negative and bounded away from zero, and one real eigenvalue
+\begin{equation}\label{eq:splitlaw}
+ \lambda_j(\delta)=-\,a\,\delta^{2n-2}\prod_{k\ne j}(\xi_j-\xi_k)\,\bigl(1+O(\delta)\bigr),
+ \qquad \delta\to0,
+\end{equation}
+with a constant \(a>0\) that does not depend on \(j\) and is given by \eqref{eq:aconst}. In
+particular \(\lambda_j<0\) for even \(j\) and \(\lambda_j>0\) for odd \(j\).
+\end{theorem}
+
+Within this family the separation of the equilibria in any smooth observable is of order
+\(\delta\), while the slowest relaxation time is of order \(\delta^{-(2n-2)}\). Section~\ref{sec:consequences}
+records this and further consequences of the proof: a closed formula for the stability margin of
+the limiting transverse dynamics, which decays like \(n^2(2/9)^{n}\); an explicit diagonal
+Lyapunov matrix, which makes the construction insensitive to the choice of the first \(n-1\)
+catalytic currents; and the elementary corollary that a single cycle can hold \(q\) stable
+equilibrium labels if and only if \(n\ge q\). Section~\ref{sec:examples} contains exact
+rational witnesses of Theorem~\ref{thm:main}(b) for \(n\le7\) with small parameters, and a
+three-site benchmark in declared physical units with a rigorous local certificate for
+independent perturbations of all \(21\) parameters.
+
+\subsection{Idea of the proof}
+\emph{The ceiling.} The compatibility class is a compact convex polytope, the vector field
+points inward or is tangent on its boundary, and there are no equilibria on the boundary. Hence
+the Brouwer degree of the negative vector field on the interior of the class is \(+1\). When all
+equilibria are nondegenerate this gives \(n_+-n_-=1\), where \(n_\pm\) are the numbers of
+equilibria of index \(\pm1\), and with \(n_++n_-\le2n-1\) we get \(n_+\le n\). A sink has index
+\(+1\). To include degenerate attractors and degenerate parameter values we use two classical
+facts: an asymptotically stable equilibrium has index \(+1\) whether or not it is hyperbolic,
+and, because the mass-action vector field depends linearly on the rate constants through a
+matrix of full rank, equilibria are nondegenerate for a dense set of rate vectors.
+
+\emph{The equilibria.} At a positive equilibrium all concentrations are monomials in
+\(u=E/F\), \(s=S_0\) and \(f=F\), and the totals are
+\(\ET=uf(1+sB(u))\), \(\FT=f(1+suD(u))\), \(\ST=sA(u)+usf(B(u)+D(u))\) for polynomials \(A,B,D\)
+whose \(3n\) coefficients are arbitrary positive numbers determined by the rate constants. The
+enzyme totals determine \(s\) and \(f\), and the equilibria are the solutions of one scalar
+equation \(\Phi(u)=\ST\). On the locus \(A=(1+u)D\), \(\ST=\ET+\FT\), the numerator of
+\(\Phi-\ST\) is a quadratic form whose discriminant is a square multiple of \(1+8u\); in the
+variable \(x=\sqrt{1+8u}\) it factors, and the equation becomes the linear interpolation
+condition \((x-1)(B-rD)=2(r-u)D\), \(r=\ET/\FT\). The even and odd parts of
+\(\prod_j(x-x_j)\) solve this problem for \(r=\infty\) and are generated by a recurrence with
+visibly positive coefficients; a B\'ezout-type quotient moves the solution to finite \(r\); and
+positivity of the quotient follows because the two polynomials have real, negative, interlacing
+roots.
+
+\emph{Stability.} The \(3n\) rate constants that do not enter the equilibrium equations can be
+chosen freely. We let all prescribed roots coalesce at \(x=3\) and use this freedom in three
+steps (Figure~\ref{fig:flow}). First, binding and unbinding are made fast. The slow variables
+are then the inventories \(\Lambda_i=S_i+C_{i+1}+Y_i\) of substrate with \(i\) phosphate groups,
+\emph{including} the substrate bound to either enzyme; discarding the bound substrate would
+change the slow dynamics. The linearized slow dynamics is \(\bK\,\diag(\bomega)\), where
+\(\bomega\) is the vector of catalytic currents and
+\(\bK=(-\bR+\one\bh^{T})\bM^{-1}\bR^{T}\) is formed from the path incidence matrix \(\bR\), a
+positive definite ``mass matrix'' \(\bM\), and a feedback vector \(\bh\) that expresses
+enzyme sequestration. Second, the current through the last site is made small. The spectrum
+is then that of the leading \((n-1)\times(n-1)\) block of \(\bK\), plus a simple zero that is
+forced by coalescence. Third, as the kinase excess \(r\) tends to infinity, \(r\) times this
+block converges to \(\bB_*=-\bH+\one\bphi^{T}\), where \(\bH\) is the Dirichlet-type matrix of a
+weighted path and \(\bphi\) is entrywise positive. This is a positive-feedback perturbation of a
+stable matrix, and its stability is decided by the scalar gain \(G=\bphi^{T}\bH^{-1}\one\). The
+moments of the coalesced polynomials give
+\[
+ 1-G=\frac{v\,(50n-45)}{9\,(14-8v)}>0,\qquad v=(3n-2)\Bigl(\frac29\Bigr)^{n-1}.
+\]
+Finally the roots are split again. Every equilibrium inherits \(3n-1\) stable eigenvalues, and
+the sign of the remaining real eigenvalue is read off from a determinant formula. The order of
+the choices is \(n\), then \(r\), then the last current, then the binding time scale, then the
+root separation; no estimate uniform in \(n\) is needed.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[node distance=5mm and 6mm,
+  box/.style={draw, rounded corners=2pt, align=center, font=\small, inner sep=4pt, text width=30mm, minimum height=11mm},
+  arr/.style={-{Stealth[length=2mm]}, semithick}]
+\node[box] (geo) {positive recurrence,\\ interlacing:\\ \(2n-1\) equilibria};
+\node[box, right=of geo] (coal) {coalesce all roots\\ at \(x=3\)};
+\node[box, right=of coal] (fast) {fast binding:\\ loaded slow matrix\\ \(\bK(r)\diag(\bomega)\)};
+\node[box, right=of fast] (slow) {slow last link:\\ prefix \(\bA_r\) plus\\ a simple zero};
+\node[box, below=of slow] (lim) {\(r\to\infty\):\\ \(r\bA_r\to-\bH+\one\bphi^{T}\),\\ gain \(G<1\)};
+\node[box, left=of lim] (lift) {lift to the full\\ \(3n\)-dimensional\\ Jacobian};
+\node[box, left=of lift] (split) {split the roots:\\ determinant formula\\ fixes the signs};
+\node[box, left=of split] (deg) {degree and\\ transversality:\\ at most \(n\) attractors};
+\draw[arr] (geo) -- (coal);
+\draw[arr] (coal) -- (fast);
+\draw[arr] (fast) -- (slow);
+\draw[arr] (slow) -- (lim);
+\draw[arr] (lim) -- (lift);
+\draw[arr] (lift) -- (split);
+\draw[arr] (deg) -- (split);
+\end{tikzpicture}
+\caption{Structure of the proof. The ceiling (bottom left) is independent of the
+construction. The parameters are chosen in the order \(n\), \(r\), last catalytic current,
+binding time scale, root separation.}\label{fig:flow}
+\end{figure}
+
+The general strategy of coalescing equilibria and then controlling the transverse spectrum by a
+singular perturbation is that of \cite{FRW2020}; see also \cite{HellRendall2015}. What is new
+here is an equilibrium geometry that reaches the maximal count, a reduction that keeps the
+enzyme-bound substrate, and a transverse stability proof that works for every \(n\).
+
+\subsection{Scope}
+Theorem~\ref{thm:main} is a statement about the deterministic, well-mixed mass-action model
+\eqref{eq:network} with irreversible catalytic steps. It counts stable equilibria. It is not a
+statement about Shannon capacity, stochastic retention times, switching between states, or
+inheritance through cell division, and the open set in (c) comes without an estimate of its
+size. Section~\ref{sec:discussion} returns to these points.
+
+\subsection{Formal verification and reproducibility}
+The Lean~4 \cite{Lean4} development with Mathlib \cite{Mathlib} formalizes both universal
+capacity ceilings, including nonhyperbolic attractors, simultaneous rational attainment with
+the full sink/saddle spectrum, and open persistence of that same configuration. It also
+formalizes the general prescribed-root construction, global conversion positivity,
+interlacing and coefficient ratios, the common-witness quantitative splitting law and its
+compact-current and closed-interval refinements, fixed rational spectra and the nominal
+benchmark, and the same-parameter operational recovery and measured-readout guarantees.
+Supporting proofs retain the original rational four-loop first-success procedure and the
+analytical readout and reciprocal-time corollaries. Section~\ref{sec:formal} identifies the
+exact statements, shared witnesses, and source-bound verification records. Supporting
+proofs also construct embedded analytic unstable curves at the same rational family's
+saddles. These curves and their backward trajectories remain in the positive compatibility
+class and tend to their base equilibria backward in time. All numbers in the paper are
+reproduced in exact rational arithmetic
+by a script distributed with the source.
+
+\subsection{Organization}
+Section~\ref{sec:model} parametrizes the equilibria, proves a determinant formula for the
+restricted Jacobian, and excludes boundary equilibria. Section~\ref{sec:ceiling} proves the
+ceiling. Section~\ref{sec:construction} constructs \(2n-1\) nondegenerate equilibria.
+Section~\ref{sec:loaded} introduces the kinetic freedom and the loaded slow system.
+Section~\ref{sec:prefix} proves stability of the transverse dynamics for large \(r\).
+Section~\ref{sec:lift} lifts the spectrum to the full system and proves
+Theorems~\ref{thm:main} and~\ref{thm:split}. Sections~\ref{sec:consequences}--\ref{sec:discussion}
+contain consequences, exact examples, the formal verification, and a discussion.
+
+\input{part1.tex}
+\input{part2.tex}
+\input{part3.tex}
+
+\bibliographystyle{abbrv}
+\bibliography{refs}
+\end{document}

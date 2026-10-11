@@ -1,0 +1,300 @@
+\begin{thebibliography}{10}
+
+\bibitem{AngeliSontag2008}
+D.~Angeli and E.~D. Sontag.
+\newblock Translation-invariant monotone systems, and a global convergence
+  result for enzymatic futile cycles.
+\newblock {\em Nonlinear Anal. Real World Appl.}, 9(1):128--140, 2008.
+\newblock
+  \href{https://doi.org/10.1016/j.nonrwa.2006.09.006}{doi:10.1016/j.nonrwa.2006.09.006}.
+
+\bibitem{BermanPlemmons}
+A.~Berman and R.~J. Plemmons.
+\newblock {\em Nonnegative Matrices in the Mathematical Sciences}, volume~9 of
+  {\em Classics in Applied Mathematics}.
+\newblock SIAM, Philadelphia, 1994.
+
+\bibitem{BihanDickensteinGiaroli2020}
+F.~Bihan, A.~Dickenstein, and M.~Giaroli.
+\newblock Lower bounds for positive roots and regions of multistationarity in
+  chemical reaction networks.
+\newblock {\em J. Algebra}, 542:367--411, 2020.
+\newblock
+  \href{https://doi.org/10.1016/j.jalgebra.2019.10.002}{doi:10.1016/j.jalgebra.2019.10.002};
+  \href{https://arxiv.org/abs/1807.05157}{arXiv:1807.05157}.
+
+\bibitem{Cohen2000}
+P.~Cohen.
+\newblock The regulation of protein function by multisite phosphorylation -- a
+  25 year update.
+\newblock {\em Trends Biochem. Sci.}, 25(12):596--601, 2000.
+\newblock
+  \href{https://doi.org/10.1016/S0968-0004(00)01712-6}{doi:10.1016/S0968-0004(00)01712-6}.
+
+\bibitem{CFM2020}
+C.~Conradi, E.~Feliu, and M.~Mincheva.
+\newblock On the existence of {H}opf bifurcations in the sequential and
+  distributive double phosphorylation cycle.
+\newblock {\em Math. Biosci. Eng.}, 17(1):494--513, 2020.
+\newblock \href{https://doi.org/10.3934/mbe.2020027}{doi:10.3934/mbe.2020027};
+  \href{https://arxiv.org/abs/1905.08129}{arXiv:1905.08129}.
+
+\bibitem{CFMW2017}
+C.~Conradi, E.~Feliu, M.~Mincheva, and C.~Wiuf.
+\newblock Identifying parameter regions for multistationarity.
+\newblock {\em PLoS Comput. Biol.}, 13(10):e1005751, 2017.
+\newblock
+  \href{https://doi.org/10.1371/journal.pcbi.1005751}{doi:10.1371/journal.pcbi.1005751};
+  \href{https://arxiv.org/abs/1608.03993}{arXiv:1608.03993}.
+
+\bibitem{ConradiFlockerziRaisch2008}
+C.~Conradi, D.~Flockerzi, and J.~Raisch.
+\newblock Multistationarity in the activation of a {MAPK}: parametrizing the
+  relevant region in parameter space.
+\newblock {\em Math. Biosci.}, 211(1):105--131, 2008.
+\newblock
+  \href{https://doi.org/10.1016/j.mbs.2007.10.004}{doi:10.1016/j.mbs.2007.10.004}.
+
+\bibitem{ConradiMincheva2014}
+C.~Conradi and M.~Mincheva.
+\newblock Catalytic constants enable the emergence of bistability in dual
+  phosphorylation.
+\newblock {\em J. R. Soc. Interface}, 11(95):20140158, 2014.
+\newblock
+  \href{https://doi.org/10.1098/rsif.2014.0158}{doi:10.1098/rsif.2014.0158}.
+
+\bibitem{ConradiMincheva2024}
+C.~Conradi and M.~Mincheva.
+\newblock In distributive phosphorylation catalytic constants enable
+  non-trivial dynamics.
+\newblock {\em J. Math. Biol.}, 89(2):20, 2024.
+\newblock
+  \href{https://doi.org/10.1007/s00285-024-02114-8}{doi:10.1007/s00285-024-02114-8};
+  \href{https://arxiv.org/abs/2308.08524}{arXiv:2308.08524}.
+
+\bibitem{CMS2019}
+C.~Conradi, M.~Mincheva, and A.~Shiu.
+\newblock Emergence of oscillations in a mixed-mechanism phosphorylation
+  system.
+\newblock {\em Bull. Math. Biol.}, 81(6):1829--1852, 2019.
+\newblock
+  \href{https://doi.org/10.1007/s11538-019-00580-6}{doi:10.1007/s11538-019-00580-6};
+  \href{https://arxiv.org/abs/1809.02886}{arXiv:1809.02886}.
+
+\bibitem{ConradiShiu2018}
+C.~Conradi and A.~Shiu.
+\newblock Dynamics of posttranslational modification systems: recent progress
+  and future directions.
+\newblock {\em Biophys. J.}, 114(3):507--515, 2018.
+\newblock
+  \href{https://doi.org/10.1016/j.bpj.2017.11.3787}{doi:10.1016/j.bpj.2017.11.3787};
+  \href{https://arxiv.org/abs/1705.10913}{arXiv:1705.10913}.
+
+\bibitem{Lean4}
+L.~de~Moura and S.~Ullrich.
+\newblock The {L}ean 4 theorem prover and programming language.
+\newblock In {\em Automated Deduction -- CADE 28}, volume 12699 of {\em Lecture
+  Notes in Comput. Sci.}, pages 625--635. Springer, 2021.
+\newblock
+  \href{https://doi.org/10.1007/978-3-030-79876-5_37}{doi:10.1007/978-3-030-79876-5\_37}.
+
+\bibitem{Deimling}
+K.~Deimling.
+\newblock {\em Nonlinear Functional Analysis}.
+\newblock Springer, Berlin, 1985.
+
+\bibitem{Dickenstein2016}
+A.~Dickenstein.
+\newblock Biochemical reaction networks: an invitation for algebraic geometers.
+\newblock In {\em Mathematical Congress of the Americas}, volume 656 of {\em
+  Contemp. Math.}, pages 65--83. Amer. Math. Soc., 2016.
+\newblock
+  \href{https://doi.org/10.1090/conm/656/13076}{doi:10.1090/conm/656/13076}.
+
+\bibitem{Dickenstein2020}
+A.~Dickenstein.
+\newblock Algebraic geometry tools in systems biology.
+\newblock {\em Notices Amer. Math. Soc.}, 67(11), 2020.
+\newblock \href{https://doi.org/10.1090/noti2188}{doi:10.1090/noti2188}.
+
+\bibitem{LeanDifferentialGeometry}
+{Differential Geometry in Lean contributors}.
+\newblock Differential geometry in lean.
+\newblock \href{https://github.com/qinz1yang/differential-geometry}{GitHub
+  repository}, 2026.
+\newblock Commit 777299070a5529e96345e0033979706fd00c7e62, Apache-2.0.
+
+\bibitem{FKdWY2022}
+E.~Feliu, N.~Kaihnsa, T.~de~Wolff, and O.~Y\"ur\"uk.
+\newblock The kinetic space of multistationarity in dual phosphorylation.
+\newblock {\em J. Dynam. Differential Equations}, 34(2):825--852, 2022.
+\newblock
+  \href{https://doi.org/10.1007/s10884-020-09889-6}{doi:10.1007/s10884-020-09889-6};
+  \href{https://arxiv.org/abs/2001.08285}{arXiv:2001.08285}.
+
+\bibitem{FKdWY2023}
+E.~Feliu, N.~Kaihnsa, T.~de~Wolff, and O.~Y\"ur\"uk.
+\newblock Parameter region for multistationarity in {$n$}-site phosphorylation
+  networks.
+\newblock {\em SIAM J. Appl. Dyn. Syst.}, 22(3):2024--2053, 2023.
+\newblock \href{https://doi.org/10.1137/22M1504548}{doi:10.1137/22M1504548};
+  \href{https://arxiv.org/abs/2206.08908}{arXiv:2206.08908}.
+
+\bibitem{FRW2020}
+E.~Feliu, A.~D. Rendall, and C.~Wiuf.
+\newblock A proof of unlimited multistability for phosphorylation cycles.
+\newblock {\em Nonlinearity}, 33(11):5629--5658, 2020.
+\newblock
+  \href{https://doi.org/10.1088/1361-6544/ab9a1e}{doi:10.1088/1361-6544/ab9a1e};
+  \href{https://arxiv.org/abs/1904.02983}{arXiv:1904.02983}.
+
+\bibitem{FeliuWiuf2012}
+E.~Feliu and C.~Wiuf.
+\newblock Enzyme-sharing as a cause of multi-stationarity in signalling
+  systems.
+\newblock {\em J. R. Soc. Interface}, 9(71):1224--1232, 2012.
+\newblock
+  \href{https://doi.org/10.1098/rsif.2011.0664}{doi:10.1098/rsif.2011.0664};
+  \href{https://arxiv.org/abs/1101.5799}{arXiv:1101.5799}.
+
+\bibitem{FHC2014}
+D.~Flockerzi, K.~Holstein, and C.~Conradi.
+\newblock {$N$}-site phosphorylation systems with {$2N-1$} steady states.
+\newblock {\em Bull. Math. Biol.}, 76(8):1892--1916, 2014.
+\newblock
+  \href{https://doi.org/10.1007/s11538-014-9984-0}{doi:10.1007/s11538-014-9984-0};
+  \href{https://arxiv.org/abs/1312.4774}{arXiv:1312.4774}.
+
+\bibitem{Gantmacher}
+F.~R. Gantmacher.
+\newblock {\em The Theory of Matrices}, volume~2.
+\newblock Chelsea, New York, 1959.
+
+\bibitem{GRPD2019}
+M.~Giaroli, R.~Rischter, M.~{P\'erez Mill\'an}, and A.~Dickenstein.
+\newblock Parameter regions that give rise to {$2\lfloor n/2\rfloor+1$}
+  positive steady states in the {$n$}-site phosphorylation system.
+\newblock {\em Math. Biosci. Eng.}, 16(6):7589--7615, 2019.
+\newblock \href{https://doi.org/10.3934/mbe.2019381}{doi:10.3934/mbe.2019381};
+  \href{https://arxiv.org/abs/1904.11633}{arXiv:1904.11633}.
+
+\bibitem{GuilleminPollack}
+V.~Guillemin and A.~Pollack.
+\newblock {\em Differential Topology}.
+\newblock Prentice-Hall, Englewood Cliffs, NJ, 1974.
+
+\bibitem{Gunawardena2005}
+J.~Gunawardena.
+\newblock Multisite protein phosphorylation makes a good threshold but can be a
+  poor switch.
+\newblock {\em Proc. Natl. Acad. Sci. USA}, 102(41):14617--14622, 2005.
+\newblock
+  \href{https://doi.org/10.1073/pnas.0507322102}{doi:10.1073/pnas.0507322102}.
+
+\bibitem{HLP}
+G.~H. Hardy, J.~E. Littlewood, and G.~P{\'o}lya.
+\newblock {\em Inequalities}.
+\newblock Cambridge University Press, 2nd edition, 1952.
+
+\bibitem{HellRendall2015}
+J.~Hell and A.~D. Rendall.
+\newblock A proof of bistability for the dual futile cycle.
+\newblock {\em Nonlinear Anal. Real World Appl.}, 24:175--189, 2015.
+\newblock
+  \href{https://doi.org/10.1016/j.nonrwa.2015.02.004}{doi:10.1016/j.nonrwa.2015.02.004};
+  \href{https://arxiv.org/abs/1404.0394}{arXiv:1404.0394}.
+
+\bibitem{Hofbauer1990}
+J.~Hofbauer.
+\newblock An index theorem for dissipative semiflows.
+\newblock {\em Rocky Mountain J. Math.}, 20(4):1017--1031, 1990.
+\newblock
+  \href{https://doi.org/10.1216/rmjm/1181073059}{doi:10.1216/rmjm/1181073059}.
+
+\bibitem{HolsteinFlockerziConradi2013}
+K.~Holstein, D.~Flockerzi, and C.~Conradi.
+\newblock Multistationarity in sequential distributed multisite phosphorylation
+  networks.
+\newblock {\em Bull. Math. Biol.}, 75(11):2028--2058, 2013.
+\newblock
+  \href{https://doi.org/10.1007/s11538-013-9878-6}{doi:10.1007/s11538-013-9878-6};
+  \href{https://arxiv.org/abs/1304.6661}{arXiv:1304.6661}.
+
+\bibitem{HornJackson1972}
+F.~Horn and R.~Jackson.
+\newblock General mass action kinetics.
+\newblock {\em Arch. Rational Mech. Anal.}, 47:81--116, 1972.
+\newblock \href{https://doi.org/10.1007/BF00251225}{doi:10.1007/BF00251225}.
+
+\bibitem{Kato}
+T.~Kato.
+\newblock {\em Perturbation Theory for Linear Operators}.
+\newblock Classics in Mathematics. Springer, Berlin, 1995.
+
+\bibitem{KKO}
+P.~Kokotovi{\'c}, H.~K. Khalil, and J.~O'Reilly.
+\newblock {\em Singular Perturbation Methods in Control: Analysis and Design},
+  volume~25 of {\em Classics in Applied Mathematics}.
+\newblock SIAM, Philadelphia, 1999.
+
+\bibitem{KrasnoselskiiZabreiko}
+M.~A. Krasnosel'ski{\u\i} and P.~P. Zabre{\u\i}ko.
+\newblock {\em Geometrical Methods of Nonlinear Analysis}, volume 263 of {\em
+  Grundlehren der mathematischen Wissenschaften}.
+\newblock Springer, Berlin, 1984.
+
+\bibitem{Markevich2004}
+N.~I. Markevich, J.~B. Hoek, and B.~N. Kholodenko.
+\newblock Signaling switches and bistability arising from multisite
+  phosphorylation in protein kinase cascades.
+\newblock {\em J. Cell Biol.}, 164(3):353--359, 2004.
+\newblock
+  \href{https://doi.org/10.1083/jcb.200308060}{doi:10.1083/jcb.200308060}.
+
+\bibitem{PDSC2012}
+M.~{P\'erez Mill\'an}, A.~Dickenstein, A.~Shiu, and C.~Conradi.
+\newblock Chemical reaction systems with toric steady states.
+\newblock {\em Bull. Math. Biol.}, 74(5):1027--1065, 2012.
+\newblock
+  \href{https://doi.org/10.1007/s11538-011-9685-x}{doi:10.1007/s11538-011-9685-x};
+  \href{https://arxiv.org/abs/1102.1590}{arXiv:1102.1590}.
+
+\bibitem{SalazarHofer2009}
+C.~Salazar and T.~H\"ofer.
+\newblock Multisite protein phosphorylation -- from molecular mechanisms to
+  kinetic models.
+\newblock {\em FEBS J.}, 276(12):3177--3198, 2009.
+\newblock
+  \href{https://doi.org/10.1111/j.1742-4658.2009.07027.x}{doi:10.1111/j.1742-4658.2009.07027.x}.
+
+\bibitem{Mathlib}
+{The mathlib Community}.
+\newblock The {L}ean mathematical library.
+\newblock In {\em Proc. 9th ACM SIGPLAN Int. Conf. on Certified Programs and
+  Proofs (CPP 2020)}, pages 367--381. ACM, 2020.
+\newblock
+  \href{https://doi.org/10.1145/3372885.3373824}{doi:10.1145/3372885.3373824};
+  \href{https://arxiv.org/abs/1910.09336}{arXiv:1910.09336}.
+
+\bibitem{ThomsonGunawardena2009}
+M.~Thomson and J.~Gunawardena.
+\newblock Unlimited multistability in multisite phosphorylation systems.
+\newblock {\em Nature}, 460:274--277, 2009.
+\newblock \href{https://doi.org/10.1038/nature08102}{doi:10.1038/nature08102}.
+
+\bibitem{TorresFeliu2021}
+A.~Torres and E.~Feliu.
+\newblock Symbolic proof of bistability in reaction networks.
+\newblock {\em SIAM J. Appl. Dyn. Syst.}, 20(1):1--37, 2021.
+\newblock \href{https://doi.org/10.1137/20M1326672}{doi:10.1137/20M1326672};
+  \href{https://arxiv.org/abs/1909.13608}{arXiv:1909.13608}.
+
+\bibitem{WangSontag2008}
+L.~Wang and E.~D. Sontag.
+\newblock On the number of steady states in a multiple futile cycle.
+\newblock {\em J. Math. Biol.}, 57(1):29--52, 2008.
+\newblock
+  \href{https://doi.org/10.1007/s00285-007-0145-z}{doi:10.1007/s00285-007-0145-z};
+  \href{https://arxiv.org/abs/0704.0036}{arXiv:0704.0036}.
+
+\end{thebibliography}

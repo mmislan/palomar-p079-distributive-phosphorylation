@@ -1,0 +1,530 @@
+\section{Kinetic freedom, coalescence, and the loaded slow system}\label{sec:loaded}
+From now on \(n\ge2\), \(m=n-1\), and the geometry is the one constructed in
+Section~\ref{sec:construction} for some roots \(x_j>1\) and some admissible \(r\).
+
+\subsection{Source-preserving kinetics}
+By Proposition~\ref{prop:param}(ii) we may choose positive numbers \(\theta_i,b_i,\beta_i\)
+\((1\le i\le n)\) freely and set
+\begin{equation}\label{eq:freedom}
+ \gamma_i=\theta_i,\qquad c_i=\theta_i\frac{D_{i-1}}{B_{i-1}},\qquad
+ a_i=(b_i+c_i)\frac{B_{i-1}}{t_{i-1}},\qquad \alpha_i=(\beta_i+\gamma_i)\frac{D_{i-1}}{t_i}
+\end{equation}
+without changing any equilibrium \eqref{eq:states}. We call \(\theta_i\) the \emph{catalytic
+scale} of site \(i\). At an equilibrium the two catalytic fluxes of site \(i\) are equal, and
+we call their common value
+\begin{equation}\label{eq:current}
+ \omega_i=c_iC_i=\gamma_iY_i=\theta_iY_i
+\end{equation}
+the \emph{catalytic current} of site \(i\). At a given equilibrium, any positive vector
+\(\bomega\) can be realized by the choice \(\theta_i=\omega_i/Y_i\).
+
+Next, for \(0<\varepsilon\le1\), replace
+\begin{equation}\label{eq:relaxation}
+ a_i\mapsto\frac{a_i}{\varepsilon},\qquad b_i\mapsto\frac{b_i+c_i}{\varepsilon}-c_i,\qquad
+ \alpha_i\mapsto\frac{\alpha_i}{\varepsilon},\qquad
+ \beta_i\mapsto\frac{\beta_i+\gamma_i}{\varepsilon}-\gamma_i .
+\end{equation}
+The new constants are positive, \(p_i\) and \(q_i\) are unchanged, and the catalytic constants
+are untouched, so this is again of the form \eqref{eq:freedom}. The complex equations become
+\begin{equation}\label{eq:fastslow}
+ \varepsilon\dot C_i=a_iS_{i-1}E-(b_i+c_i)C_i,\qquad
+ \varepsilon\dot Y_i=\alpha_iS_iF-(\beta_i+\gamma_i)Y_i,
+\end{equation}
+with the constants from before the replacement on the right. As \(\varepsilon\to0\), binding
+and unbinding become fast while catalysis keeps its time scale.
+
+\subsection{Loaded inventories}
+Let
+\begin{equation}\label{eq:loaded}
+ \Lambda_i=S_i+C_{i+1}+Y_i\quad(0\le i\le n),\qquad C_{n+1}=Y_0=0,
+\end{equation}
+be the total amount of substrate with exactly \(i\) phosphate groups, free or bound to either
+enzyme. Binding and unbinding do not change \(\Lambda_i\), so with the net catalytic fluxes
+\(j_i=c_iC_i-\gamma_iY_i\),
+\begin{equation}\label{eq:Lamdot}
+ \dot\Lambda_i=j_i-j_{i+1}\quad(j_0=j_{n+1}=0),\qquad\text{that is,}\qquad
+ \dot{\bLam}=\bR^{T}\boldsymbol j,
+\end{equation}
+where \(\bR\) is the \(n\times(n+1)\) incidence matrix of the path on the levels \(0,\dots,n\),
+with rows \(\be_i^{T}-\be_{i-1}^{T}\) \((1\le i\le n)\). Also \(\sum_i\Lambda_i=\ST\). In
+comparison with \eqref{eq:pools}, \(Z_i=\sum_{k\ge i}\Lambda_k\). The functions
+\((\Lambda_1,\dots,\Lambda_n,C_1,\dots,C_n,Y_1,\dots,Y_n)\) are linear coordinates on each
+compatibility class. In them the right side of \eqref{eq:Lamdot} is a linear function of
+\((C,Y)\) that does not involve \(\varepsilon\), and \eqref{eq:fastslow} does not involve
+\(\varepsilon\) on the right. The restricted Jacobian at an equilibrium therefore has the form
+\begin{equation}\label{eq:blockform}
+ \JS_\varepsilon=\begin{pmatrix}0&\bB_0\\ \varepsilon^{-1}\mathbf C_0&\varepsilon^{-1}\bD_0\end{pmatrix}
+\end{equation}
+with matrices \(\bB_0\) \((n\times2n)\), \(\mathbf C_0\) \((2n\times n)\), \(\bD_0\)
+\((2n\times2n)\) that do not depend on \(\varepsilon\). (In \eqref{eq:blockform} we use the new
+coordinates; this changes \(\JS\) by a similarity.)
+
+On the set where the right sides of \eqref{eq:fastslow} vanish, that is, at \emph{fast-binding
+equilibrium}, write
+\[
+ \bS=(S_0,\dots,S_n)^{T},\qquad \bc=(C_1,\dots,C_n,0)^{T},\qquad \by=(0,Y_1,\dots,Y_n)^{T},
+\]
+indexed by the levels \(0,\dots,n\), so that \(\bLam=\bS+\bc+\by\). The entry \(c_i=C_{i+1}\)
+of \(\bc\) is the kinase-bound substrate of level \(i\); it should not be confused with the
+rate constant of the same name, which does not appear in this subsection.
+
+\begin{lemma}[Mass matrix and feedback]\label{lem:mass}
+Consider a state at fast-binding equilibrium with enzyme totals \(\ET,\FT\), and variations of
+it within the fast-binding equilibrium set that keep \(\ET\) and \(\FT\) fixed. In terms of
+the logarithmic variations \(\sigma_i=dS_i/S_i\),
+\begin{equation}\label{eq:mass}
+ d\bLam=\bM\bsigma,\qquad
+ \bM=\diag(\bS+\bc+\by)-\frac{\bc\bc^{T}}{\ET}-\frac{\by\by^{T}}{\FT},
+\end{equation}
+and if the state is an equilibrium with catalytic currents \(\bomega\), then
+\begin{equation}\label{eq:dj}
+ d\boldsymbol j=\diag(\bomega)\bigl(-\bR+\one\bh^{T}\bigr)\bsigma,\qquad
+ \bh=\frac{\by}{\FT}-\frac{\bc}{\ET}.
+\end{equation}
+The matrix \(\bM\) is symmetric and positive definite.
+\end{lemma}
+\begin{proof}
+At fast-binding equilibrium \(C_i=p_iS_{i-1}E\) and \(Y_i=q_iS_iF\). Differentiating
+\(\ET=E+\sum_iC_i\) at fixed \(\ET\) gives \(dE\,(1+\sum_iC_i/E)=-\sum_iC_i\sigma_{i-1}\), that
+is, \(dE/E=-\bc^{T}\bsigma/\ET\); likewise \(dF/F=-\by^{T}\bsigma/\FT\). Then
+\(dC_{i+1}=C_{i+1}(\sigma_i+dE/E)\) and \(dY_i=Y_i(\sigma_i+dF/F)\), and summing the three
+contributions to \(d\Lambda_i\) gives \eqref{eq:mass}. At an equilibrium
+\(c_iC_i=\gamma_iY_i=\omega_i\), so
+\(dj_i=\omega_i\bigl[(\sigma_{i-1}+dE/E)-(\sigma_i+dF/F)\bigr]\), which is \eqref{eq:dj}. For
+positivity, the Cauchy--Schwarz inequality gives
+\((\bc^{T}\boldsymbol a)^2\le(\sum_ic_i)(\sum_ic_ia_i^2)\) for every vector \(\boldsymbol a\),
+and similarly for \(\by\), so
+\[
+ \boldsymbol a^{T}\bM\boldsymbol a\ \ge\ \sum_iS_ia_i^2
+ +\Bigl(1-\frac{\sum_ic_i}{\ET}\Bigr)\sum_ic_ia_i^2
+ +\Bigl(1-\frac{\sum_iy_i}{\FT}\Bigr)\sum_iy_ia_i^2\ >0\qquad(\boldsymbol a\ne0),
+\]
+because \(\sum_ic_i=\ET-E<\ET\), \(\sum_iy_i=\FT-F<\FT\) and all \(S_i>0\).
+\end{proof}
+
+The matrix \(\bM\) converts changes of the free substrate concentrations into changes of the
+conserved inventories. Its rank-one terms express sequestration: raising one \(S_i\) binds
+enzyme and thereby lowers the complexes at all other levels. It cannot be replaced by
+\(\diag(\bS)\): in the regime used below most of the substrate is bound to the kinase.
+
+\begin{proposition}[Loaded slow matrix]\label{prop:slow}
+At an equilibrium with catalytic currents \(\bomega\), let
+\begin{equation}\label{eq:K}
+ \bK=\bigl(-\bR+\one\bh^{T}\bigr)\bM^{-1}\bR^{T}\in\R^{n\times n}.
+\end{equation}
+\textup{(i)} The block \(\bD_0\) in \eqref{eq:blockform} is similar to a symmetric negative
+definite matrix. \textup{(ii)} The matrix \(-\bB_0\bD_0^{-1}\mathbf C_0\) is similar to
+\(\bK\diag(\bomega)\). \textup{(iii)} As \(\varepsilon\to0\), \(2n\) eigenvalues of
+\(\JS_\varepsilon\) have real parts tending to \(-\infty\), and the other \(n\) converge, with
+multiplicities, to the eigenvalues of \(\bK\diag(\bomega)\).
+\end{proposition}
+\begin{proof}
+(i) With the inventories and the enzyme totals fixed, \((C,Y)\) are the extents of the \(2n\)
+reversible binding reactions \(S_{i-1}+E\rightleftharpoons C_i\), \(S_i+F\rightleftharpoons Y_i\)
+with rate constants \(a_i,b_i+c_i\) and \(\alpha_i,\beta_i+\gamma_i\). Let \(\Gamma_{\!f}\) be
+their \((3n+3)\times2n\) stoichiometric matrix; its columns are independent because each
+complex occurs in exactly one of them. At an equilibrium the forward and backward rates of
+each of these reactions agree; call the common values \(\varphi_k>0\). The differential of the
+net rate of the \(k\)th reaction is \(\varphi_k\) times the differential of the logarithm of
+the ratio of its forward and backward rates, which is \(-(\Gamma_{\!f}^{T}\diag(X)^{-1}dX)_k\),
+where \(X\) is the vector of concentrations; and \(dX=\Gamma_{\!f}\,d(C,Y)\). Hence
+\(\bD_0=-\diag(\varphi)\,\Gamma_{\!f}^{T}\diag(X)^{-1}\Gamma_{\!f}\). This is a positive diagonal matrix times a symmetric negative definite
+matrix, hence similar to the symmetric negative definite matrix
+\(-\diag(\varphi)^{1/2}\Gamma_{\!f}^{T}\diag(X)^{-1}\Gamma_{\!f}\diag(\varphi)^{1/2}\); compare
+\cite{HornJackson1972}.
+
+(ii) Since \(\bD_0\) is invertible, the equations \eqref{eq:fastslow} with zero left side
+define \((C,Y)\) locally as a function of \((\Lambda_1,\dots,\Lambda_n)\) with derivative
+\(-\bD_0^{-1}\mathbf C_0\), and \(-\bB_0\bD_0^{-1}\mathbf C_0\) is the Jacobian of the reduced
+vector field \(\bLam\mapsto\bR^{T}\boldsymbol j\). By Lemma~\ref{lem:mass} this Jacobian is the
+restriction of \(\bR^{T}\diag(\bomega)(-\bR+\one\bh^{T})\bM^{-1}\) to the tangent space
+\(\{d\bLam:\one^{T}d\bLam=0\}\) of the class. The map \(\bR^{T}\) is an isomorphism of \(\R^n\)
+onto that space, and in the coordinates \(\boldsymbol a\) with \(d\bLam=\bR^{T}\boldsymbol a\)
+the restriction is \(\diag(\bomega)\bK\), which is similar to \(\bK\diag(\bomega)\).
+
+(iii) For \(\lambda\) in a compact set and \(\varepsilon\) small,
+\[
+ \det(\lambda-\JS_\varepsilon)=\varepsilon^{-2n}\det(\varepsilon\lambda-\bD_0)\,
+ \det\bigl(\lambda-\bB_0(\varepsilon\lambda-\bD_0)^{-1}\mathbf C_0\bigr),
+\]
+and the last factor converges uniformly to the characteristic polynomial of
+\(-\bB_0\bD_0^{-1}\mathbf C_0\). By Hurwitz's theorem, \(n\) eigenvalues converge to its roots.
+The eigenvalues of \(\varepsilon\JS_\varepsilon\) converge to those of its limit
+\(\bigl(\begin{smallmatrix}0&0\\ \mathbf C_0&\bD_0\end{smallmatrix}\bigr)\), namely \(n\) zeros
+and the \(2n\) negative eigenvalues of \(\bD_0\); the latter correspond to \(2n\) eigenvalues
+of \(\JS_\varepsilon\) of the form \((\mu+o(1))/\varepsilon\) with \(\mu<0\). This is the
+standard two-time-scale decomposition \cite[Ch.~2]{KKO}.
+\end{proof}
+
+\subsection{Coalescence}
+Now set every auxiliary root equal to \(3\): \(x_0=\dots=x_{2m}=3\), \(\Pi(x)=(x-3)^{2n-1}\),
+and let \(r\ge3n/2\). All results of Section~\ref{sec:construction} up to
+Proposition~\ref{prop:slope} remain valid. There is one constructed equilibrium \(X_\circ\),
+with
+\begin{equation}\label{eq:coalstate}
+ u=1,\qquad E=F=1,\qquad s=\frac1{D(1)},\qquad (\ET,\FT,\ST)=(2r,2,2r+2),
+\end{equation}
+and \(\Phi'(1)=0\) by Proposition~\ref{prop:slope}. By Proposition~\ref{prop:det},
+\begin{equation}\label{eq:detzero}
+ \det\JS=0\quad\text{at }X_\circ,\ \text{for every choice of the kinetics.}
+\end{equation}
+
+\begin{lemma}\label{lem:Ksingular}
+At the coalesced equilibrium, \(\det\bK=0\).
+\end{lemma}
+\begin{proof}
+Let \(u\mapsto X(u)\) be the curve of equilibria \eqref{eq:states} with enzyme totals
+\((2r,2)\), defined near \(u=1\) by \eqref{eq:chart}. Along it, fast-binding equilibrium and
+\(\boldsymbol j=0\) hold identically and \(\sum_i\Lambda_i=\Phi(u)\). Let \(\bsigma\) be the
+logarithmic derivative of \((S_0,\dots,S_n)\) at \(u=1\). If \(\bsigma=0\), the proof of
+Lemma~\ref{lem:mass} gives \(dE=dF=0\), which contradicts \(E/F=u\). By Lemma~\ref{lem:mass},
+\(\bM\bsigma\ne0\), \(\one^{T}\bM\bsigma=\Phi'(1)=0\) and \((-\bR+\one\bh^{T})\bsigma=0\). Hence
+\(\bM\bsigma=\bR^{T}\boldsymbol a\) with \(\boldsymbol a\ne0\), and \(\bK\boldsymbol a=0\).
+\end{proof}
+
+The formulas \eqref{eq:evenodd} become explicit for coalesced roots. With \(x^2=1+8u\) and
+\(k=2n-1\),
+\begin{equation}\label{eq:parity}
+ N(u)=\frac{(x+3)^k+(x-3)^k}{2x},\qquad
+ J(u)=\frac{(x-1)(x+3)^k-(x+1)(x-3)^k}{4x}.
+\end{equation}
+Evaluating \eqref{eq:parity} and its derivative at \(x=3\), using \(du/dx=x/4\) and \(k\ge3\),
+gives
+\begin{equation}\label{eq:moments}
+ \jm:=N(1)=J(1)=36^{\,n-1},\qquad
+ \frac{N'(1)}{\jm}=\frac{4n-6}{9},\qquad \frac{J'(1)}{\jm}=\frac{4n}{9},
+\end{equation}
+and \eqref{eq:leading} gives \(N_m=8^{n-1}\), \(J_m=(3n-2)\,8^{n-1}\).
+
+\section{A stable prefix for large kinase excess}\label{sec:prefix}
+Let \(\bK(r)\) be the matrix \eqref{eq:K} at the coalesced equilibrium, and let \(\bA_r\) be its
+leading \((n-1)\times(n-1)\) block, the \emph{prefix}. It involves the sites \(1,\dots,n-1\). In
+this section we prove that \(\bA_r\) is Hurwitz for all sufficiently large \(r\), for every
+fixed \(n\ge2\).
+
+\subsection{Limits of the coalesced state}
+By \eqref{eq:qformula} and \eqref{eq:conversion}, as \(r\to\infty\),
+\(Q_i/N_r=J_i+O(1/r)\) and \((B_{\raw})_i/(4rN_r)=J_i+N_i+O(1/r)\), because \(J_r/N_r\) is
+bounded. After the normalization \eqref{eq:normalize},
+\[
+ D_i=\frac{J_i}{J_0}+O(1/r),\qquad \frac{B_i}{r}=\frac{N_i+J_i}{J_0}+O(1/r),
+\]
+and all these quantities are rational functions of \(r\). By \eqref{eq:states} and
+\eqref{eq:coalstate}, \(Y_i=D_{i-1}/D(1)\), \(S_i=(D_i+D_{i-1})/D(1)\) and \(C_i=B_{i-1}/D(1)\).
+Define
+\begin{equation}\label{eq:limits}
+ d_i=\frac{N_i+J_i}{\jm}\ (0\le i<n),\qquad
+ \bar y_i=\frac{J_{i-1}}{\jm}\ (1\le i\le n),\qquad \bar y_0=\bar y_{n+1}=0,\qquad
+ \bar S_i=\bar y_i+\bar y_{i+1}.
+\end{equation}
+Then, as \(r\to\infty\), the entries of \(\by,\bS,\bc\) satisfy
+\begin{equation}\label{eq:limitstate}
+ y_i\to\bar y_i,\qquad S_i\to\bar S_i,\qquad \frac{c_i}{r}\to d_i\ (i<n),\qquad c_n=0,
+\end{equation}
+with errors \(O(1/r)\). By \eqref{eq:moments},
+\begin{equation}\label{eq:vmu}
+\begin{gathered}
+ \sum_{i<n}d_i=2,\qquad \sum_{i=0}^n\bar y_i=1,\qquad
+ \mu:=\frac12\sum_{i<n}i\,d_i=\frac{4n-3}{9},\\
+ v:=\bar y_n=\frac{J_m}{\jm}=(3n-2)\Bigl(\frac29\Bigr)^{n-1}\in(0,1).
+\end{gathered}
+\end{equation}
+Here \(v<1\) because \(J_m<J(1)\). We also use three identities that hold exactly for every
+\(r\): by \eqref{eq:coalstate} and \eqref{eq:freeinventory},
+\begin{equation}\label{eq:exact}
+ \sum_ic_i=2r-1,\qquad \sum_iy_i=1,\qquad \sum_iS_i=2,\qquad S_n=y_n ,
+\end{equation}
+the last because \(t_n=D_{n-1}\) and \(f=1\).
+
+\subsection{The singular limit of the mass matrix}
+By \eqref{eq:mass} and \eqref{eq:limitstate}, \(\bM=r\bM_0+\bM_1(r)\), where \(\bM_1(r)\)
+converges as \(r\to\infty\) and
+\[
+ \bM_0=\begin{pmatrix}\diag(d)-\tfrac12dd^{T}&0\\0&0\end{pmatrix},\qquad d=(d_0,\dots,d_{n-1})^{T}.
+\]
+By the Cauchy--Schwarz inequality and \(\sum_id_i=2\), \(\bM_0\) is positive semidefinite, and
+its kernel \(\mathcal V\) is spanned by \(\one_{<n}=(1,\dots,1,0)^{T}\) and \(\be_n\). The
+inverse of \(\bM\) is therefore of order one on \(\mathcal V\) and of order \(1/r\) on
+\(\mathcal V^{\perp}\), and the limit of \(r\bM^{-1}\) on \(\mathcal V^\perp\) involves the
+order-one part of \(\bM\) on \(\mathcal V\). The next lemma shows that this part is controlled
+by the exact identities \eqref{eq:exact} alone.
+
+\begin{lemma}[Kernel compression]\label{lem:compression}
+As \(r\to\infty\),
+\begin{equation}\label{eq:compression}
+ \begin{pmatrix}\one_{<n}&\be_n\end{pmatrix}^{T}\bM\begin{pmatrix}\one_{<n}&\be_n\end{pmatrix}
+ \ \longrightarrow\
+ \begin{pmatrix}
+ \tfrac72-v-\tfrac12v^2&\tfrac12v(v-1)\\[2pt] \tfrac12v(v-1)&2v-\tfrac12v^2
+ \end{pmatrix},
+\end{equation}
+and the limit is positive definite, with determinant \(v(7-4v)\).
+\end{lemma}
+\begin{proof}
+By \eqref{eq:mass} and \eqref{eq:exact},
+\(\bM\one=\bS+\bc\,(1-\tfrac{2r-1}{2r})+\by\,(1-\tfrac12)=\bS+\bc/(2r)+\by/2\). Hence
+\(\one^{T}\bM\one=2+\tfrac{2r-1}{2r}+\tfrac12\to\tfrac72\),
+\(\one^{T}\bM\be_n=S_n+\tfrac12y_n\to\tfrac32v\), and
+\(\be_n^{T}\bM\be_n=S_n+y_n-\tfrac12y_n^2\to2v-\tfrac12v^2\). With \(\one_{<n}=\one-\be_n\)
+these give \eqref{eq:compression}. The diagonal entries are positive for \(0<v<1\), and the
+determinant is
+\((\tfrac72-v-\tfrac12v^2)(2v-\tfrac12v^2)-\tfrac14v^2(v-1)^2=7v-4v^2\).
+\end{proof}
+
+\begin{lemma}[Scaled inverse]\label{lem:inverse}
+Let \(\bchi\in\mathcal V^{\perp}\), that is, \(\chi_n=0\) and \(\sum_{i<n}\chi_i=0\). Then
+\(\btau^{(r)}:=r\bM^{-1}\bchi\) converges as \(r\to\infty\) to the vector \(\btau\) with
+\begin{equation}\label{eq:tau}
+ \tau_i=\frac{\chi_i}{d_i}+\tau_\ast\quad(i<n),
+\end{equation}
+where the constants \(\tau_\ast\) and \(\tau_n\) are the unique solution of
+\begin{equation}\label{eq:alpha_beta}
+ \tfrac32T+U+\tfrac12(7-3v)\,\tau_\ast+\tfrac32v\,\tau_n=0,\qquad
+ (4-v)\,\tau_n=T+(1-v)\,\tau_\ast,
+\end{equation}
+with \(T=\sum_{i<n}\bar y_i\chi_i/d_i\) and \(U=\sum_{i<n}\bar y_{i+1}\chi_i/d_i\). Moreover, with
+\(\bh_\infty=\lim_{r\to\infty}\bh\),
+\begin{equation}\label{eq:feedbacklimit}
+ \bh_\infty^{T}\btau=2\tau_n-\tau_\ast=\frac{10\,T+(2+v)\,U}{2(7-4v)} .
+\end{equation}
+\end{lemma}
+\begin{proof}
+\emph{Convergence.} In an orthonormal basis adapted to \(\mathcal V^{\perp}\oplus\mathcal V\),
+\[
+ \bM=\begin{pmatrix}r\mathbf A_0+\mathbf A_1&\mathbf B_1\\ \mathbf B_1^{T}&\mathbf C_1\end{pmatrix},
+\]
+where \(\mathbf A_0\) is positive definite and does not depend on \(r\), where
+\(\mathbf A_1,\mathbf B_1,\mathbf C_1\) converge as \(r\to\infty\), and where the limit of
+\(\mathbf C_1\) is positive definite by Lemma~\ref{lem:compression}. Solving
+\(\bM\btau^{(r)}=r\bchi\) with \(\bchi=(\bchi_\perp,0)\) by elimination of the second block
+gives the \(\mathcal V^\perp\)-component
+\(\bigl(\mathbf A_0+r^{-1}(\mathbf A_1-\mathbf B_1\mathbf C_1^{-1}\mathbf B_1^{T})\bigr)^{-1}\bchi_\perp\)
+and the \(\mathcal V\)-component \(-\mathbf C_1^{-1}\mathbf B_1^{T}\) times it. Both converge.
+
+\emph{Identification.} Dividing \(\bM\btau^{(r)}=r\bchi\) by \(r\) and letting \(r\to\infty\)
+gives \(\bM_0\btau=\bchi\), that is,
+\(d_i\tau_i-\tfrac12d_i\,(d^{T}\btau)=\chi_i\) for \(i<n\), which is \eqref{eq:tau} with some
+constant \(\tau_\ast\). Two further equations hold exactly for every \(r\), because
+\(\one^{T}\bchi=\be_n^{T}\bchi=0\):
+\[
+ (\bM\one)^{T}\btau^{(r)}=0,\qquad (\bM\be_n)^{T}\btau^{(r)}=0 .
+\]
+By the proof of Lemma~\ref{lem:compression}, \(\bM\one\to\bar\bS+\tfrac12(d,0)+\tfrac12\bar\by\)
+and \(\bM\be_n\to2v\,\be_n-\tfrac12v\,\bar\by\). Inserting \eqref{eq:tau}, the first equation
+becomes
+\[
+ \sum_{i<n}\bigl(\bar y_i+\bar y_{i+1}+\tfrac12d_i+\tfrac12\bar y_i\bigr)
+ \Bigl(\frac{\chi_i}{d_i}+\tau_\ast\Bigr)+\tfrac32v\,\tau_n=0 .
+\]
+Since \(\sum_{i<n}\chi_i=0\), \(\sum_{i<n}\bar S_i=2-v\), \(\sum_{i<n}d_i=2\) and
+\(\sum_{i<n}\bar y_i=1-v\), this is the first equation of \eqref{eq:alpha_beta}. The second
+limit equation is \(2v\,\tau_n-\tfrac12v\bigl(T+(1-v)\tau_\ast+v\tau_n\bigr)=0\); dividing by
+\(v/2\) gives the second equation of \eqref{eq:alpha_beta}. The determinant of the system
+\eqref{eq:alpha_beta} in \((\tau_\ast,\tau_n)\) is \(\tfrac12(7-3v)(4-v)+\tfrac32v(1-v)=14-8v>0\),
+and Cramer's rule gives
+\begin{equation}\label{eq:cramer}
+ \tau_\ast=-\frac{6T+(4-v)U}{14-8v},\qquad \tau_n=\frac{2T-(1-v)U}{14-8v}.
+\end{equation}
+No next-order coefficient of \(\bc\) enters.
+
+\emph{Feedback.} By \eqref{eq:dj} and \eqref{eq:limitstate},
+\(\bh_\infty=\tfrac12\bar\by-\tfrac12(d,0)\). Hence
+\(\bh_\infty^{T}\btau=\tfrac12\bigl(T+(1-v)\tau_\ast+v\tau_n\bigr)-\tfrac12\cdot2\tau_\ast\),
+where we used \(\sum_{i<n}\chi_i=0\) and \(\sum_{i<n}d_i=2\). By the second equation of
+\eqref{eq:alpha_beta} the first bracket equals \((4-v)\tau_n+v\tau_n=4\tau_n\), so
+\(\bh_\infty^{T}\btau=2\tau_n-\tau_\ast\), and \eqref{eq:cramer} gives \eqref{eq:feedbacklimit}.
+\end{proof}
+
+\subsection{The limiting prefix}
+Let \(\bR_0\) be the \((n-1)\times n\) incidence matrix of the path on the levels
+\(0,\dots,n-1\), and let
+\begin{equation}\label{eq:pathH}
+ \bH=\bR_0\,\diag(1/d_0,\dots,1/d_{n-1})\,\bR_0^{T}\in\R^{(n-1)\times(n-1)} .
+\end{equation}
+It is symmetric, positive definite and tridiagonal, with diagonal entries
+\(1/d_{i-1}+1/d_i\) and off-diagonal entries \(-1/d_i\).
+
+\begin{lemma}[Limiting prefix]\label{lem:prefixlimit}
+As \(r\to\infty\),
+\begin{equation}\label{eq:Bstar}
+ r\bA_r\ \longrightarrow\ \bB_*=-\bH+\one\bphi^{T},\qquad
+ \phi_i=g_i-g_{i-1}\quad(1\le i\le n-1),
+\end{equation}
+where
+\begin{equation}\label{eq:gi}
+ g_i=\frac{10\,\bar y_i+(2+v)\,\bar y_{i+1}}{2(7-4v)\,d_i}
+ =\frac{10J_{i-1}+(2+v)J_i}{2(7-4v)(N_i+J_i)}\qquad(0\le i\le n-1).
+\end{equation}
+Every entry of \(\bphi\) is strictly positive.
+\end{lemma}
+\begin{proof}
+Column \(k\le n-1\) of \(\bK\) is \((-\bR+\one\bh^{T})\bM^{-1}\bchi\) with
+\(\bchi=\bR^{T}\be_k=\be_k-\be_{k-1}\in\mathcal V^{\perp}\). By Lemma~\ref{lem:inverse}, \(r\)
+times this column converges to \(-\bR\btau+(\bh_\infty^{T}\btau)\one\). In the rows
+\(i\le n-1\), \((\bR\btau)_i=\tau_i-\tau_{i-1}=\chi_i/d_i-\chi_{i-1}/d_{i-1}\), since
+\(\tau_\ast\) cancels; this is the \((i,k)\) entry of \(\bH\). For the feedback,
+\eqref{eq:feedbacklimit} with \(\chi_k=1\), \(\chi_{k-1}=-1\) gives
+\(T=\bar y_k/d_k-\bar y_{k-1}/d_{k-1}\) and \(U=\bar y_{k+1}/d_k-\bar y_k/d_{k-1}\), hence
+\(\bh_\infty^{T}\btau=g_k-g_{k-1}\).
+
+For the sign, write
+\[
+ g_i=\frac{1}{2(7-4v)}\cdot\frac{J_i}{N_i+J_i}\cdot\Bigl(10\,\frac{J_{i-1}}{J_i}+2+v\Bigr).
+\]
+By Lemma~\ref{lem:ratios}, which applies to coalesced roots, the second factor is positive and
+nondecreasing in \(i\) and the third is positive and strictly increasing. Hence \(g_i\) is
+strictly increasing and \(\phi_i>0\).
+\end{proof}
+
+Thus the limiting transverse dynamics is a diffusion-like stable matrix \(-\bH\) on a weighted
+path, perturbed by a rank-one \emph{positive} feedback: every column of \(\one\bphi^{T}\) is
+positive. Positive feedback can destabilize, and the question is whether its gain is below
+one.
+
+\begin{lemma}[Strict feedback deficit]\label{lem:gain}
+Let \(\bz=\bH^{-1}\one\) and \(G=\bphi^{T}\bz\). Then \(\bz>0\) entrywise,
+\begin{equation}\label{eq:gainfinal}
+ G=\frac{10\bigl[\tfrac43-v(n-\mu)\bigr]+\tfrac13(2+v)}{14-8v},\qquad
+ 1-G=\frac{v\,(50n-45)}{9\,(14-8v)}>0,
+\end{equation}
+and \(\bB_*\) is Hurwitz. Consequently \(\bA_r\) is Hurwitz for all sufficiently large \(r\).
+\end{lemma}
+\begin{proof}
+The matrix \(\bH\) is a nonsingular symmetric \(M\)-matrix: it is positive definite with
+nonpositive off-diagonal entries. Since it is irreducible, \(\bH^{-1}\) is entrywise positive
+\cite[Ch.~6]{BermanPlemmons}, so \(\bz>0\).
+
+To compute \(G\), let \(\psi=\diag(1/d)\bR_0^{T}\bz\in\R^{n}\) be the \emph{level potential} of
+\(\bz\). Then \(\bR_0\psi=\bH\bz=\one\), so \(\psi_i-\psi_{i-1}=1\), and
+\(\sum_{i<n}d_i\psi_i=(\bR_0\one)^{T}\bz=0\). With \eqref{eq:vmu} this gives \(\psi_i=i-\mu\).
+The map that sends \(\bchi\) to \(\bh_\infty^{T}\btau\) is linear, and \(\phi_k\) is its value
+at \(\bchi=\bR_0^{T}\be_k\) (extended by \(\chi_n=0\)). Therefore \(G=\sum_k\phi_kz_k\) is its
+value at \(\bchi=\bR_0^{T}\bz\), for which \(\chi_i/d_i=\psi_i\). By \eqref{eq:feedbacklimit},
+\(G=\bigl(10T+(2+v)U\bigr)/(14-8v)\) with
+\begin{align*}
+ T&=\sum_{i<n}\bar y_i(i-\mu)=\frac1\jm\sum_{k=0}^{n-2}J_k(k+1-\mu)
+   =\frac{J'(1)}{\jm}+(1-\mu)-v(n-\mu)=\frac43-v(n-\mu),\\
+ U&=\sum_{i<n}\bar y_{i+1}(i-\mu)=\frac{J'(1)}{\jm}-\mu=\frac13,
+\end{align*}
+by \eqref{eq:moments} and \eqref{eq:vmu}. This is the first formula in \eqref{eq:gainfinal}. With
+\(n-\mu=(5n+3)/9\),
+\[
+ (14-8v)(1-G)=14-8v-\tfrac{40}{3}+10v(n-\mu)-\tfrac23-\tfrac13v
+ =v\Bigl(\tfrac{10(5n+3)}{9}-\tfrac{25}{3}\Bigr)=\frac{v(50n-45)}{9}.
+\]
+Now \(\bB_*\bz=-\bH\bz+\one\,(\bphi^{T}\bz)=-(1-G)\one<0\). The matrix \(\bB_*\) has nonnegative
+off-diagonal entries, because those of \(-\bH\) are nonnegative and \(\bphi>0\). After the
+similarity \(\diag(\bz)^{-1}\bB_*\diag(\bz)\) it has nonnegative off-diagonal entries and
+strictly negative row sums, so all its Gershgorin discs lie in the open left half-plane. Thus
+\(\bB_*\) is Hurwitz. The last claim follows from \eqref{eq:Bstar} and the continuity of
+eigenvalues.
+\end{proof}
+
+\section{Lifting, splitting, and the proof of the main theorems}\label{sec:lift}
+All choices in this section are made in the order
+\begin{equation}\label{eq:order}
+ n\ \text{fixed}\ \longrightarrow\ r\ \text{large}\ \longrightarrow\
+ \omega_n>0\ \text{small}\ \longrightarrow\
+ \varepsilon>0\ \text{small}\ \longrightarrow\ \delta>0\ \text{small}.
+\end{equation}
+No scale or spectral gap uniform in \(n\) is required.
+
+\begin{lemma}[A slow final link]\label{lem:slowlink}
+Let \(r\ge3n/2\) be such that \(\bA_r\) is Hurwitz. For all sufficiently small \(t>0\), the
+matrix \(\bK(r)\diag(1,\dots,1,t)\) has an algebraically simple eigenvalue \(0\), and its other
+\(n-1\) eigenvalues lie in the open left half-plane.
+\end{lemma}
+\begin{proof}
+For \(t=0\) the last column vanishes, so the characteristic polynomial is
+\(\lambda\det(\lambda-\bA_r)\): a simple zero and \(n-1\) stable roots. By continuity, for small
+\(t>0\) there are \(n-1\) eigenvalues in the open left half-plane and exactly one, counted with
+multiplicity, in a small disc around \(0\). By Lemma~\ref{lem:Ksingular},
+\(\det\bigl(\bK\diag(1,\dots,1,t)\bigr)=t\det\bK=0\), so that eigenvalue is \(0\).
+\end{proof}
+
+\begin{lemma}[Full spectral lifting]\label{lem:fullspectral}
+For every \(n\ge2\) there are an admissible \(r\) and positive kinetics such that the
+restricted Jacobian at the coalesced equilibrium \(X_\circ\) has an algebraically simple
+eigenvalue \(0\) and \(3n-1\) eigenvalues in the open left half-plane.
+\end{lemma}
+\begin{proof}
+Choose \(r\) by Lemma~\ref{lem:gain} and \(t\) by Lemma~\ref{lem:slowlink}. Realize the currents
+\(\bomega=(1,\dots,1,t)\) at \(X_\circ\) by \(\theta_i=\omega_i/Y_i\), take \(b_i=\beta_i=1\) in
+\eqref{eq:freedom}, and apply \eqref{eq:relaxation}. By Proposition~\ref{prop:slow}(iii), for
+small \(\varepsilon\) the matrix \(\JS_\varepsilon\) has \(2n\) eigenvalues with large negative
+real part, \(n-1\) eigenvalues near the stable eigenvalues of \(\bK\diag(\bomega)\), and exactly
+one eigenvalue, counted with multiplicity, in a small disc around \(0\). By
+\eqref{eq:detzero} that eigenvalue is \(0\).
+\end{proof}
+
+Geometric simplicity of the zero eigenvalue follows from the equilibrium geometry alone, but
+algebraic simplicity, which excludes a Jordan block, does not; here it is obtained together
+with transverse stability from the kinetics.
+
+\begin{proof}[Proof of Theorem~\ref{thm:split}]
+Fix \(n\ge2\) and the parameters \(r,t,\varepsilon\) of Lemma~\ref{lem:fullspectral}, and let
+\(\theta_i^\circ=\omega_i/Y_i(X_\circ)\) be the catalytic scales used there. For real
+\(\xi_0<\dots<\xi_{2m}\) and small \(\delta>0\) put \(x_j=3+\delta\xi_j\). Since \(r\ge3n/2\), the
+hypotheses \(r>\max_ju_j\) and \(4r+\sqrt{1+8r}\ge\sum_jx_j\) of Theorem~\ref{thm:count} hold
+with strict inequality at \(\delta=0\), hence for small \(\delta\), at the same \(r\); the
+coefficients of \(N,J,Q,B,D\) are polynomial or rational in \(\delta\). Define the kinetics of the split system by
+\eqref{eq:freedom} with the \emph{frozen} scales \(\theta_i=\theta_i^\circ\) and
+\(b_i=\beta_i=1\), followed by \eqref{eq:relaxation} with the same \(\varepsilon\). For each
+\(\delta\) this is one rate vector \(\kappa(\delta)\), common to all the equilibria
+\(X_0(\delta),\dots,X_{2m}(\delta)\) of Theorem~\ref{thm:count}, and as \(\delta\to0\) the rate
+vector converges to that of Lemma~\ref{lem:fullspectral} and every \(X_j(\delta)\) converges
+to \(X_\circ\). All these objects are real-analytic in \(\delta\).
+
+Let \(\JS_j(\delta)\) be the restricted Jacobian at \(X_j(\delta)\). By continuity of the
+spectrum and Lemma~\ref{lem:fullspectral}, for small \(\delta\) it has \(3n-1\) eigenvalues
+with real parts below a negative constant, and one eigenvalue \(\lambda_j(\delta)\) in a small
+disc around \(0\). The latter is real, since the nonreal eigenvalues of a real matrix occur in
+conjugate pairs, and it is simple, hence analytic in \(\delta\) \cite[Ch.~II]{Kato}. Let
+\(\Theta_j(\delta)\) be the product of the other eigenvalues; then
+\(\det\JS_j=\lambda_j\Theta_j\), and \(\Theta_j(\delta)\to\Theta_\circ\), the product of the
+nonzero eigenvalues at \(X_\circ\), whose sign is \((-1)^{3n-1}=(-1)^{n+1}\). By
+Propositions~\ref{prop:det} and~\ref{prop:slope},
+\[
+ \det\JS_j(\delta)=(-1)^{n}\,\Bigl(\prod_i(b_i+c_i)\alpha_i\gamma_i\Bigr)F^{n}u_jM(u_j)\,
+ \frac{16(1+u_j)(\cs x_j+\es)}{(r-u_j)(x_j+1)^2D_{\raw}(u_j)}\;\delta^{2m}\prod_{k\ne j}(\xi_j-\xi_k),
+\]
+where all quantities are those of the split system. As \(\delta\to0\) every factor in front of
+\(\delta^{2m}\) converges to a positive limit that does not depend on \(j\): \(F\to1\),
+\(u_j\to1\), \(x_j\to3\), and \(M(1)=L(1)+(r-1)D(1)>0\). Dividing by \(\Theta_j\) gives
+\eqref{eq:splitlaw} with
+\begin{equation}\label{eq:aconst}
+ a=\frac{4\,\bigl(2rN_r+J_r\bigr)\,M(1)}{(r-1)\,D_{\raw}(1)\,|\Theta_\circ|}\,
+ \prod_{i=1}^n(b_i+c_i)\,\alpha_i\,\gamma_i\ >0,
+\end{equation}
+where all quantities are evaluated for the coalesced system of Lemma~\ref{lem:fullspectral}.
+Finally \(\prod_{k\ne j}(\xi_j-\xi_k)\) has the sign \((-1)^{2m-j}=(-1)^{j}\).
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}\textup{(b)} and \textup{(c)}]
+Let \(n\ge2\). In the preceding proof choose rational \(\xi_j\). For sufficiently small
+\(\delta>0\), the system with rate vector \(\kappa(\delta)\) and totals \((2r,2,2r+2)\) has
+exactly the \(2n-1\) equilibria \(X_j(\delta)\) by Theorem~\ref{thm:count}; each of them has
+\(3n-1\) eigenvalues in the open left half-plane and a real eigenvalue \(\lambda_j\ne0\), so it
+is hyperbolic; and \(\lambda_j<0\) exactly for the \(n\) even indices. Hence there are \(n\)
+sinks and \(n-1\) saddles with one unstable direction. This agrees with the degree count
+\(n_+-n_-=1\) of Section~\ref{sec:ceiling}.
+
+The conditions on \(r\), \(t\), \(\varepsilon\) and \(\delta\) in \eqref{eq:order} are open, so
+these parameters can be chosen rational, and then all rate constants, totals and concentrations
+are rational, because they are rational functions of \(x_j,r,t,\varepsilon\) with rational
+coefficients. Hyperbolic equilibria and the numbers of their stable and unstable eigenvalues
+persist under small perturbations of all \(6n+3\) parameters, and by Theorem~\ref{thm:WS} no
+further equilibria appear. This gives the open set in (c).
+
+For \(n=1\), let all six rate constants be \(1\). The state
+\((S_0,S_1,E,F,C_1,Y_1)=(2,2,1,1,1,1)\) is an equilibrium with totals \((2,2,6)\), it is the
+only one in its class by Theorem~\ref{thm:WS}, and in the coordinates \((S_1,C_1,Y_1)\)
+\[
+ \JS=\begin{pmatrix}-1&1&3\\-1&-5&-1\\1&0&-4\end{pmatrix},\qquad
+ \det(\lambda-\JS)=\lambda^3+10\lambda^2+27\lambda+10 .
+\]
+The Routh array has first column \((1,10,26,10)\), so \(\JS\) is Hurwitz \cite[Ch.~XV]{Gantmacher}.
+
+With part (a), proved in Section~\ref{sec:ceiling}, and Theorem~\ref{thm:count}, this gives
+\(\capE=2n-1\) and \(n\le\capH\le\capC\le n\) for every \(n\ge1\).
+\end{proof}

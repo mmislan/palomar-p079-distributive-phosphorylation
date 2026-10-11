@@ -1,0 +1,3136 @@
+{
+  "research_root": "proofs.PhosphorylationStableCapacity.ExactCapacity435",
+  "research_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "palomar_target_toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "external_repository": "DifferentialGeometry",
+  "external_commit": "777299070a5529e96345e0033979706fd00c7e62",
+  "external_license": "Apache-2.0",
+  "files": [
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BoundedLipschitzGlobalCurve.lean",
+      "sha256": "6996902a29aa71f5c1f46c8de1c645938523ef66e3d8b98d6b6cd92842b551ca",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationSharpness/Source.lean",
+      "sha256": "50b31d6d69dac67887c4da9018c52082ca87895f4ef0888ddf736ddd167ae821",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/Compatibility.lean",
+      "sha256": "cf4a8cd77ad91d53ea4eafb4d096ff581661a1b9a7eeaf6b264982c6835748b3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/Jacobian.lean",
+      "sha256": "88f6e0d506a57f58950bc0ad81f3e5888a1fdc6f1e7be642ab69b33bb3a4474a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FullDerivative.lean",
+      "sha256": "78f577d5365b5337712dcfc86a96c9e2da1f1ed85c410fcab928ab1fcb80e519",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedFieldCurrent.lean",
+      "sha256": "64bf260d5c59bc801c47fc3a4a6e72df08c6ffa5244bc7670818fbe3a3e46f01",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PathLaplacian.lean",
+      "sha256": "6633a6fdf4dae945aac273bdd395bbfe87a8fea10d234ff8bf4e1ea20f307f40",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PathIncidence.lean",
+      "sha256": "0e395d0251a65d90652d5a25c9acc139d39287c06d4e1718a9ac58487664d4ab",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ProjectedPathIncidence.lean",
+      "sha256": "02b37e0ba6a20e81fcfac1228516b76037a0206c0209830b3e40f909e9067b4f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BoundaryEquilibrium.lean",
+      "sha256": "f6ea4dab4ea076ec415e07431f16cb6b56b2d7c5fa74e3c5a9cb76bda50539b4",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassPolytopeBounds.lean",
+      "sha256": "2270e88b1bd9bb7ff3ef8883f5f2f26ff4245d48dbe4b6b6f05be304b429c4db",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassBoundaryInward.lean",
+      "sha256": "6213f08badda7807a0dcf06afe63f03d70db3e91e338466b2ce31bf44e0ad52e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FullFieldCutoff.lean",
+      "sha256": "474f6424ddcc95fe524369fa2f85e70002140aad06bf0ea28bd5a44c1ef5182c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/NegativeDerivativeBarrier.lean",
+      "sha256": "9d34fb7ad6fe97d6e6122047c8423581c438528959e47df33e0af98a1d417e4a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FullCutoffPositivity.lean",
+      "sha256": "b9d7be8005c6c6984860336a499e4192baa2c82065c9f2b3aa45d9ed1c6381b0",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FullCutoffConservation.lean",
+      "sha256": "6beed32f595f7802982f96be375b2a6a77706bfab1b00be2319cded23ca9a46b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassPositiveCenter.lean",
+      "sha256": "4bd25fa7203cdfe3526398d72e598241e1bdcfbed6dd8ea4a9f4e6868c8c01a3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassPolytopeTopology.lean",
+      "sha256": "bdc5253580225253480377db6550beaf50a7cd8bc23588dad9ec0848712ce5a8",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FullPhysicalForwardFlow.lean",
+      "sha256": "3f48b12318a4b2cd8c9b27cfbefd8873d878810a4abc52075784581e07a22dbe",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationSharpness/Recurrence.lean",
+      "sha256": "4c4554a2068f930cd04d85e3b839986bb0ef36e247479801abb20d10d67d70b4",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationSharpness/Conversion.lean",
+      "sha256": "6a3f2f552baccdb1fde2418b956e88acce0ca1b7abe22f7e6d55e6d69cb0b603",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationSharpness/PublicationAlgebra.lean",
+      "sha256": "de0233c5995d2d6140525885ff25f6305118fc280043c3a60520fb52ddcd78eb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/StructuralAlgebra.lean",
+      "sha256": "0dab99ccf024e325d209c421c843d6ee6c3d1eddbc65cee279a8aa6a7c1f4388",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RelaxationRates.lean",
+      "sha256": "79c41fa85eca49e55ac71dc30a2c9840c5f21bc65fa81a68b9a1c0d42f0d99b4",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RelaxationFieldBlocks.lean",
+      "sha256": "b92ebcee32f032e67fb93d050180347d157cde77300e495adf78dc405eca46e4",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedClassChart.lean",
+      "sha256": "fe1587a2abc9948f4ee69a09418274d4299d6b7164d7521a432fd8ac2a7fc79a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedChartLinear.lean",
+      "sha256": "773f0a67d8c85fad3cf330ae5052b994cee7f6f28ea4f3653c8096ead4da40dc",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedJacobianConjugacy.lean",
+      "sha256": "aa57f2b0a19780bd1af3f3d558fc7e70732d3b27758857a34575514f511a5c20",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedFieldDifferentiability.lean",
+      "sha256": "75d44cf4e0a5f1429a5015182fff19680057168ac168a464781ea28f7113079a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedDerivativeBlockScaling.lean",
+      "sha256": "a7094dea1ba632e97c410fa697e41b76049a33dec7346fb5af9196a237ac03cc",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedFastField.lean",
+      "sha256": "79c419e0b61728c3809ca1a9d584fd46dc7605734fb95f681362bcf42ee7bef5",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedFastBalance.lean",
+      "sha256": "43fa1a0ae9be128159566572307710315a40c7543b56e20a2de01fcc66b9866b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingEnergy.lean",
+      "sha256": "9a1b027a917ce00388f8f488ecf79c78ecca197c529811c47d551dbb881bcb37",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedJacobianFourBlocks.lean",
+      "sha256": "b78b6fbc3ea6f91dc2ff79cc65579c8a31ffe5cd6064b13fcc59e6cfe3f31194",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedJacobianBlockAction.lean",
+      "sha256": "12600ceddf7b3a510283900644d3235368fecd5a4cd177f7a049d022a4087b0e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingIncidence.lean",
+      "sha256": "b013fd5dc8b2e91c0972985ca86ded3604832a59ff6df28b36bc996b59e8b90b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingAffinity.lean",
+      "sha256": "55f161a970ca583aafeeac5e5f6b6c0a58e38dcd917232b86b58dc620e4422a0",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingDissipation.lean",
+      "sha256": "e6ee4abbbdaa9547ebd3fc4ce570a763a5eb4ed0cc27ddea911bbaa3a58d85db",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingLinearMap.lean",
+      "sha256": "8fc96532cfb152e7e9b10a1a29793d9fafaf2c085eb9a792b88fe7bbd00becfc",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingInverse.lean",
+      "sha256": "c87f0e5746aab59762c6cb6d24139c9faf030fcc61668f5590c8311863a9b621",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingFactorization.lean",
+      "sha256": "0e00b4b6d15d3e397cc4b182e15d2174060e0efea09774a8861b896dc37cdd4e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingMatrixFactorization.lean",
+      "sha256": "5a4c18fb2408e5088d98bce62a0c67aae7d763be1296330aee6f4796052866f6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingStatePerturbation.lean",
+      "sha256": "a1e0d502d42ea496380fb5779414b70dc57a841837fb6376aca346a17bd5f90a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingFieldDifference.lean",
+      "sha256": "a6a1018f6cb2b5a26c713e014a004a40779d0ab923ced7f06a805b7ae9d42071",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingLinearTerm.lean",
+      "sha256": "c523b8c0f2da1a5fda65f1c52ebf92d970d470137cd5f81991fed4ad1c505a70",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingFieldAffinity.lean",
+      "sha256": "2a4b1871661f62d40c12137648a1533c16d82648adde685623ac424407a24500",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingScaling.lean",
+      "sha256": "d336539009712c645f540d1ea8dd3270efcc46c769b9368e576198fecc4915f6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingQuadraticPath.lean",
+      "sha256": "087622d4fd42b586cfeffb2d59af6f3707ac3598f84242fa665af67dd1460ee2",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingQuadraticPathD.lean",
+      "sha256": "f87184c91a32f1a5e276797c3cbb948fd8db1306644f845b01e7445cc9e9b435",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingRawCoefficient.lean",
+      "sha256": "0cefae46e6d1b45570fa95e1dc223c26e1f68bcd961c614649ba75ab8f6583b7",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingQuadraticPathEquilibrium.lean",
+      "sha256": "d6e3878470a9fbaf7f6e66e97aa84095e43ccdd884016ad2569ba9dceb94cae9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingLineDerivativeD.lean",
+      "sha256": "dc29d0a089a563a2233332dd5641f9aa58bde3eaeb5a099f5a1a37d15956c01f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingLineDerivativeC.lean",
+      "sha256": "e1d89965c7b36c54db765d5effb2231b31c74264960adb6d9999f91004cb7c5a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedFastFderivBridge.lean",
+      "sha256": "953fb7ec57026da608c1be4f49f50b2ff6106a18406c634a1729e62d9620961d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedFastBlockIdentification.lean",
+      "sha256": "45df2627a0eefced5ab24ea61410735907d4e440832e059c4cdf3849bb88f09d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastSlowScaledLimit.lean",
+      "sha256": "5b5c85e9dc2749b4938927317cb2e31714dbb145ce1053bec6c1b420426463f8",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastSlowEigenElimination.lean",
+      "sha256": "42c5ff490e2e13b23692d81797357f9d47ea7a0203c1a1c9bf3fe54f749b246d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastSlowSpectralLimit.lean",
+      "sha256": "f9151b6c36360206315440555c3fc28a0f018107334c060baec42a8020ec2bfc",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastSlowBoundedness.lean",
+      "sha256": "cfd52323df125e3e80b80769e440139328f02ab503187a0e91df5a5f64a888e5",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastSlowNearZero.lean",
+      "sha256": "2f1ea161cc7161a8e4b333503399fd8e01eef022fe527a978d33adf179ec6ff9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastSlowCharacteristicBlock.lean",
+      "sha256": "02923db3bb42e9914bbbb79299d8754a349f931b9db7ca92b4a430b3fe408d23",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastSlowCharacteristicPositive.lean",
+      "sha256": "774ea2c810dbfd7edf792a3d778242ba8a18259eea82aff549233d06871e6eb3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastSlowPencilPolynomial.lean",
+      "sha256": "19636c8966873df05962e96fd212718450f982adbc1213a8ab90d29ee36531da",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PolynomialCoefficientContinuity.lean",
+      "sha256": "f354d81024521998b0cceb74022127cbf2921973c60a2283ef7f3aa2c611091a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastSlowSpectralTransfer.lean",
+      "sha256": "dc2eae51b8be12b4e75f975972554dba23c83568df024db30bbcdbcadb559eaa",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/MetzlerHurwitz.lean",
+      "sha256": "9cb1f0064ff2b77e0e5cc3b1f291af1a9a82c96ad905b85c1288595a1f3f4275",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/MetzlerWeighted.lean",
+      "sha256": "c8cd1c8dda56fa41c5ef012db011d64bcb8f22992ebef93b3934c25abeabe558",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/HurwitzNonsingular.lean",
+      "sha256": "2b57657fc3d2a0cc744de8a87eea6910a5a020b359a38f17419dcbe5d842a4ed",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastSlowRealComplexMap.lean",
+      "sha256": "04551e5f362b83382e69dd8b4b0e21bf288c45d87126db2572711cac90884eb1",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedJacobianBlockMatrix.lean",
+      "sha256": "205573224d103494ab95f1c0f66ac424073b4626fd42e42707365ace5549959b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedJacobianCharpolyBridge.lean",
+      "sha256": "80458d93075949025531d9bd6742b5e9ce45b658c72a3ed2a529f3902802f203",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedMoments.lean",
+      "sha256": "a497ff7ffe7d9c66e71f2e48de6f9295720f49e69cafaccd649cc7c6febee193",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitRootFamily.lean",
+      "sha256": "a6a329d24469e4dc76f519edca17b335773b4584195bcd7ea2eec1d6e07cc0dc",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationSharpness/Assembly.lean",
+      "sha256": "c77e1596461700899ed91e37623a5a3832ce0eb156ff3428f7d4dec22b328505",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedDerivative.lean",
+      "sha256": "2304106d0d0f8556d9f19c4808f2edcc62daad6beafdad400ac786e86f4ba039",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedMomentInduction.lean",
+      "sha256": "afbe01ac389513b9ec9aef8b29b6b2516797d9640304851ea7f2b1ecf5e7e758",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoefficientMoments.lean",
+      "sha256": "d5b6e889ba19f5daf7e780a8bc7cb712095de60d3632afe6312c2450381e9848",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedCoefficientMoments.lean",
+      "sha256": "1340fed8d612ac1e0e4a7464489ea08f025df3e6256ab44426f60d3cd665dc0c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceNormalizedLimit.lean",
+      "sha256": "19c39114db41eb0d9b44db08fc2cb9d6b3618b673b9ff5a8050a8aff08f8b1cf",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFiniteSource.lean",
+      "sha256": "3cc5a9286465b36a77daf9f3fb30304ddb304b1a16533f00d2571ee6ed09f564",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationSharpness/Resolution.lean",
+      "sha256": "9b9290642cabdfdf57a5ae5b6db7667f7a1fa48f0ccd769aab8d179c730e5904",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitSource.lean",
+      "sha256": "2bbc626850e234f42c94889ff1235f278dd8018e28c132f5e0f2669a6facdafd",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitSourceContinuity.lean",
+      "sha256": "e56f6faf0352a1d8725e65c59cf713858c99de874f20645bdf7dbcd089bbc674",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedSourceFirstMoment.lean",
+      "sha256": "df12e5b2950b91d8260667663cdb7c5d2991c2c698a7a941f90b05c50588ed40",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedSourceSubstrateLimit.lean",
+      "sha256": "db79b16e3980e90f26c75085f7e8e3cf63f22ea54a5c1fd9153d4e056812d7a7",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedLevelWeight.lean",
+      "sha256": "911621902f0612b1eb4b78a8beb2053dd3bbf6bd8f57d1f09097abb9ee7847ef",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedYMoments.lean",
+      "sha256": "f394119a47e688bb6537db51b4827908fdbe6d609dc39bb106264cd072284503",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedSourcePathLimits.lean",
+      "sha256": "2f3733f498c85cb33c8ee8aadd2f138bd7608737a3e4262b733fc6b57566eafe",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedShiftedY.lean",
+      "sha256": "fad2d824be589bb25c35e2441a4d38a0e8656fcbbb54124a8d49a4e0ba8074dc",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PathMatrixBridge.lean",
+      "sha256": "ac6c681239174091feb5cb27630afec3b2d13e692a577088c726b00082baa096",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PathVector.lean",
+      "sha256": "fa3bce96796cf6092e9acd1ba3167eb3cc2c065565119fb3bf022a0ffb945c5f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/KineticFreedom.lean",
+      "sha256": "99042c7304ede135b7e37ddc8b6fa23c815d8dfe1034e8922766648e76dedae7",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/Assembly.lean",
+      "sha256": "0d68bef85065738e5f2a031494a3e4a07b06ae7db48ca57e549d865f7dae36bd",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SpectralCertificate.lean",
+      "sha256": "b0d2910ec97a7e0302d7ad471a59c466048fe956f6e679efbe1f0ee44acfd558",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PathSpectralBridge.lean",
+      "sha256": "9787e81e8efdd657a4fd8447a5106df209d380299adc0d4ba529c88ea261f678",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PathGain.lean",
+      "sha256": "3ce197cf15aa70935fba7af4be66452349941629ce6c66e20fab612d268fc0cb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPathMean.lean",
+      "sha256": "3fd6be3d13154a0b02424db9e5e064e4fbe89f63743ee0efe92a0752cd2a95e8",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedYPrev.lean",
+      "sha256": "a88c577dc3bc5c8cbedc492c538fcda9d8f5554a8036d9abaf6963812b604c60",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedLoadedMassLimit.lean",
+      "sha256": "d9024468021805c98567211c9dae637a5c7ea73a8b2fa0abed7a6371dfaee3f5",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RankOneMassKernel.lean",
+      "sha256": "5a22c1b4d54088fe7c8ad927ac6898a6258428a7fe6a13bf174a6742a012694a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedMassKernel.lean",
+      "sha256": "8b4584c22a70fe328b34c5efa8bd9f5081d46d525c6c1e87162daef1c8a99c09",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFullMassLimit.lean",
+      "sha256": "00f186c73b6262a8a25a28d5b18f107875f9a4ad8d577908a8d52508bbd27336",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedSourceComplexCoefficients.lean",
+      "sha256": "e696711d63e1b0a6bffcf2ccb98c1a2db51de54f8bec00390150fabb8a468a8d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFiniteTotals.lean",
+      "sha256": "21a63ed67c0ee0de94fcbd484dfa93fe22cb11220993841ebd7bc12a26ab9a4e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFullMassKernel.lean",
+      "sha256": "e2d846d4ed8ad6e8975d3cf89d72694924a03356714d7bac8bda2b3305d6027d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedTwoModeBlock.lean",
+      "sha256": "1a522af3cb41063a33010fa483e965ed8fcc63b8cc9291bfaefe080ca6b28bd9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFiniteModeBlock.lean",
+      "sha256": "acb1f34090e69d856dc9cbb484e5c24e065e774b86e4c1214dda11e4628350ec",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedOccupiedFirstMoments.lean",
+      "sha256": "80019fb134e4ad91d6c15eb939cf8f64498f8629a9d9ec91f4c40be12d74d613",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedBindingAlgebra.lean",
+      "sha256": "8da62cd25361101323f26dcc798ecf2cb5a09c3cef1dc9b89800edb308f5dcbb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedBindingDerivative.lean",
+      "sha256": "252d39eae2de71ac25933d81a9fef53542819e42eeb14c7e984c585f869c5f44",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedBindingRealization.lean",
+      "sha256": "6aa6a8f9711ff9e0b76ea72a549e91599fc88d577003705c7e6e9ff29db9961d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedBindingDerivative.lean",
+      "sha256": "5ec15ce474f1415ee77b0bdbc01e25f90398e252d6edfda15cd7760fcb68f507",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedLiteralFeedbackMoments.lean",
+      "sha256": "15adb7b682dbddbb6cf0e57f39575404ae579bc815971872ef8d0a6daf40f66b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedSourceSubstrateMoment.lean",
+      "sha256": "d9e4131b51769c3e4c9b650de7e0b606b6ac9210b602e235d93a809c297e4b2a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedBindingModeRows.lean",
+      "sha256": "d0c2ef163597f429caf4617ef2f73c8c7f3daefe3e304e51234c9b09a9dea83f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedMassModeRows.lean",
+      "sha256": "4b9d8f14d173768cbda08195ff8dd4415681243616b5fc02a02f2a9c38d66221",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedLiteralMassMoments.lean",
+      "sha256": "b958df807e3ef18c0f5da113602dbcdf5f3fe8f6b58714e8d4071210cb26a737",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedCurrentDerivative.lean",
+      "sha256": "981ae852f5c715b50b9d103340f703417979ce7e9850dd4e38daa312faa809a8",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedCurrentDerivative.lean",
+      "sha256": "b3ac6a688567af2815450e2c244e42bffbfe31027c6bc485018ed15fe7c7f411",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedCurrentJacobianMatrix.lean",
+      "sha256": "7ddea70aa2ac5df3975ae39853b598a0aa078b0e25eb2b93f8f30817c605739a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedAffineZeroMode.lean",
+      "sha256": "2a0161109b407f829c1cb685e635e850706ad94fb40d9a67fe3e2b025aaf0ca6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedAffineMassTotalZero.lean",
+      "sha256": "9ddd70b1fbd6d164b8c2a114fcc6ab04cf602ea513e9def6680f00a181164028",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedBindingModeColumns.lean",
+      "sha256": "13b801a9de2928f6e3a1ca56ffb8714e9a04b6e8fb0304d196326df0ca65ef9b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedMassModeColumns.lean",
+      "sha256": "e499fc265bf4928d854de3830b07f9ead373ba06dbe920db137d67e334198794",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedReplacementRows.lean",
+      "sha256": "5bdc699337f61b8ff717f335b777d5a7a37ec844e2b1dd9e31fa415db991ad93",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedReplacementLimit.lean",
+      "sha256": "4662970316be45ac9f2c7df7a187d3c0bcb36f9f5c9bde05691a954ab5a59e8e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedReplacementSourceTotals.lean",
+      "sha256": "09130f950e003a8a77f5bb4f68b363686520e432df10a1027c57834decf542ec",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedReplacementModeRows.lean",
+      "sha256": "3d1722be0c3197b80eb62c7db800cbd76a136abb8f8a4e548563cce5a541665d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RankOneMassRowCompletion.lean",
+      "sha256": "7d587b1c7cfa25c31f4f872690cfbdb646e7d92891650a92a22e25d6e6df778c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedInverseModeElimination.lean",
+      "sha256": "27f29b3de1f1b1568c83519be8d754bb56a8081de7756b96cfc34e6ec3eaaea9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedModeUnique.lean",
+      "sha256": "a7938cf87ebd9999e8eb98f67b817301e05c6d19444250d231c046f2dd921fc4",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedReplacementNonsingular.lean",
+      "sha256": "fec757a0c5033290bdec411deb89c1b350176a5c742f12c4e85637a05a818f41",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedBindingPositive.lean",
+      "sha256": "2417f65ccf7e90e84142db6856045cc720a55b924d4622a19e064fdc15569614",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFullMassPositive.lean",
+      "sha256": "b4d4ed49365ba71345d736caa3fca6e84c6c9b08f8d5ce63fb8393acf7a29742",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedInverseModeRows.lean",
+      "sha256": "8c0458e8dc9c0bb76fe3ca734565d1d4fc442f568ceb82aca74b583540f2a1cd",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedReplacementEquation.lean",
+      "sha256": "858e728d16496b34c72a69e489e3762dfbedd60c7124e345b6830b7dee72b701",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedReplacementInverseLimit.lean",
+      "sha256": "5265015c58881fb3fc25c3ada746dd3b1be35a7fda19f231c360b985b38e700c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedSourceShiftIdentity.lean",
+      "sha256": "222df71a69583151aeb3e16c5422b472b1b508eb56db686f1dfe6353f77bb32d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedInverseParticular.lean",
+      "sha256": "17db94bd341ad41f219d0e39b42861e7b6e5a1179814363f28f24af256d4c2ab",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedInverseOccupiedFormula.lean",
+      "sha256": "84d9e3df2eeaacbb9c057d9a452fafc2dcd1a30c0599a55921a3c39ffce6b62b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedInverseForcingMoments.lean",
+      "sha256": "766007663b7b11d034601dd0691e2c3ef3506c29bb47eb629c5391bba1b27aee",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedInverseModeIdentification.lean",
+      "sha256": "c74505b5ef56703b4eb7d0a81431d64b6f2102715db86ce4ae4f48c472a8bcd5",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedInverseModeLimit.lean",
+      "sha256": "38e5deb3ed15a1984b0509e1c286bf6e20a4c87f85a30680bcea6bbe13a15c77",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedInverseFeedbackWeights.lean",
+      "sha256": "7c5542b3f7e5cd37cff9d27741b1b6c3f76f1e7c65d71cfe864fb9177a607237",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedInverseFeedbackLimit.lean",
+      "sha256": "cdab480dd2d91f2c5b84cb7ba68ae8807211976302beeb8187a12e9e51d89b40",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedInverseFeedbackCurrentForm.lean",
+      "sha256": "e1fa5f22308fec0b1f386b267ebab334de5d1b7e60be312bbc6c6fe99c6768ac",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedScaledEdgeCurrentLimit.lean",
+      "sha256": "ce7b2ed4e20732bc719b7b3bbde1572d0117b90ecafb0d1cc12023848ae92fdb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedScaledEdgeCurrentDerivative.lean",
+      "sha256": "e6d9041933794bca483c4a02b22e37ab36703eaacfe15f809602a023d6486929",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedNormalizedEdgeActionLimit.lean",
+      "sha256": "bc063fedf25c84efa7fdfe132ba2db619a7fa9b8f208f45acf8d6417267ca5f2",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPrefixEdgeForcing.lean",
+      "sha256": "4a5d24e7ab528a611aadb86d56ab3e813adb8746769be6b3a55215a03b3048d9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFeedbackMoment.lean",
+      "sha256": "f90a04eac75f7615aff1b016bf2f97c2ef85316eb73410c4acfc8cee55144ece",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPathGain.lean",
+      "sha256": "7f2cabb28ba22177a51d8a0578ee9a4110763e8694b7bbbe098fcffada1a965e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedSpectralGain.lean",
+      "sha256": "684f96a919b35e5792863b8fab205018709997a3c7313b592099ec4ebef61919",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPrefixEdgeFeedback.lean",
+      "sha256": "73641a017d95c529e12b59806b17284bd61285ee05290b43d72ea7da33099876",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPrefixEdgePathH.lean",
+      "sha256": "1c45cb9067395cee4eaf0cd80d40329a7057a67a4f50d144da52b5254cf03bb8",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFeedbackSignReduction.lean",
+      "sha256": "cdbe143bc356613044ae3868966f81dea19e67f0c296843a1c31f22deafb47cc",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedClosedForm.lean",
+      "sha256": "b431ead02e563c71f4fc9f3bf24e932dfcc275959b370d4c589c8b1edf18a83e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedSecondOrder.lean",
+      "sha256": "2da8b5305c9e4c13795f2c07cfcb1acebbc426e7a02a6c4934f1fb0d71febcbf",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedChebyshevScale.lean",
+      "sha256": "2076ba9de71478fc583465e4685592d2557229ecb891854cbc1e41f9090cf013",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedChebyshevTrig.lean",
+      "sha256": "b8ef396581488acf902ddc70b651b2b2d740206cd0b605c0e8a1017aee1b2c10",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedChebyshevZeros.lean",
+      "sha256": "67790d9073e872d71059eba4b47df559ddeb61f98d04d30a7c2d726f16fcc547",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedChebyshevRoots.lean",
+      "sha256": "671d775fa3d65a65b1fa74b0f07dc68cebcfad271d1497f6cd3b751f481a4d7d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedChebyshevRootOrder.lean",
+      "sha256": "6b01283718edb9a29c49fe4e905c22f3a2fcff1f66afbfe06135449a338e51d1",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedChebyshevAllRoots.lean",
+      "sha256": "eaa3b8ad00b39f88b4fd28e683b4e18ec278bd5095e7c83218e94531c46c94b9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedJAtNRoots.lean",
+      "sha256": "b124123b52d2f5abb5c28d9eff2427789d9371bf9e6aa5cdb4ee2dde7c2afc50",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedJRootSign.lean",
+      "sha256": "46afec37083b368062aba9291447b00557e334c93f8e86bfe873d3936bc615a2",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedJRootAlternation.lean",
+      "sha256": "775a041d3ef6c605bc5f74ff8123e288689353a8e9c8f1fd8f9ef2b8abaaff3f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedJInterlacingIntervals.lean",
+      "sha256": "47c6cf1ee8f3f3a7970a0e9f25c8652bd0858e3f80953b36d4d8b3b81bb8acfa",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedJOuterInterval.lean",
+      "sha256": "94a91c64163f807d037a7c843262d719af336ae3e498f9e3fb3068b34bde770c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedJAllRoots.lean",
+      "sha256": "f816bd8e128f0251e877fb6e1c4ac86f9bab7bc2f46892a0dd48eec51d2827eb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedCoefficientRatioFactor.lean",
+      "sha256": "23e11eb264c3acf06c4c2f6798ecff397691ddbcc4dd4ef4dee70b7885d870ff",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFactorMatching.lean",
+      "sha256": "a1fbed2a2b2d9fded632710e6423ce89c6b5731233f7a2d3d2251b9389d67128",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedSourceFactorization.lean",
+      "sha256": "d892d42b856acca18343f4288f89477396076d605aa08d067b767f9aa9df8f8f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PositiveRootLogConcavity.lean",
+      "sha256": "66467a73454b2e5f19340bf7a60441c77058de226d47e7d5171646081cea5730",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PositiveLinearFactorStep.lean",
+      "sha256": "d0ee3e072f90eff1aebfb590399e0d5ab4b5d0a48588362707b4ac0ab4bf4599",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PositiveLinearLogConcavityStep.lean",
+      "sha256": "12309dc34a9873b0ae62333da65129fadd7793a7d7ae6dd4d7a94bd38900b3f9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PositiveFactorProductLogConcavity.lean",
+      "sha256": "78671a632393f6b1a4d8adfc0fb054ca946efeabbeada5df04b82b6cb3832766",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PositiveFactorListProduct.lean",
+      "sha256": "767b1d9d54d01376ac4a4f4b1b4a2208d0c805a11f7ac8802fdb4c694f0cee69",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/NegativeRootLogConcavity.lean",
+      "sha256": "8ff73dc849f4262599d25ba0115441fdea91212877695bff91dfa9d0e069a19e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedSourceLogConcavity.lean",
+      "sha256": "545d796be33632b93f6e09a9bf03b807fc9ad28033638c60c57edbe1631400d7",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PositiveLinearStrictLogConcavityStep.lean",
+      "sha256": "126a96b270b1e778b6b82db09fbb26c2efb1992a76a984736a938593048a0b6b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PositiveFactorStrictLogConcavity.lean",
+      "sha256": "26d535271b2a51ec7481da1017719f52b8cf704fcd0df170a4cde4fc4078e0d4",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/NegativeRootStrictLogConcavity.lean",
+      "sha256": "363681e2b9e0fabf63b36df46d659024f65b8b0471718290559fdbc7b59bca86",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedJStrictLogConcavity.lean",
+      "sha256": "785b1a660264741403c2d2cab321b4bfce9cd75416072b2800da6b7d7ef470bb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPrevRatioMonotonicity.lean",
+      "sha256": "ce5a3f004cf8b3ef4b01681e77546f38260894291014fe4451c4cac406bd645e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoefficientRatioTransport.lean",
+      "sha256": "c4872119f7f7dcb1f4db39d2f2544f4d0590acf63b1b1c1ee2390e8b628f0edb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoefficientRatioComposition.lean",
+      "sha256": "2b6d46e6ea38555866d675dbb5380b8cb7fb724b7c9d5af2cfe7e984f1e50b12",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FactorReplacementRatioOrder.lean",
+      "sha256": "ea1138067fb7e16a348ae5dc4452be7e9e9a17d92af6111d0f4e49d4fb64c41b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CommonFactorRatioOrder.lean",
+      "sha256": "f437a773ab702a1c46c8591de56119c85bd8e0aceab1dfe3cc8444c94cf30ad6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PositiveFactorPairRatioOrder.lean",
+      "sha256": "a230373f21d3f2852c70d47bba92ea2fd5397aa92305bf5e6e8fb26564f2ae69",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/IndexedFactorProduct.lean",
+      "sha256": "30fb48d92941a57a156625a9e0b8da25b15b2d4138cf1c910d3f037a1690f717",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedIndexedFactors.lean",
+      "sha256": "70682484da16639f21ab551038f46f471f43149870c1b6c6aabd7611ba7b4c14",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedCoefficientRatioOrder.lean",
+      "sha256": "38dedbccb7c5cb683ff24f54f1eb48ad8778918ddefe5339f79baef95ccb27f6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedOccupancyRatioMonotonicity.lean",
+      "sha256": "c8e3ece8a95025d2208da91c7da0056095bc7dd49e7a364bd348aaf5354f2345",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPathStrictFeedback.lean",
+      "sha256": "4605de40033dd6338d9568737a494bbb38a0668acc1369eb87fe07c3eb09ef80",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/MetzlerLimit.lean",
+      "sha256": "d2e3e3701416d2a0a373451b7268a47c5a7f2274c31d74853759e4b192f81a38",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPathLimitTransfer.lean",
+      "sha256": "f75bf656f33710352f9855ff9ff7dd33d8ae07184f248e7145da98530081df2e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPrefixEdgeBlockLimit.lean",
+      "sha256": "1cc4decb234e1632ad7e0f493eec73bdfe83f4013cac54f003702377e0a7a6bd",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPrefixCurrentBlockLimit.lean",
+      "sha256": "36f856985e63db98fb9f22435b83fcf3cea57a7bb5c386ba775396d19723d93c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPrefixLoadedMatrix.lean",
+      "sha256": "cc39fe05d3691ceadfb425d6d980cb4e9a19ba1667e8371270dc8fb7175f83f2",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPrefixLoadedHurwitz.lean",
+      "sha256": "482f088e02f6e4fde16e0f44b4cc80d14f52408d097df06ca589ec37ed1ef51a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFullLoadedMatrix.lean",
+      "sha256": "24303f60be0e12b4f1242f1e7e6cf146ece3fb5530cb7cafd99417bea95bcbe3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PathIncidenceSurjectivity.lean",
+      "sha256": "bef4ba215f331840e903debdd4d18718a24499e2f3e03eb3eb9e44d4bda7e97e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedAllEdgeKernel.lean",
+      "sha256": "31701410bf8bfd0b056d4f9e125435ac46a6b91a730f2e980af313fc3eb1ff5f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedAllEdgeDeterminant.lean",
+      "sha256": "bc00bb15beafc915d3fe559623ba5b5e5585f6261e4bfdfa75f3b06062f45391",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFinalCurrentWeight.lean",
+      "sha256": "d6e2efdb1eee3e8624774207a7be6c538542b29fd454fb775b3006cab23ae431",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFinalRateRetune.lean",
+      "sha256": "ca42ac24abb3f0bb21fed167026918871f5d6eea5ac3975b09646caa9a757338",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitRetunedSource.lean",
+      "sha256": "2b562c085f77f3fd3f241031e0a988477470bcf7596a15832786d56869a2019e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastSlowSchurAlgebra.lean",
+      "sha256": "3eedabe1e0ed81b674e7820db0bfde94891ad80962eb5344422fa91ea5cce342",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SchurMatrixToMatrix.lean",
+      "sha256": "36d4837002b29a8e0b26628323c0ba2de3d32d4bc555b506fce3dcbc748e05c6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedSchurMatrixBridge.lean",
+      "sha256": "c48b8e7b1b300dff38bf96208a34a8fbf3ae2c4c9053b215611af55e1770b91f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingBilinear.lean",
+      "sha256": "17e889ea565617b6e89efca0d42e7a3cc9ba21d78ee494ace52ba0e2d9e1da3a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingSelfAdjoint.lean",
+      "sha256": "c8d923f162ab67e655ad90f25a242d96cfa87ea03ffe304beca803e735d1be63",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingMatrixPositive.lean",
+      "sha256": "1a2343f85062f2b22bdcb2dc3a3fc7ad761b3a3f7185d327d5069732551fea68",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingRateDiagonal.lean",
+      "sha256": "54407594a42590f0c7c521e70b871f43608c180538b1a66356bb9a76c7c8350d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingSymmetricRate.lean",
+      "sha256": "906609b910da0e241b61b3adce6012cddf386024eb037f49a780f73fd96b3be8",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/NegativeDefiniteHurwitz.lean",
+      "sha256": "9d1bec351241e44a5c9b14ff1ad6e2831af9416479ccf1ac5bba9ba7a72e293d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FastBindingHurwitz.lean",
+      "sha256": "44c31cee5b2689f13047e399bd5f9fc2a95f837c88705e6d6fa47a956bb29b67",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedFastBlockHurwitz.lean",
+      "sha256": "e6416ed26f1a733c9c1a468f110e20a27a0a003809462114531c02383f1324c1",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/IntertwinedCharpoly.lean",
+      "sha256": "4a259c580eeb9a7860a7a425e8f3687022505a62f689081394b5e5731c1173ac",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/EdgeScaledLoadedField.lean",
+      "sha256": "d00c34ef7adb976fa92daca758cc690a5c43900f8da6510a066b5978fd891852",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedReducedField.lean",
+      "sha256": "713742872a70f5c048d5ebca0a57e05a19d3b27c003330a9e0fe3db07adec630",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedBindingLevelBridge.lean",
+      "sha256": "7b19bc1300fb59b0eaaba2bbb254a88e0a7e4a65ad007eecf156c26455174592",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPrefixInventoryDerivative.lean",
+      "sha256": "ce2622633ec37284b5bff0be8b488b1d7881cfe2c7470ff796b095bdc7d55226",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedBindingLevelBridge.lean",
+      "sha256": "ee7944231058bf2e051153e53db259132ee8888597e887ba201e440ee3d3b44c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedTotalIdentity.lean",
+      "sha256": "2fa749cca0ccef32433c8b50688ce7fe7d6edb1da4926237e85dd7f7590fc68a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedArbitraryInventoryDerivative.lean",
+      "sha256": "85615ea297b889c2056e83d1b1c30d9e75a53b381287886916aff7d3ddf3e4a1",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedInverseCurrentDerivative.lean",
+      "sha256": "1aea0345625f872ddd2e35a368382c4f099e941a188d812ddbe32db39b606c3d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/EdgeScaledBindingCurrentDerivative.lean",
+      "sha256": "aa0a1cbf4f709e56ec04432d60b2d94a74a70f77f48cbce163c3c8251bdd4663",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedWeightedReducedDerivative.lean",
+      "sha256": "21eda3b1c3e309d3d093803a3a917d6363c07a5bd74943fe810fdf34b0efdca7",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedStateChartBridge.lean",
+      "sha256": "f8f98efb746d70add4d16c57fa693d98f52b41379aca8abcaef0d8cf0ee58670",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedStateChartDefect.lean",
+      "sha256": "100c0a28d210953159f40b0c9f8a0962eac0d978dd09fc86ee844a14884b05c9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedProjectionFastField.lean",
+      "sha256": "81ef1aaaf155e760ea48fd4a9d972264b7e5d091a9c9102a2a59b481b7610fa7",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedProjectionFastDerivativeC.lean",
+      "sha256": "0859898d2d0591ca6027e3474d855d239786992fb97d5e6fd1afa66987c812d5",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedStateChartDerivative.lean",
+      "sha256": "195d8e6e88e1725264f31074ba9a9e79587629fc75a9570a79e064ffd50db246",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BindingStatePathDerivatives.lean",
+      "sha256": "87c34b8dd465cd020cca73ae529a0b259b181eaa192e035d9f79e5d82a3a792f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedBindingStateIdentity.lean",
+      "sha256": "10e1be5065785bdbf321ea5be247a9f527aa785bfc268e729b3575b4e8c951cc",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BindingStateEnzymeTotals.lean",
+      "sha256": "f704e622335e6132458616e0d456071ba9d1b215c52171b5a3040e94b69bd877",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BindingStateEnzymeTangent.lean",
+      "sha256": "351734e19fbf931126f3783864ef106c696fcb9bda60733163aaf6a4d45236b7",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedBindingClassTangent.lean",
+      "sha256": "9d7292960a9db7e4fc267f1b8cfed6226b0e865550915f0034883a5b42c041cb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BindingManifoldFastBalance.lean",
+      "sha256": "e4473f8a1dd4c9bf458a3d24e0a5c0983ebc1b4547c33b4141207dae5a887dff",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedBindingFastBalance.lean",
+      "sha256": "2faa2a38eb3f0283169e8f14ea6c927a68da0f29bca6177352fe44916c4806a6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedProjectedFastDerivativeC.lean",
+      "sha256": "3b3ef94346e3094a9f5935ed2f6072161ce0fa2130c975e356b9bd49a3a3384c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedProjectionFastDerivativeD.lean",
+      "sha256": "fb3ad0c856b11e45a79952a33566b05e185969c09612ddda0cc2708599b0dcbd",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedProjectedFastDerivativeD.lean",
+      "sha256": "71c1a812a3e0b0980c98c910927df2d71281501e6575cf28bf7da5439ac39514",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedProjectedFastDerivative.lean",
+      "sha256": "3e22e85b544f957a014f09bb8441282e1ad56dfc9a1998fab52496eb12298a37",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedWeightedProjectedFastDerivative.lean",
+      "sha256": "b447bca1f12bf9029256ffa9ffa5d949b9e7c62e9f5f06ced413a96b75d7e24f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedLoadedCoordinatePathDerivative.lean",
+      "sha256": "0561a57291080d5248cad9df3c0aad5f091ef05802cd82f5de75f459fe73d9c2",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedProjectionSlowField.lean",
+      "sha256": "40d1b5eb010a2d1c090c609d5b5027615aa9002a025fc9aad46c50fcd1848bb1",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedWeightedLoadedJacobianAction.lean",
+      "sha256": "fe74837f26a0bbaa922555857d0710a59ead771280dc36759d4e8093ec35b173",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedWeightedLoadedBlockAction.lean",
+      "sha256": "7a516cdb835ada0628e1e72da3ca8d66fc821280b083c918eba6069f4e92f380",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedLoadedChartBase.lean",
+      "sha256": "47a8319cf560cc849beacdf7d71980dc74512b12b98e91ddcee153246670520b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedWeightedSchurPremises.lean",
+      "sha256": "7a338700496d564d16e97ecf8fdcfa0493782d07e2387f56050247afaffd536e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedFastBlockLinear.lean",
+      "sha256": "7dc90a4b270789aceb5b1be946a5f94bd3b20f10a49ff7f7c3d42af3d47d7c99",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedSchurAction.lean",
+      "sha256": "bcf8d6778c24529e57a5caf3cafedd6cb7ce332cce99e8b18dccb480f3691841",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedWeightedSchurAction.lean",
+      "sha256": "05f4fdae195c344f1f5ebabcabd5d6ed27ecd7b82c01df3c22027eb4e7bd9a45",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedInverseReducedDerivative.lean",
+      "sha256": "5e43d8a3c3581f1cdfb65f91d6cc5eba30bbfcd610b9dee5690fad38b781095c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedLoadedJacobianAction.lean",
+      "sha256": "1a5b8b982ff73ff5af07c50160aa7ce4cd95ba8aa87a4cd0360c43125cf68276",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedLoadedBlockAction.lean",
+      "sha256": "299608f79de34e7934195b836070f3c9bb4b6d7350434c48bf2c2367e46161fb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedLoadedSchurAction.lean",
+      "sha256": "78a1f1e6852499fa08a74f371ca52ed1d2424df39bca142973f349226fdd5d07",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedLoadedIncidenceAction.lean",
+      "sha256": "c8fdbe4b2278f1d01fc78a9a96eab19306df30e91714d04bee7a9e19cca551d9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedWeightedIncidenceAction.lean",
+      "sha256": "e0227ddeb432849c903769542ede26b6ff3e636780cafef532bc6f63eb58a8c3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedWeightedSchurMatrixAction.lean",
+      "sha256": "7fb8f49ce7d7a6cd7485373707014a35c436ab648a9b67a3e501e66a450f9617",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RankOneMetzlerPerturbation.lean",
+      "sha256": "92efd1a96e220e756d85e5bc5a9cd72d8b78e9fe9cc85173f7158ce5191c1b40",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RankOneBlockSimilarity.lean",
+      "sha256": "4c98a486f0f9d0277baa5a2412b4c9ace1b88130e526928374e77f7be318b00f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FinalEdgeBlockCoordinates.lean",
+      "sha256": "1151b5001903ba1fec5cf6ca9c807bdd0c823e063ec5c93f3f9aef2b3fb96141",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FinalEdgeWeightedBlocks.lean",
+      "sha256": "e5bc4a896fc202639a91c4e615645ee1c0e27d3b11afa2c5517710db9872d23f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FinalEdgeKernelBlocks.lean",
+      "sha256": "37ec916276d0c3647e47fe24a1e77e54c79b1a001df7ec5785f917f8b2e7b57d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FinalEdgeCharpolyFactor.lean",
+      "sha256": "f9656e0789035f88b2220cf1228f9131f40da6186e731aad59c0ea5177974d89",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PrefixKernelLast.lean",
+      "sha256": "bd13c72908642f110a25a5c7eb431ba1f7687644f0a5fcc3110cb6cc7d9b4b3c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedKernelLastNonzero.lean",
+      "sha256": "e16a8f746a3509dbc3e8a25bf91ca54a77188ec860412f6c33963e326abb879b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedNormalizedKernel.lean",
+      "sha256": "505d9a14890f9ef2195031d2d5ad7dbb6eb7b3aa199d7e0cca8c6f7bc410c9d9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedPrefixStrictCertificate.lean",
+      "sha256": "c65953864f73b954f5fd326d45cf1c086b6c63bd651e43103c2d3f54becea7b6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedShearComplementHurwitz.lean",
+      "sha256": "c6726fe205186e23744ecd783cb191b007ff6ddc90e51bf8c9f3391ec40fc956",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFinalCharpolyFactor.lean",
+      "sha256": "720ea0f16de6811e5d8db7d32967bf226d16e6e624f58c96a730a5ba4f39e5ad",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/HurwitzCharpolyZero.lean",
+      "sha256": "027db0497e62f89b6e147ef779e5885ef2b188e0589f7a96359dca654f3628c3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedFiniteSlowSpectrum.lean",
+      "sha256": "9730a94bcced3b2e255c9a5b529c78c611ecb9a5454c79c642eed605427e4f4c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedWeightedSlowSpectrumBridge.lean",
+      "sha256": "7bf77cd150716e18fb4d2dd18876738c87bc179cc56fff2bf656dc9550088a31",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedWeightedSchurSpectrum.lean",
+      "sha256": "f32624ff750a143a2273d971781e0611404af5a656d967ef0c320dec527f8bf9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedFastSlowSpectralDock.lean",
+      "sha256": "8c7f4bdd1b5cb497a7c62104179dffc02b20c6d236f98f27ad3f4532234883f7",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoalescedAdmissibleSpectralSource.lean",
+      "sha256": "0dace331e0051f6cb8537a2c94fdd9e0355734ff1cb351d4dfdfd3df23bfbed3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitAttainmentPreparation.lean",
+      "sha256": "98cca6ba960958164901c93c82a92489239466a4003399073dcbe8b6e4378af0",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitStateContinuity.lean",
+      "sha256": "4cbee0657ddb2fcd1a9fe9dab0fb2996397a7111c8cc8af7bbb8f0f956757d6a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/MatrixSpectralNeighborhood.lean",
+      "sha256": "185aa319af898f88e41995ff2794f21bdd858d625c71640d80fd2d67cf623add",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitJacobianContinuity.lean",
+      "sha256": "102320292884bb057eee0fcf32c96543f8f86510001e10f850ea96a1720cd584",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitSlowRoot.lean",
+      "sha256": "d0e8caf2be6dcf2c2c302bd90e68083f985e3bfd558c684c089e90cb6030b493",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitSlowRootExistence.lean",
+      "sha256": "ea414690f56cad39114e155e0e43b43b5be411e0dfcfbb1f287e5a4831e0c153",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitSlowRootUniqueness.lean",
+      "sha256": "56e73ac1e066ddb9c2da2c6646c9c203d9516d263f3bb7ed9785c93ce5d7f4a4",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitSlowComplexIsolation.lean",
+      "sha256": "edd3d0863095a8c33ef0d44f99dcb0c54805a7be1f0218b876c23bac452b0522",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitScalarIdentity.lean",
+      "sha256": "23a8b0b6ac316e0b22a104adde6b575e0d0b073c5c49c29948a5b9839e5e2868",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitConversionResidual.lean",
+      "sha256": "8d21f8ec5f429692c94730922dcaf2607a631fe8614ed724ed0c43be4cea2c9b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitRelaxDeterminant.lean",
+      "sha256": "f2980cc722f3888996607c04003bbe3b274bc1c077f4da54211bd5e8b1d43bdb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/EdgeScaledDeterminantPreparation.lean",
+      "sha256": "07d56496d465d3c48ff68b4c7ab13c095baa077584aafe1f74d553bae01067ad",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateVariationSurjective.lean",
+      "sha256": "9631205a0a756b689fc3c979ea39288a3275449352f664cd637e460ff6a923ae",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateVariationDerivative.lean",
+      "sha256": "8b253c2eb260706867ec10f308e15bdd5ab6ea11aad80a04cc5c5f86b41d0865",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateVariationTranslated.lean",
+      "sha256": "df85ed6a1ebab44731bb0cc111877d0c6c8ff5d1a9848a9cbcc2a71666936dc2",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateVariationPositiveNeighborhood.lean",
+      "sha256": "7953e10ba9a49791e07d8f98c1fa80d3064c982a61773468ab4729f631a6ed6c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateSelectedParameter.lean",
+      "sha256": "848208bd7dca36c5d2713581ae823dd2332b44ba0d65039893f276ced43a4ea4",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateCancellationGraph.lean",
+      "sha256": "d405dbf3d0c47b52f000055f3ca346e2d23ec6d0f239ad698dfbdef5e01ef035",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateSelectedResponseInjective.lean",
+      "sha256": "fc7b54d52ae7bb3f85ec304bf8ceeaa5ec58edf8bccfdd8c876ba972f9c30185",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateCancellationDifferentiability.lean",
+      "sha256": "2c4e034e2be6a4c0375366e1904d53b7c737240423b4756107dd2533ecab896b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateCancellationPositiveDomain.lean",
+      "sha256": "a173fafb0685dc7e7c38e1f59956292725decfd5fe6b7c3dd64ee3cb835a10cb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateSelectedPositiveNeighborhood.lean",
+      "sha256": "75fd8f34c41a41248700808ef55e8a84dec6bdfdc7aa405a816577599018b007",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateSelectedLinearEquiv.lean",
+      "sha256": "392966d074140cf538a1c3c99f74c4e6744c8d096080d10501a04befa9e97e57",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateCancellationDifference.lean",
+      "sha256": "31973cec6de224a2285ae9f88534d24f2452795eab59da28577303c91e0360b1",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateSelectedInversePairDifferentiability.lean",
+      "sha256": "037604fbd3acbc63b2f6ab090b97f2f861f95a1ec69b1e7380466ee2e6a42cba",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateSelectedInversePairDerivative.lean",
+      "sha256": "fc6dedcc6850f19287dd82605ea44ceb4d11888bafb1b183f654afe9dfc02135",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateCancellationJacobianBridge.lean",
+      "sha256": "849a09db14c6f360978be3258900cb0a7fe4a3c4c110b9d25d80d47ba373953a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateCancellationCriticalIff.lean",
+      "sha256": "5c02aa45001268bfba2e70a69bdcb1f731c03d1df06c26fc256d0e70a3541aac",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateCancellationSard.lean",
+      "sha256": "58fca7da669243f04cfd8b4262129820e69ee2983a34fe982ebea35c145e43a2",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateRegularOriginalMatrix.lean",
+      "sha256": "31a86d030774762aa39e100a335fe4a833be55a0e9c06d80f2188f0b2b9865ca",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/GeneralEquilibriumRatios.lean",
+      "sha256": "e8ebc2c2307f1b3f7288e32a4259009cc299400b96faf0f0d9ed66c617969e68",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FixedRatioTotals.lean",
+      "sha256": "87ca18887bd31735689429998931cbba5b9b73bfa497163b80951c1389e91930",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/GeneralEquilibriumProfile.lean",
+      "sha256": "964fcec8bf413a129cc88d3b791ba1f2f8f0d3cab0f6f7ee7b79051d8a21f978",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/GeneralEquilibriumTotals.lean",
+      "sha256": "46acc786b82836e86aa673b86f56b7d336eb8ee9deb6134cc2a94ff85bf337b1",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/GeneralEquilibriumInjection.lean",
+      "sha256": "25bf68ae5448361ef14858ee8fc64453f49f9b1d57198a46290280f0d4252179",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/GeneralEquilibriumElimination.lean",
+      "sha256": "3233da4c626e850c3bd810cb9f0856078609d4bd9e92b7b4a9113c9af64154dd",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/GeneralEquilibriumPolynomial.lean",
+      "sha256": "26890a8989d1122c03c7f82d13732fef17dc03cfb2f62c4e9a0b709de5c35597",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/GeneralEquilibriumPolynomialSigns.lean",
+      "sha256": "f08f9d4a2fd49a8ae3bffb7e8c5c303e4f0fc297e319c19042f7a99839bb3b7d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/GeneralEquilibriumNegativeRoot.lean",
+      "sha256": "39e5eb397fcb19dc6c3b7396f735c9ae34b91657448a0d9eb13ba0c494d04d0d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/GeneralEquilibriumBudget.lean",
+      "sha256": "411667063afd3510c83431b5f5e9947d605d8a24f61470fbe7b1f9bc4aabc617",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateRegularBudget.lean",
+      "sha256": "cd9c6020955845f591c298e9a39a34056775d03d7688b4c23703e941e87095a2",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LocalAsymptoticStability.lean",
+      "sha256": "dac37b16f8d2475af7b7f72bf43ba7ef2c7a898efe5725d2286d7c34087013f0",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassPhysicalForwardFlow.lean",
+      "sha256": "5ce2014f49f3091f8529547ff92dd8af169449340f9677864d1590a2c0b41a7d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PositiveForwardExistence.lean",
+      "sha256": "e958c304cb72aed779f44ee54c1c35808e9e8b6214615c53259bf56c3f2f7821",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LocalStableEquilibriumBudget.lean",
+      "sha256": "3b90dd639661fbb7dfa93a32fddea435c8671c6d6d1bbe9219d94f76b57fe85c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassFieldLocalLipschitz.lean",
+      "sha256": "bb3a9109b15b24deaa001e0a87dff8ede4e7125ca386f85627137b8642a2322d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassFieldLocalFlow.lean",
+      "sha256": "d03247531f0652946e143d93409e7321ce7184163c858b490f3bb29fbdbd9a1f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassFieldCompactBounds.lean",
+      "sha256": "3ae0da273166b6835e67b53ffdaca382f8eb5f9bce20b380fe72f0183857e45b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassForwardUniqueness.lean",
+      "sha256": "eb52b67be818496d9938135d3196f63b7153eedee3e5a6cd453340649ce4315d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassFlowContinuousDependence.lean",
+      "sha256": "3fe3a4828335cc865eec04dd319e61c7574953322c892db447f172f31e926b44",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassPhysicalTimeMap.lean",
+      "sha256": "3428a3b7cccd6dc42bce16defff551f789da80344949af8bd931c8819b69549b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassPhysicalTimeSemigroup.lean",
+      "sha256": "b593201f42f4ecc7ce3920513b23b99a1847bf60e4103e5f90e95103c5338a33",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CompactAttractionUniformity.lean",
+      "sha256": "e5b68647ed09eba47fd3bf5da38ea80a674cb316be0cec83a60a2365fa447503",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassUniformAttraction.lean",
+      "sha256": "681b49a9a601f8c9e92ffb8d44298efeb18956193545b45e2e2a1252907ec230",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassFlowTimeLipschitz.lean",
+      "sha256": "03607d38a4dd05e2d972d25008b46c96ed927c5958e6aa2a70dbdede596c1998",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassFlowJointContinuity.lean",
+      "sha256": "aec049fb10496b01d3e1dabc1414d604c3158bbcea34ba551d23a635ab411a18",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassInwardTimeHomotopy.lean",
+      "sha256": "ad07775a2dc9a609f51b8a7a38a01a07971557ba4cbe5a029bb870404012149a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassFlowSmallTimeError.lean",
+      "sha256": "17bc59eb08307fdc1085b9e612f5f608419a2f20e19dc81bc622038ae21ebc5f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassNoPeriodicInBasin.lean",
+      "sha256": "ba9437ea55c2e463140fb5e3541446e7692a7d2d278d4c8916b778fa5582c6d7",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/AttractorBoundaryGap.lean",
+      "sha256": "889681009b7a604ad935702431df298cc218fb141f36664f080ee24b9ea950cb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/AttractorBoundaryGapSmall.lean",
+      "sha256": "643ae841b21512fe166104d27f2cf3a4f8727191842ab7bb6ff23fc28a11adc6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassAttractorIndexAnalyticData.lean",
+      "sha256": "7ca3b9f7f21aa882d419d4b892ecaaab669efc6eb30caabbcf51cf3e72fa8315",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClassSmallTimeBoundaryHomotopy.lean",
+      "sha256": "16d5553be7497e94859c02b5d94980a6b89024041afe30f9a587bc15432dd0f1",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CompactParameterUniformity.lean",
+      "sha256": "23037ad7d45782f5531f7e1062f01003cab31e31aa2d5eb1453283dbb3ab1cc8",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/AttractorRateBoundaryPersistence.lean",
+      "sha256": "f7cabf563dd3bff54a0d86e562d7d01530e8f16e3ee314af32cb1a80a6e921e3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SelectedRateNeighborhoodBridge.lean",
+      "sha256": "c0bc3a8761e68ac04f04d53a3ccf913d3faa1c2f1155a8a7304b29284fe39ba8",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FiniteDisjointAttractorBalls.lean",
+      "sha256": "a08ab150f8249c767200a0f29a2053651312b026550f8ed28139114fd04e7cbc",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SelectedAttractorSphereSmallTime.lean",
+      "sha256": "3aa3f92c1398557a5f1aea5fb26e52a360e37bd164dd53ea4756c1f999c6a769",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SelectedAttractorSphereInwardHomotopy.lean",
+      "sha256": "b8325a1c52659ca60d4a0a50a13b8b3322a11b0a874d6264b4c60b5d5b9b8b9f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SelectedAttractorBallFlowContinuity.lean",
+      "sha256": "c0e8a2a9f92a694db25c9f3dcb981a407a898790ae5d3ca39819d177df4081fb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClosedBallDegreeInterface.lean",
+      "sha256": "a76d07b69ac1e1911ca10ed94a0dc5e00460b77668525a55cc5e08481151d4a4",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/AttainmentGeometry.lean",
+      "sha256": "3de546534dde94241132b9a6ea98a211d7308cc9e3d62d6fa99031ecd07ead9b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitHurwitzAssembly.lean",
+      "sha256": "ceac401842a1c4b592af6136c84a72ecc5610bb595410495d7be996750ace9e1",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitDeterminantTransfer.lean",
+      "sha256": "0f5a2e25ff4db34df2815193a665a4d810503e347a92c2c552780c8d2bd49889",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitDeterminantSlowSign.lean",
+      "sha256": "285fc39c33fcf05299b2cb5205be33f4b7b60236748d0269d8a31ac90cf0addf",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SignedNegativeFieldIndex.lean",
+      "sha256": "16dc78346eb7817806d9174f6ffcd41e4f7cd94d34d9a8e512a97ab87f6508e1",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/NegativeFieldDeterminantBridge.lean",
+      "sha256": "dc6f57b953e7fe7622d07fc26418591fdba5f0f8033a290a0f5d2d5d8395afa8",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SelectedBallEquilibriumZero.lean",
+      "sha256": "3d86a4e3c4570d54923ec8f488dd22b8a8b565bb2b95ea6c800050012c4ab8b4",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SelectedBallZeroFinite.lean",
+      "sha256": "107899c212bc7443972cf87c32bc5d80f3483e2e8086327203c70f1c0efc7ebb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SelectedBallSignedSum.lean",
+      "sha256": "f83d76f2bcabb6742db32f01eb0df3eca1802c2feb5a48eac1bb9b28a60a7820",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SelectedBallDegreeRegularFormula.lean",
+      "sha256": "6db6564f0a8bb328b707b764e246252945af167c11c9553dbfaa8ec988239e89",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SelectedBallDegreeRateTransport.lean",
+      "sha256": "eb8a1e6309d78ceeae68369e6287155a32764a87dd947c1b626625424e158ad3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SelectedBallDegreeFlowTimeTransport.lean",
+      "sha256": "9eceb0318a6b88d5642879533228fd61ceaccc1d2315996de4e30ed3dd395f72",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SelectedBallDegreeSmallTimeTransport.lean",
+      "sha256": "264e9c56cf703dcbe227f7fce32dd1587c4a00e724aaba34e42df001afba775f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SelectedBallDegreePositiveScale.lean",
+      "sha256": "9252e6ad84e73813fccebf0dd282f9bb941d9ec2c8a1f1b66cc5034c809fa7b6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FiniteStableStateEnumeration.lean",
+      "sha256": "f153f53164c44d1b1edf580352ab5a29c8e420d166f1b48092d5c0cc2c78ca96",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/StableIndexCeilingCombinatorics.lean",
+      "sha256": "7198695d4f66e34e558992150c97a3fb60df701afcd0915c73fb3f248136cf4a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RegularDegreeCountContradiction.lean",
+      "sha256": "d13ea23200a7f1a6b588c29b91ef857ff2aa4113f3defb5d2c90f850843f5e17",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FiniteLocalDegreeSelection.lean",
+      "sha256": "efeb8633d9736fc7f557e95486885ecc8abc2cc7a38929f19b1a6f3cf907a09b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/HurwitzSpectralGap.lean",
+      "sha256": "6c6df492e2f77ed5dc5fd528e9df177a6a502210e0ac0ecb403ae426b9865c64",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BaseCase.lean",
+      "sha256": "46743b679b77ec51c7881ea2c2212ccd7861d72d3f5de43d7f8ba9b742c15d51",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/OneSiteLyapunovCertificate.lean",
+      "sha256": "53e8df8094b814b1fa5a2b6bb41dc8e4a3913073613e9ff523b5a0d58a8dad82",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/OneSiteLocalEnergyInequality.lean",
+      "sha256": "78e80a5569905e9e5bd15166442b8cc2bb35afb0626997ea6b14bf2602fab4b6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/OneSiteEnergyAlongCurve.lean",
+      "sha256": "25922b7df4f74485dc0fc00d8b6d3316987c2ec5bcdbc57d9e1de2398d8fa4c8",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/OneSiteEnergyBounds.lean",
+      "sha256": "55390e4c0e6a37f07107da05b8de58c06e6ef7dc66d3e5cd1846c87eb0b059b7",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ScalarEnergyDecay.lean",
+      "sha256": "4a246450d445599bf45adeb2019a188922890f8d8312f82932ce442ce847800a",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/EnergySublevelBarrier.lean",
+      "sha256": "28d78ce703a7242ee1b77f527a52b2180ec61d8d6af571c7105c5108c1f97af8",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/OneSiteEnergySublevel.lean",
+      "sha256": "8ad8abed9d2e750fd81100627f5746c4225c3f693170804bd54ac2b05b4591b5",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/OneSiteEnergyDecay.lean",
+      "sha256": "e36ed5ab703739235aebf2f222d6abb0d1ecc3651912dd952231248beb13de5b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/OneSiteEnergyMetricBounds.lean",
+      "sha256": "40476dc72c5c1887fc03339280dab7d9b0ef47a9649fbf338f684c0fb642b08b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ExponentialAttractionCriterion.lean",
+      "sha256": "737b1ce4727ef7cd429b85ba32eda05587da39174c59ec92125e6b4aad648f88",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/OneSiteNonlinearStability.lean",
+      "sha256": "deba28fbbf0b2923da819507afe4f3281adafe7683e41e9fef314e3556b97ad1",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/AugmentedDifferenceDeterminant.lean",
+      "sha256": "80d92e6557edbb80a36931f8e035a863467a48c3706f504dd8314631a125b13d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/AugmentedRankOneDeterminant.lean",
+      "sha256": "698f04f7a814d5d7ccce27c52b4649fe367103279b185fea8e2a64bd53380cc5",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedBindingMassOrientation.lean",
+      "sha256": "861a16b7db2707f2d7fb7302a2249d7a9c2157828a11e5196649c69455ade808",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceCurrentTriangular.lean",
+      "sha256": "7cacc6af5bae5df55884d450933be99817d0ef2f0abb1ccb43f562ccf502005d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceSchurDeterminant.lean",
+      "sha256": "6c53b48a6ba5292756f0a17cb7d2558774fe38484c10732551fef0b2c40a6d24",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceCurrentSchur.lean",
+      "sha256": "022cceeef6ead4302e35e565c2dab82ee8bb624b1d6adbd2c33f13a71c55457d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceBindingCurrentBridge.lean",
+      "sha256": "dc0296a858961fa5fcb76457dc2b337c3b3f9c4f7ae24c008c8fcb3a04b4992f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedBindingMassDerivativeSource.lean",
+      "sha256": "9b978d732c03abf3fb4041dafc7567ce30699f1efab8bafadf3ae1da9eeeaf33",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedBindingTotalPivot.lean",
+      "sha256": "1e60aaabde4bfeb44797718c0da28a79bca135b48b1e5c4343b5edcb7b9de6ea",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LoadedBindingOutputOrientation.lean",
+      "sha256": "a28997fb6e13de25142412b9fa679b8791310cd4cbe25c7e7898bcd322b43393",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PositiveTotalSchur.lean",
+      "sha256": "bdfc095ac2759525cf47b1628f3992b31f352ee66e16fbcad3a117bd4c83f0ec",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceBindingCurrentDerivative.lean",
+      "sha256": "27f994085086b50f0a1ad552146842b616ba236ee279e2f70132ad00328090f9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceConstrainedCurrentDerivative.lean",
+      "sha256": "8fd25ea6af3c44451978e0c46b65e6b8582ebc99b7f2c50d548740ac721ca9c5",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceAugmentedCurrentOrientation.lean",
+      "sha256": "1d01dadbc72a162a06bb199381efb8db064e6cc66cf55b0c09403839da72ac0d",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceAugmentedSlopeFactor.lean",
+      "sha256": "4a65e3d1fff680c5e0b728e229f92b7b288834cb2ee5f727472b1451f40e5ca3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceAugmentedRankOne.lean",
+      "sha256": "0cc189d3072adf671e0926f0dfd559a7b1f439f78b3381c227231618f3d3e090",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceAffineCurrentKernel.lean",
+      "sha256": "49bde5709d3339b17e8511128bf5e64eb8614bdede94090c26d66376a2837abf",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceAffineCurrentAction.lean",
+      "sha256": "83f2369d54b556171c4ee2657d422c0725d11213bbb12d3c4505062549c05585",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceAugmentedAffineOrientation.lean",
+      "sha256": "62da2270234b08aae77dde55249412da1a35e70f69fed437eef1289af559b16b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceAffineEnzymeBalance.lean",
+      "sha256": "14c1bb42db01f24c6877a05637dbdbb81fc85dbbc041ad1ed27862088ec82807",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceAffineLoadedTotalBalance.lean",
+      "sha256": "a101d230724cd47703f22c2616af4f93b68d5b9ccbb0ed6f3f320cba65bb62f6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ReconstructAffineTangent.lean",
+      "sha256": "e4f8cdd1bdda3361d6ac14f8d6c8d3abda77903af70031afad9a35874a4ff403",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ReconstructCurveOrientation.lean",
+      "sha256": "8a884b5e309acf3ea72bb239648fed364f688c47ecdb4eed9f5b70dbc8ff8ac9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitChartResidual.lean",
+      "sha256": "c5f64614c9746d078c68c29ff482d4d89618df634e1cb558f34537eac3e82ffc",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitClearedChart.lean",
+      "sha256": "3323c24bdb9f06e8f43e58fc867fbddafc3d8b2875f828ad9653be797e60dd27",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitChartState.lean",
+      "sha256": "b9c55e898d2b9bc95e77599c44b2a2288a2326dadec7f1572bbfb49517e50017",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitChartDerivative.lean",
+      "sha256": "917a2f2b2020f13fa2d7b9aa736548aaf25b977f78d6eab0fa2dae37083d3409",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitChartTangent.lean",
+      "sha256": "eb9420bcf77fa0a4b9b938e7c491dce2354a00625a7115c3dcae054981cd8f92",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitChartTotalDerivatives.lean",
+      "sha256": "7bf248b637deec96e89542e442250335dfb0f70a9e459b1db7127e99b2d43005",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitAugmentedRootOrientation.lean",
+      "sha256": "990444f698748e8d158ec5844c850c2fb956b7dec0ed8dc6cd0c7e4ade439f20",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceBindingFastTangent.lean",
+      "sha256": "7b6fd9cbf7bca528f2ae3364feafb360c10a828cf4391bf56162a743309679a3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceBindingLoadedCoordinateTangent.lean",
+      "sha256": "7a71f4f862438bd4a73cd85ba012c93b56b5e68a2dc5532d1bc578926276aa0b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceProjectedFastDerivative.lean",
+      "sha256": "40b85d8133e6d9f14065a7fdf60b220112ec614ccce822ad1cd5b1601ed6725b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceProjectedSlowDerivative.lean",
+      "sha256": "afc89aa10349250f56ba45337767d3f78d7d2395514dd36fe432299829eb11b7",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceFastTangentKernel.lean",
+      "sha256": "f453c58b081d7106d722e908ec459acbb50ff55bed44f27f2d770a34b0b514d3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceCurrentResponseChain.lean",
+      "sha256": "933d929554bd6c484fba3e9b6bfe06eccf6a799bbc36725697011a8e9c229811",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SplitStableAttainment.lean",
+      "sha256": "e8f8b2f35b2c0bda6a38f162c6ff5e915316198eefc5e34e380b00e4da4b3cef",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/CoordinateEuclideanEquiv.lean",
+      "sha256": "6d53e754c82f6d16dce3665953172173e4abeb2b4525159a002ac45a4d69d5d2",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/EulerDiskScalar.lean",
+      "sha256": "93271881c89107cde16c772dd752d879f265aa9585f1c4f78948647d89d74fcc",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/HurwitzEulerRootDisk.lean",
+      "sha256": "2c024b043f7ef85cb4c120f556c58e8082936af1225a3abd7a46e1be5d9e7279",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/EulerMatrixSpectrum.lean",
+      "sha256": "238df466c216c79580d27d52a62513c249b9440a85f378fafa171da7eb40d3e2",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/HurwitzSchurEuler.lean",
+      "sha256": "c91df58daab55a81c3c36e67f65cd79c0a97de575acf0f53772215b52d07dd5e",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SchurFrobeniusPowerContract.lean",
+      "sha256": "272dff251b2687c4f62b8fdd741b022a130f655dc75ff20d98a6fb36ea34fb82",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/HurwitzRealEuclideanPowerContract.lean",
+      "sha256": "076724cdb998383937b89993187403cc8529f1f7a6e2116ee2298a659346e2dc",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/HurwitzEuclideanGeneratorPower.lean",
+      "sha256": "8e33c67ce7a8a42685ef8e1e65d4984cff51d4d5f3caedef7e6d09ae0a141781",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/FiniteLyapunovForm.lean",
+      "sha256": "befdba58106c6bf3242e9655202a865bbddc7b7a59915c193a2ee32da912e169",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/EulerLyapunovDissipation.lean",
+      "sha256": "da807e40df2ed640712cfbd70ec84644a4cb07867a4d7826699442059428a5bd",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/HurwitzEuclideanLyapunovCertificate.lean",
+      "sha256": "99ffbf594e7c971b6623f87162354c0679a2491aa5b520fa71b5b428e1cd2ab7",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/TransportLyapunovCertificate.lean",
+      "sha256": "51ea27d759dc2009a24a0ffad63ec9b520e5459a58e9de8e18a0c239c1920595",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/HurwitzClassLyapunovCertificate.lean",
+      "sha256": "468123e1d93e6537d3bb590eb931446c8e97a9d62e6c25a2972615531f1ee8e8",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/LinearizationRemainder.lean",
+      "sha256": "4eee683a1bba455f4fac4766ccbc3a2c1522f7465b809f5887d9c859b56b1236",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BilinearEnergyChain.lean",
+      "sha256": "298d49f1cc36a2bb177f3ea7158d349a17d8f51175bceb6572d23bc0b6dee5ff",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BilinearEnergySlope.lean",
+      "sha256": "a223fc35dfbb87faf11ffdd44e814782c0f23b39da077892695dfb60270a9de4",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/QuadraticEnergyCriterion.lean",
+      "sha256": "2e21c5b3193cc7448ffbac9abaf56fe2cbd38aaba617a89d0a5478e13798f71c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BilinearLyapunovStability.lean",
+      "sha256": "bb11e645601140574080572f179175d0e6c476662acd4f9339eecec855514270",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BilinearLyapunovCertificate.lean",
+      "sha256": "e2b7f533adc89b8c42b4de22e286836e05726d24baa9b8ee7aaec8754b80d520",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/HurwitzNonlinearStability.lean",
+      "sha256": "6924dcb66f9401016bf437bc2a653ec4d78b7bfe3894a37a240999652566a4cb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/NonlinearAttainmentTarget.lean",
+      "sha256": "c4c7bd394e274efbfb3177059552b7ce4f4de4820934cbfe376768c0b53c455c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ExactNonlinearCapacityTarget.lean",
+      "sha256": "05ee609348834d3b9d1be475a89b44b485826ad2be6f7256bc0b2bf2106fb5d3",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/UniversalCeilingDegreeDocking.lean",
+      "sha256": "34d8ef176ea3e40b46b113147e641abbf0eccbe0476541b04224cbca4b9a6b64",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioSubstratePivot.lean",
+      "sha256": "583935b5f9689704f684b3936dbb919182536a9dd6993d7774dd1086acfe0c63",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioSubstrateDerivative.lean",
+      "sha256": "3e87242e30cd09a3d92f246cbf2466c468ac254f64ad62a090e0f9c9b272cb75",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioSubstrateFormula.lean",
+      "sha256": "ec64e2a251b48ca1df8ee18c0f8682173748ebbb601c7d4f369754e1fa5168b0",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioSubstrateChart.lean",
+      "sha256": "9b4a7082b4004e1b43c4e22d802673a26ecda06b7bbacd6f307759431e194108",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioEnzymeResidual.lean",
+      "sha256": "b8dba17536a6ce43e827d8fc4a01c45d5b68b264718f6f24f033ee47d3102509",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioProfileState.lean",
+      "sha256": "4c8fc04e2bd3f10271c9d8f3ce3916eb632c35f2c7ab99b35760f90756e67fd6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioProfileTotals.lean",
+      "sha256": "596a83950bce68051d95421915bc900fe940d26371a9bd1fddffdfdf448fae98",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioResidualConverse.lean",
+      "sha256": "fb25c2ffc3e0974ee13b617c7805cc567797dd7f7e4ddc2788ddfc599e96d706",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioEquilibriumCurve.lean",
+      "sha256": "bfd70824c3790e102cd5cfa5bb2ec9bb9c2a6428dd2279c96fa2abfa25975de9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveDerivative.lean",
+      "sha256": "8a2e8538f8d66242fbf0f14d5803a3bb3527753ec7e7d7caf14825f1fc031934",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveLogSlope.lean",
+      "sha256": "9c5d41a446233f0d0da404829eca0b525ca4245a347fa8f945ee951e7d1e8038",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveSpeciesLogDerivative.lean",
+      "sha256": "04fb6ab4ce54a85dbd4012ba512ae1ad727d71eaa93f17aed5eeb617ae47ede4",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveSpeciesSmooth.lean",
+      "sha256": "ce081fdf958d0151866634e787c319d2407cf590850f0483f560acfabe18b906",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveTotalLogDerivative.lean",
+      "sha256": "7530c1cf54d7562d4102bf3d6e4684dcd952c8d632dea7ab0fa4f2e76984bf71",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceJacobianAugmentedOrientation.lean",
+      "sha256": "8b757b8fb9be6a7dba215d4f5cb2c30a966255c47deb7043bbe0def2996b2a94",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceMomentPivotPositive.lean",
+      "sha256": "5d12f8a079dfbab26e178071a983f463f85b889d5c46840fd624b6b38c29c0b0",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceOccupancyMoments.lean",
+      "sha256": "167cb92acf679fbcd309d8c5c570d0055dcc4e6ee05e49f90f2ba692918d25a9",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceTotalRowMoments.lean",
+      "sha256": "7aaafa9e59e238a036a850434e2eed9d03a090e4df1fdf924cfac0e49a5cc390",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveMomentBalanceAlgebra.lean",
+      "sha256": "10e96e272868d19efa71a9b8deb7fd62f8c75a1bb52af5c4214a9ce707ae1865",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveMomentIdentities.lean",
+      "sha256": "c6362a5ec690fb12981b4c48df5629cd42c4927d2cbf7ca0c0ef0f01f6252510",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveChart.lean",
+      "sha256": "74c4376af91787110a0deb9b9f697603d6a50fac300e8727b677aeb0fd04fe91",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/SourceMomentSlopeAlgebra.lean",
+      "sha256": "69b17eed90284862ef2e759a72e794ff9c3c1d075e09379cebdd98f101ab5e14",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveDeterminantOrientation.lean",
+      "sha256": "e42f845ac70d2fa55a5352b1cdf2e0cfd9469a7d34435986e39c2752202a751f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveHurwitzSlope.lean",
+      "sha256": "97a4b643ad6d1bd3f738ad4aa09d5c4189643e29e16b09cb38070c9d99113fdb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ScalarCrossingLocal.lean",
+      "sha256": "edc5f20866e27c6ee19c9e6e0ed9242c86d6f94ae4bb422fe1dcb53ba0aa51ea",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ScalarCrossingLast.lean",
+      "sha256": "cfce29084e748a3a6709d9b789abbd6d7236bee946b881d2f3a63686e2e12c5c",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ScalarCrossingRightmost.lean",
+      "sha256": "cc5b793c0ef71096c6a2984d4de929c7cef76f90dfafe4553dac780c5308f84f",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ScalarCrossingCount.lean",
+      "sha256": "ad8302336bc4f50d846b4895f8c35d63ca2687601d2f4b0809854c45f13f6919",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioResidualBijection.lean",
+      "sha256": "9488d59b7f5537ee55f984ff9be3e65ce060443f6df8c2ea8a74f50cf108b139",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioSubstrateBounds.lean",
+      "sha256": "13c7c69ba7dadb8c91d56038e12692650931294398e996a15a77bbbfc9e830fb",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioResidualEndpointSmall.lean",
+      "sha256": "894466280d41b3ffcb0c94ba9f20ed467f7b2005a3a96fda972d520870a2acc2",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioResidualEndpointLarge.lean",
+      "sha256": "5635d3cfef457372d9948adbba69a3f2119614f1685a2acf878597e8e7ec472b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PositiveEquilibriumExistence.lean",
+      "sha256": "072a01ed05db7371c27c5c0415d4f86f0954891db592333eb3933dc1a5821eff",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioResidualSignedCount.lean",
+      "sha256": "92b49df9cb06c7191f814dd0b04b9ddf1d4d01b7df4859f1dafaeb44e124df6b",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveClassLift.lean",
+      "sha256": "8d58263ab225250bec0ce9ea470bb6a1dd8a97ee0f751e92be18186dd7694698",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveFieldFactor.lean",
+      "sha256": "0c03155bdbf4d6c4ecd8fe9ad6fa0bc0654ab7d2fa34aad3310031da3c2f1ee5",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveJacobianAction.lean",
+      "sha256": "85559294eaf749aa7403525c568d94ba1ff4018c56e5728947314fe1415a5943",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveImmersion.lean",
+      "sha256": "e14865f520ca09e52ae6cb7cc13864c8d17fa9508f79cc133bf516fe1d9444c2",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveRegularRoot.lean",
+      "sha256": "a25ab34ba4ab30d3070f0d9630ced44df7e6c7d267e7dcb3287959eb9e730298",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioCurveRegularDet.lean",
+      "sha256": "b9559f454d7b66947a9b8b899f21c6cdffc5f6330b70d7078061fee8a8a075a5",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioResidualRootBudget.lean",
+      "sha256": "c1c3b731a2ca6286d205eb5d1d59992aadca558d4d8a1e035e59a06426b94e75",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RateRegularScalarRoots.lean",
+      "sha256": "9f2803fd32802b6ed857b3bc3ecfb6071400118e8fdf63f543861432e83d52c6",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RatioResidualSignedIndex.lean",
+      "sha256": "6155ea89e6cdf48422fae49194e608a3ee51802144f2a9e11e542614278e46ed",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/UniversalCeilingLocalIndexDocking.lean",
+      "sha256": "abd7cf5c7fd2fd0ab74829b6324244b9ad7b998cf18a0a002c055b014e86d349",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClosedBallDegreeDocking.lean",
+      "sha256": "301aa3001e90388a95b93696dcf7f32f1b42fa73c28461ba307add74b6f9a4de",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClosedBallAmbientDegree435.lean",
+      "sha256": "3e943cc7aa5adc214d0f0757e5824051f4dede25515f7783047316587560f009",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClosedBallCoordinateChart435.lean",
+      "sha256": "a0422a81966c2141f5fa219eb0d7acf8db6de8c40fae581abc1363ca0a00ff85",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClosedBallDegreeInstance435.lean",
+      "sha256": "bab4336ff8634c321d673f38914085423c668b6f166c63b496622571859d26bd",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ClosedBallDegreeBridge435.lean",
+      "sha256": "ad1bd41ba0d00c9db8e03c142b96d1632da88510d02184780e0fd1440b859a82",
+      "origin": "erdos"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ExactCapacity435.lean",
+      "sha256": "ca618c7b81b005aea9fc5f012550fadc2a333ecded96b326e181b25f1eb7284d",
+      "origin": "erdos"
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Calculus/Retraction/Ball.lean",
+      "sha256": "c0d4b004f3e979047fc9ab714434d190bc0b70a37257ebe2b41eba517adec416",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Category/TopCat/SingularCoproduct.lean",
+      "sha256": "374ca31b22dce27122c838f18de19a29885e2217b6aed4a20c74a10269926f9c",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/ClosedBall/Extension.lean",
+      "sha256": "ba5bbf7121abc6fd312baeacabdec1ac1e001f30b9b13e4d040798c321ca73d0",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/ClosedBall/Retraction.lean",
+      "sha256": "2df485addda1ccfecefaee431c29eea64c8edf367c0c1814e449ad437d5740e0",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homeomorph/SphereAffine.lean",
+      "sha256": "a2adbcddb91701e96eaf6b52a1880a65c50fa1f0dc94c285d4dc7c34bbc0632b",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/Augment.lean",
+      "sha256": "f581eeec9f704b583f19fe65225c3a6ac80a6942ac89ef8eb4b162becc502c0e",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/AugmentHomology.lean",
+      "sha256": "a943165d20c34eb9297fe7745130f2a7ccc86a06ff5e88677351a2e0c1acc42b",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/Biproduct.lean",
+      "sha256": "69ea0ad2e3f6c13dca558d9715af13eebce61bdd384c9969e3a49b36d5c42567",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/CokernelCoproduct.lean",
+      "sha256": "68fed2659dbb075aaf20990bba73849b56043e667f5c4182a7c32df52e424acb",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/CokernelHomotopy.lean",
+      "sha256": "738b5944c3f1a9c698ed19fa3a2f42e5000c06dffe9448b91dea75330591b0b9",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/CokernelQuasiIso.lean",
+      "sha256": "d67ad26918af6d0194820bfde60011318c43a0b1880899805eef1908fd32e04a",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/EulerCharacteristic.lean",
+      "sha256": "861696730845069a3e5d10d2659dc96cd96f76836c4d063c85316c83573a6c98",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/EventualImage.lean",
+      "sha256": "5cc54ed2bb1274d4b766e51378e06d9849b01130d7554c5c61dc01d5d0119df6",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/ExactSequenceEuler.lean",
+      "sha256": "6f4da2fd1d29adcc8e71a2bf644df4189e8e9373b75272979ea11f1a57c99d69",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/FiniteType.lean",
+      "sha256": "d4feeca8157f4dc7e44b114c73d6981a8be93349d4ff8310b59273a127037e02",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/FiniteTypeMap.lean",
+      "sha256": "1454faf23df876bd9caf3ac3dcaae78b88197ab63121c0cfe76be30f1bd9c598",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/LocallyNilpotent.lean",
+      "sha256": "bd1817f8886e592016acc338eaf7f80b787fcd3c5cc039278d248ae10e5d1b2f",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Algebra/PushoutExact.lean",
+      "sha256": "e0449d6a9ca43fdf630d5b88f3d81f24f1fe2e4e8efe1dabcdac28e0df42650f",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Coproduct.lean",
+      "sha256": "b348974d212de30347d98778bc76bb25d3f2b17b7be7510b5400430f43f9d571",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/EulerCharacteristic.lean",
+      "sha256": "b17054af7d985af4a2313bf2972c2f04b6150889cfef596ecdaba6efd1a2f8a8",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/Chart.lean",
+      "sha256": "b1cb2e275767c4a60f8ed7cf56905e4ac4b6a5161dac45a5d14552d91748554e",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/ClosedBall.lean",
+      "sha256": "b1d8a6b39705cc64c26d39450969599c5f618f84fde05fb690ce64f80cfd55ca",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/ClosedBallFiniteSet.lean",
+      "sha256": "a28e943e22ed5bf681409993d52a7e5a104187d5a043df12c6b1c35f4cef9f42",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/Euclidean.lean",
+      "sha256": "c1e4858718de5eabfa303bc9cc27866337d696e4933385ed4d6d9385487756ef",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/FiniteSet.lean",
+      "sha256": "6fbe018e9fcd7e1128e5ce7dda44b4d714bb35d827ef159cf6579362b611ecc2",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/FiniteSetDecomposition.lean",
+      "sha256": "85aba30a2200191abeccaef192d58602a2ec0a595c7e7bb54bb422b2a4098b25",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/Generator.lean",
+      "sha256": "78b083a201feb8c2f454e568c366edbb7310ac7d7873797670aec9c69368200f",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/Graded.lean",
+      "sha256": "64f057e4f88115062e87102ca2ce99388aa8b65baec61f898c931ef580fce6c6",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/HalfSpace.lean",
+      "sha256": "473886ea1987682dc9d7b0f8e87a95f60725ed3025d729d7d5e37737a3d5e062",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/Manifold.lean",
+      "sha256": "d3deed1e89dbf65dc85d03d42ca3fc01ac303fe926ce5ace47376e86b60829c0",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/Neighborhood.lean",
+      "sha256": "33a38e586213dd4d9c7d73d3ca5b54286a4aac2c0603ff0840456aab74f5ba99",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/NeighborhoodGenerator.lean",
+      "sha256": "6702286ec42e285aa6aecd6d37aa282591c9cae99fc9b7e351d8a00b0001e1b4",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/NeighborhoodReduced.lean",
+      "sha256": "55fdc9792f964e10cda42b1769ba845fe084bfc0716f6068a8625a04a1033e51",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/NeighborhoodSphere.lean",
+      "sha256": "ae77667aa4b238722e3dea863ea7eeca98b0023614aa518378e3b72d66b51815",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Local/Translation.lean",
+      "sha256": "9bf0bbb7ad57f29ef4c9ceae24a02b41a8ab5a98bda1c4f0db0c758a71fd01eb",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/OpenCover.lean",
+      "sha256": "9f57217ad18d2d03ea41aec3dde54ba1c276a9fac0b4b11684153c920a1aef19",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Reduced/MayerVietoris.lean",
+      "sha256": "c3ed8008679b68769e4ccb2f5992e308507c3ebb3beb10d51132b5369ac1abdf",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Reduced/MayerVietorisNaturality.lean",
+      "sha256": "3b9bda6d6108dc4c190edad8bd106e5770f814498641e46776ff04363b1a9359",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Reduced.lean",
+      "sha256": "92a23112e3165a65604d9faa3e45695b452ab32337f19a9c2388c9258af27b20",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Relative/ContractibleHomotopy.lean",
+      "sha256": "35114cae45a8e4b412ac6353914ec1bcbd88786179a4f73d0c2e6e19ce4f5c13",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Relative/Coproduct.lean",
+      "sha256": "4b311f16a4f6b0ab445b4572e6e6572caa3af4bc9433bad2bafebd282920be2e",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Relative/DisjointExcision.lean",
+      "sha256": "04c684ac78948474957fea0a6c0f026951ff8193763d2349188d7055db3e0bda",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Relative/Excision.lean",
+      "sha256": "7d47b03c5c8824d4945280292c97448232fc5bcdc5548969d9ef2a6d492b91fa",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Relative/Map.lean",
+      "sha256": "de7987063a3dd50d0e03f35050380e74914b859cb80637f6ec9867b712a2ff18",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Relative/MapZero.lean",
+      "sha256": "493222f1499342fc715ca5f4639b30979ab6cd9d14271fbcabf215f2c5662f0c",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Relative/Reduced.lean",
+      "sha256": "83e6c9c77c107e23323b3edb6a734208e6a7c463f6f5d0f9602c33b963da7d97",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Relative/ReducedMap.lean",
+      "sha256": "d3759ef36a6c78e18e893ba8baa2f24999726591d7571e904b4f4a7f72841767",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Relative.lean",
+      "sha256": "f4d84183fb4e6f05fddbd9552f8408df4bbb4250a4726ea8af21e98d2e2c3c24",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/SmallChains/Compactness.lean",
+      "sha256": "928ef45f565b8d8ae21b085912778e9877dfee223de1df8b365915da4ce4d83d",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/SmallChains/FiniteType.lean",
+      "sha256": "e0d14f39c7ae302cb03a922c2b6d93b23128d343d1184a107c15906f4a570cac",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/SmallChains/QuasiIso.lean",
+      "sha256": "68ae829193d351c635b5fc958ed4332945757315045392b74df63f633a12b6ce",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/SmallChains/Subspace.lean",
+      "sha256": "321bcad364b30dcd6bfb9c8947a89a89ffb04f503ec222d130a6135707315353",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/SmallChains/Union.lean",
+      "sha256": "a12afb0604845810aec46192ec6e20049ab2f04b3b0b59e93e9512dfb0786344",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/SmallChains.lean",
+      "sha256": "bc12659676c0894f6b0b5c6b7052bd9acebc1dc67e3187414c6fef7c427f09d1",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/SphereEuler.lean",
+      "sha256": "276076b7ee30b7639d85e370639cbf1c1029a52fb465ebae715632782e4f8449",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/AffinePieces.lean",
+      "sha256": "d40427ded204f4b021d55c87a166d05c3ae258fa966c893a53e4049ef8a0f211",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/AffineSimplex.lean",
+      "sha256": "e356de8d2a22702e37e504cdeb22c0b9eb8a80844fb1ee924d38f127cc39c677",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/Barycentric.lean",
+      "sha256": "0f54d308534a2cf8204e064d154316de1f923a1299207b377c4c576589101561",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/Cone.lean",
+      "sha256": "cfede5d222a6a91b89669dac969b8f2598d11c8bb497236cda52960e9fcac5e8",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/EventualSmallness.lean",
+      "sha256": "fdbd505f919aed34feaa25e83963cb139cdfc11a9fad7403b5da36f3c2bd671e",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/Homotopy.lean",
+      "sha256": "0a75e64502f081f988a3b66ec4b648f73561c5fe63d7e1331f5d52b1614834a2",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/Mesh.lean",
+      "sha256": "761f8e539b71be9d323646c55c34278c1516d6dd60d7846dcd0c9d45c844aab0",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/MeshChains.lean",
+      "sha256": "745b5f19845084e2247970ae121c62ccec155fbe7036784c7890f7dd23a00b03",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/Naturality.lean",
+      "sha256": "5c25b6c04efb20684dc662e99c1e6b44866ff3bf387f104a1042947c5a1f9e01",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/Restriction.lean",
+      "sha256": "9e20458da21b90dbe8d3bcaeaa0828256b7a4fca65fa7a9d5d7b52e274c14063",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/SimplexSmallness.lean",
+      "sha256": "045d9cdec489b8f0c57bee1ed1e6bf9b194529af65d4fc9a22476adb891bf9cc",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/Singular.lean",
+      "sha256": "cc25768cbc0795930523dccfaf8a2e129f983219d74b142379936334bd76f8b5",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/SingularSupport.lean",
+      "sha256": "e2d507820d126ed981311358b16c0963caadf2b637bf20d4284bfdff1efca6db",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/Support.lean",
+      "sha256": "fe746391d3c089c3afa273c920cde3239cefd67d25a78d3ad8de96a318be5173",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/Universal.lean",
+      "sha256": "9833796759fdb186a021b2e3590c5ffbaf0ac3a2a673784f0cb2c0ce94e38274",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homology/Subdivision/UniversalGeometry.lean",
+      "sha256": "53ecb62f16fb8a49922f1ed58c384e2df2c5352628408b95ddbf2afec6fb3373",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Homotopy/SphereRadial.lean",
+      "sha256": "2ffefc559e02286a7d57626aa59fa4e373a06bb1ad95ee06822f52f0838916eb",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/ClosedBall.lean",
+      "sha256": "533e70c43206c8ec664dbec9826ec43aedea27be9b3cdbd7624854b705be937e",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/Determinant.lean",
+      "sha256": "c7a7afe3a6dda44a515a808ad2f56a47d1136d6d4f9d418ec4bfb5f78918b6a3",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/Euclidean.lean",
+      "sha256": "acdf562108e193a6d98eaf99c2e903d203cbab05fcad5fe6382403087d0b48b7",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/EuclideanLinearization.lean",
+      "sha256": "7e3b576ad6610d85bd44853efc09f625480f77acb3052adca37cfde004f85f4d",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/FiniteAdditivity.lean",
+      "sha256": "bb98f5ff4e153564626f009a80f885e3631b7a9aeddf1d32a9c76159a99ed0c1",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/FiniteSetLocal.lean",
+      "sha256": "69dc36e7d53df98321705a23cd498814ae4b802620137e7a86ee0cfd78a6fbb0",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/FiniteZeros.lean",
+      "sha256": "b2044ccabb10780f77003be67210d11d17dff27cfc0059d9fd11ef0a8f546334",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/IsolatedZero.lean",
+      "sha256": "ba9d10e0a9a98eb362410fc7b95b1a3a018769f88aeab33743f51615e58a1244",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/LinearDegree.lean",
+      "sha256": "a50a3a6b72e86f1281baa0b480b40757cd2d8f7439b3e5c3110795f9e6177d19",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/LinearDegreePath.lean",
+      "sha256": "8a7b91e4010603d176379acf06cf316cb827318d029d18d89d422afc0980bc7a",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/LinearizationHomotopy.lean",
+      "sha256": "5aeb30b19331ed7661c308d1c5dd5dd4f9601e50bf9ca1aa65e0e0026004d50c",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/LinearSphere.lean",
+      "sha256": "a106342c68de1af474cd544b58cfc647bbe174a0842692cefa98c915416952a6",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/OrthogonalDegree.lean",
+      "sha256": "f2e0eedb513efd30b07dad2124e6e963d5543fcf98cf10323f346f46ce4d5bb0",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/ReflectionDegree.lean",
+      "sha256": "080f4ac39c8b1a864a2bb3b1fd187a806dab5db155c466ed99badae78bcd3153",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/Relative.lean",
+      "sha256": "54df520e8d22cabb269952c58c1a92e2fb4771eb9f6feae292c641f0ac134a67",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/SphereAntipodal.lean",
+      "sha256": "719202999f90c4c8bf5b3f98b70547aaeba5ec64016ca07c621c3123c20e5e8f",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/SphereCover.lean",
+      "sha256": "cbd8ffad83e5dca6284041f80e46cc0b7ce6f1cb8429ccb2c6e8df68c0bf3a8c",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/SphereDegree.lean",
+      "sha256": "4df3a8f6c6963a9da974dca05bbd056296ce950db8368b7630c918a7217ceffd",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/SphereGenerator.lean",
+      "sha256": "602601511b1ae2bd77b43603f705ac71f2aee46442fd85650d42065d84f81f8a",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/SphereHomology.lean",
+      "sha256": "061fbaf0473c110bec9cc50e85f524d36e6a32e9e2447e87700cc5a81feb092e",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/SphereMap.lean",
+      "sha256": "edb5f1db7f9b47f994a96f6d9bebe32215df4ea9b51ddd6c06015ced4fca9a74",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/SphereVanishing.lean",
+      "sha256": "ad4e659520f48861dc5ddba202873044aebe01c2f9c06cdcde43dfb526a9cab2",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/LocalDegree/ZeroSphere.lean",
+      "sha256": "ca5a4ad2e382fd376ecbdfbb7ee320c5dbde4a0e9e7aa10d4b29c9eb440d4673",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Manifold/InteriorChart.lean",
+      "sha256": "e5a79d77bdf4105200e36d7c92da379c4fa4bdb12c3281364b2e6d66ceb35833",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/OpenCover/Disjoint.lean",
+      "sha256": "28f71a3a8a5ee2d2371607f7ddddaecf2c3c522fa7f7e4e8cbfd927e2d4e07cf",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Simplex/Coordinates.lean",
+      "sha256": "4a2306546d25d5b5c6eaf1baae61c65c4c5148e48db1160069c65380b5fb95f8",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/SimplicialSet/ChainColimits.lean",
+      "sha256": "0a908aac34765759f228b9ed6cb302ad5382fdb40592837d5375fdc61ee0e0db",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "DifferentialGeometry/Topology/SimplicialSet/UnionChains.lean",
+      "sha256": "6af183064a84a8070a8973f03d9974caae8a99656346d1048e288ddc4105fcfe",
+      "origin": "differential_geometry"
+    },
+    {
+      "path": "preparation/release/P079/differential-geometry-LICENSE",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "origin": "external_license"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ReadoutGlobalMonotonicity435.lean",
+      "sha256": "8a4c25f3e17528e9f5a279bb4379ca500f25dcd678c227b8033dcfe72fea488c",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ArbitrarySplitGlobalConversionPositive435.lean",
+      "sha256": "a9e59f51ee92ca0dc308876cb46e6c35ada8dea420f52e4591cdde88286d75a8",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ArbitrarySplitGlobalBPositive435.lean",
+      "sha256": "aceae1b7a841beeaed4d703064a1686c1a48d94dc5176ed3ba1424e7d453b3e5",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PaperGlobalSubmissionEndpoints435.lean",
+      "sha256": "cbeb774a2d410611898129b6d6753421249d5b350e06ddf5bad8f85c90fe3683",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ArbitrarySplitPhase435.lean",
+      "sha256": "c25da06ef00d2bb3966b25f524b0160811cae19a115984ae853a4851e9592b5c",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ArbitrarySplitPhaseProduct435.lean",
+      "sha256": "05f2d04a29422d316bc479abb5aaf5aeb586eca1e3e1a7245f1c224a4e580b26",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ArbitrarySplitInterlacing435.lean",
+      "sha256": "3902181fc40d487e65d8465c6026a0c179d87713526bbf3cc4cf2d52d67f1551",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/InterlacingPositivePartialFractions435.lean",
+      "sha256": "eafa72d1e44b34f57bb93c2d5db5c04fe79448056a69da80fd0fc1e97023f84d",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ArbitrarySplitInterlacingTail435.lean",
+      "sha256": "d63bbeb41aa03bb81942e96129b9aa8898e2631762d796151dcbebf13c774157",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PaperInterlacingSubmissionEndpoint435.lean",
+      "sha256": "15818b5b46df32066c11f6309bffdeee1d764a0d11440115c81bd7533e315b5b",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PositiveRealRootParity435.lean",
+      "sha256": "f1a519ddbb328d33b1faadae4bef5e2b3a7ee0434f3ff39358b85d7f9ead2dad",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RegularFullFamilyOpen435.lean",
+      "sha256": "0c83f209e1a4488dd15062058fa7b9fcfc522445ee53eecb91f3e0acbfb17284",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PaperGeneralPrescribedRootConstruction435.lean",
+      "sha256": "fd70e3bf5d87101ea5cb083668bbd08900cbee6d34829ac93ca60a2e782966f6",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RouthSignedSeed435.lean",
+      "sha256": "d5aeccff25e860e67dd755813cfc72bbd4ab437d2a9353e7718dffe71755727c",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/UniformRealResolvent435.lean",
+      "sha256": "b246687f53cb1c43e201dd9eabb4544cdcee39b0c64c25536d27f1910a2f121e",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/UnstableCurveNonresonance435.lean",
+      "sha256": "6b3bd68636810364843490f8adfc432edd37233535b30a2a5145e6944f30ff9b",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/QuadraticCoefficientMajorant435.lean",
+      "sha256": "b006b8bc445db0205b620889646adbb8b5bc528bb36d8d765a995b97d1cbb5cc",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BilinearCauchyProduct435.lean",
+      "sha256": "cbc340b6bc8aa3ff0d40d7c02d49d7926a8da7081774f400d5212e6fe008b4d1",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ScalarSeriesDifferential435.lean",
+      "sha256": "fede83ae8bb8fbb488479855b4dbf3ad6090026a739514fe9b81f9d3b44d7d41",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/QuadraticParameterSeries435.lean",
+      "sha256": "1016c65d232f9da131a66403ef8113c92ed427567341f476c60f62ef94be9ab6",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/AnalyticCurveEmbedding435.lean",
+      "sha256": "be7fa40091fdc26fa339839b4865170c96d5da58f64e1e8e18b916f544f96229",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/BackwardParameterTrajectory435.lean",
+      "sha256": "c11dba4579ea90f06b8f56966c6198ce98fc47393625618fe797448c665a1704",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ActualQuadraticClassField435.lean",
+      "sha256": "76d63eb00f3af1777cf438a06aac29b33dae0266d718774ca992d7f7dbfb2759",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ActualAnalyticUnstableCurve435.lean",
+      "sha256": "7fa5e5d80ebe2a692fc230ca848f26ac2a204e9f3054c84766bee0f5edb91492",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ActualPositiveAnalyticUnstableCurve435.lean",
+      "sha256": "25c7ebc2d7e30de513c9c179f21926000d4abc5c4236004f36dbd59fec29b407",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PaperFullConfigurationUnstableCurves435.lean",
+      "sha256": "83b0071f33ab3728ef1c6d07f30f1fab5b488098e337d4215613bcb866cfc14d",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/ArbitrarySplitReadoutOrder435.lean",
+      "sha256": "41519be44ec0113405878c86e7ae38e9cfcc5b5f5b9d9f0bf5ddbbb1eb49a3c3",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/PaperTwoSiteRoundedRoot435.lean",
+      "sha256": "f5365ca59260fd688ff61eaf2e82077595cb54a1ae27da374be884fd31fca68c",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/IntegerTriangularDeterminantCertificate.lean",
+      "sha256": "57bc4ffb7f115db777e87a11cc8c0c0d70e20e512ea15bf38fc85b3d0d5b6243",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/OrderedRationalCoefficientLists435.lean",
+      "sha256": "2313280dfaa5a52e42f57e927ed24e5582201943f27df59ce17d9ee908f874ad",
+      "origin": "new_p079_preparation"
+    },
+    {
+      "path": "proofs/PhosphorylationStableCapacity/RouthSignedCriterion435.lean",
+      "sha256": "81d6f0a96a43c2164993fbcdf77f70f6ccebc1c51cedb69869c6179f5e3e7c5b",
+      "origin": "new_p079_preparation"
+    }
+  ],
+  "external_repository_url": "https://github.com/qinz1yang/differential-geometry"
+}
